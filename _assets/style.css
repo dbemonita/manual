@@ -1,0 +1,103 @@
+body {
+  font-family: Raleway;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Slabo 27px", serif;
+}
+
+code,
+pre {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+button.sidebar-toggle {
+  top: 10px;
+  left: 7px;
+  bottom: unset;
+  width: 35px;
+  height: 35px;
+  background: white;
+}
+
+button.sidebar-toggle>div {
+  background: white;
+  width: 16px;
+  box-shadow: 0 0 30px white;
+  box-shadow: 0 0 10px white;
+}
+
+@media screen and (max-width: 768px) {
+  body.close button.sidebar-toggle {
+    top: 10px;
+  }
+
+  button.sidebar-toggle {
+    top: -10px;
+  }
+}
+
+.fa {
+  font-size: 80%;
+  margin-left: 3px;
+}
+
+.sidebar-nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav ul li.active {
+  background: none;
+}
+
+.sidebar-nav ul li a {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav ul li.active a {
+  color: slateblue;
+}
+
+h1.app-name {
+  line-height: 20px;
+  color: #0074d9;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+h1.app-name span {
+  color: slateblue;
+  font-size: 16px;
+  color: #0074d9;
+  opacity: 0.3;
+}
+
+.search {
+  margin-top: 50px;
+  border-top: 1px solid #eee;
+}
+
+button.docsify-copy-code-button {
+  font-size: 10px;
+  opacity: 0.25;
+  background-color: gray;
+}
+
+button.docsify-copy-code-button:hover,
+code:hover+button.docsify-copy-code-button {
+  opacity: 1;
+  background-color: dodgerblue;
+}
+
+.pagination-item-title {
+  font-size: 16px !important;
+  margin-top: 10px;
+}

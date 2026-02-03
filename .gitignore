@@ -1,0 +1,10 @@
+*.log
+.DS_Store
+/themes/*
+!.gitkeep
+node_modules
+/lib/
+.idea
+dl/*
+!dl/.keep
+*.*~
