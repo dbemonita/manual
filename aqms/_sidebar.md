@@ -1,0 +1,6 @@
+- [Pendahuluan](/)
+- Konfigurasi
+    - [via Serial](command/command_serial.md)
+    - [via MQTT](command/command_mqtt.md)
+- Register Data
+    - [MODBUS](register/reg_modbus.md)
