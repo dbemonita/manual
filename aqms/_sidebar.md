@@ -4,3 +4,5 @@
     - [via MQTT](command/command_mqtt.md)
 - Register Data
     - [MODBUS](register/reg_modbus.md)
+- Led Matrix P10 (2x3)
+    - [DMD LED MATRIK](dmd/config.md)
