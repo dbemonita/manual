@@ -193,6 +193,21 @@
           width: 90%;
         } */
       }
+
+      /* Spin animation */
+      @keyframes spinFan {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Only spin the fan icon on hover */
+      li:hover .fa-fan {
+        animation: spinFan 1s linear infinite;
+      }
     </style>
   </head>
   <body>
@@ -204,10 +219,10 @@
           Monita Daffodil
         </a>
       </li>
-            <li>
+      <li>
         <a href="/aqms/">
-          <i class="fa-solid fa-microchip"></i>
-          Monita Aqms
+          <i class="fa-solid fa-fan"></i>
+          Monita AQMS
         </a>
       </li>
       <li>
