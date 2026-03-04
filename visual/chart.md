@@ -63,6 +63,7 @@ Pada _tag_ ini juga bisa berisi atribut:
 - `closing_process` (_boolean_) untuk mendefinisikan tutup buku, bila _false_ berarti data dimulai tanggal 1 pukul 00:00, bila _true_ maka data dimulai satu periode ke belakang
 - `closing_process_strict` (_boolean_) untuk mendefinisikan periode awal tutup buku, bila _false_ misal dari tanggal 15 sampai dengan tanggal 15, bila _true_ misal dari tanggal 16 sampai dengan tanggal 15; atribut ini digunakan bila parameter `closing_process` bernilai _true_
 - `decimal_default` untuk mendefinisikan nilai baku atribut `decimal`
+- `windrose` (_boolean_) untuk mendefinisikan grafik dalam bentuk _windrose_
 
 > `<y_axis>`
 
@@ -87,6 +88,7 @@ Komponen **series** _mandatory_. Memiliki properti:
 - `formula`: formula; [Referensi&rarr;](ref_formula.md)
 - `calc`: kalkulator; [Referensi&rarr;](ref_calc.md)
 - `decimal`: jumlah angka di belakang tanda koma ("."); default 2
+- `windrose_component`: penentuan komponen dengan opsi data `speed` atau `direction`
 
 > `<plot_line>`
 
@@ -114,3 +116,41 @@ Komponen **plot_option**. Memiliki properti:
 - `line_marker`; default _true_
 - `series_stacking`; default _null_; pilihan `normal` atau `percent`
 - `turbo_threshold`; default 1000
+
+## Windrose
+
+Windrose merupakan bentuk grafik yang digunakan untuk menampilkan data arah dan kecepatan angin dalam bentuk diagram polar. Untuk menampilkan grafik windrose, maka pada komponen `<series>` harus ditambahkan properti `windrose_component` dengan opsi data `speed` atau `direction`. Berikut contoh implementasinya:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+
+...
+
+<monita type="chart" windrose="true">
+  <y_axis>
+    <name>Wind Speed</name>
+    <ref>y0</ref>
+    <unit>mm/h</unit>
+  </y_axis>
+
+  <series>
+    <name>Wind Speed</name>
+    <point_id>3302</point_id>
+    <y_axis_ref>y0</y_axis_ref>
+    <windrose_component>speed</windrose_component>
+  </series>
+
+  <y_axis>
+    <name>Wind Direction</name>
+    <ref>y1</ref>
+    <unit>&#xb0;</unit>
+  </y_axis>
+
+  <series>
+    <name>Wind Direction</name>
+    <point_id>3303</point_id>
+    <y_axis_ref>y1</y_axis_ref>
+    <windrose_component>direction</windrose_component>
+  </series>
+</monita>
+```
