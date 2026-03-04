@@ -15,7 +15,7 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **chart**:
 
   <y_axis>
     <name>Level</name>
-    <code>y1</code>
+    <ref>y1</ref>
     <min>0</min>
     <max>100</max>
     <unit>m</unit>
@@ -24,14 +24,14 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **chart**:
   <series>
     <name>Level Kiri</name>
     <point_id>1001</point_id>
-    <y_axis_code>y1</y_axis_code>
+    <y_axis_ref>y1</y_axis_ref>
     <color>LightSeaGreen</color>
   </series>
 
   <series>
     <name>Level Kanan</name>
     <point_id>1002</point_id>
-    <y_axis_code>y1</y_axis_code>
+    <y_axis_ref>y1</y_axis_ref>
     <color>FireBrick</color>
   </series>
 
@@ -40,11 +40,11 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **chart**:
 
 ## Penjelasan
 
-> `<?xml version="1.0" encoding="UTF-8"?>`  
-> `<?visualmonita 5.3?>`  
-> `<?title Contoh Grafik?>`  
-> `<?author Andi Prianto?>`  
-> `<?revised 2020-01-01 08:00?>`  
+> `<?xml version="1.0" encoding="UTF-8"?>`
+> `<?visualmonita 5.3?>`
+> `<?title Contoh Grafik?>`
+> `<?author Andi Prianto?>`
+> `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)
@@ -66,10 +66,10 @@ Pada _tag_ ini juga bisa berisi atribut:
 
 > `<y_axis>`
 
-Komponen **y-axis** _mandatory_. Memiliki properti:
+Komponen **y axis** _mandatory_. Memiliki properti:
 
-- `name`: nama y-axis; default `yAxis`
-- `code`: keyword atau inisial. Berfungsi seperti referensi untuk direlasikan dengan properti `series`. Tiap `y-axis` dapat direlasikan ke banyak series (_one to many_); default _null_
+- `name`: nama `y axis`; default `yAxis`
+- `ref`: keyword atau inisial. Berfungsi sebagai kode referensi untuk direlasikan dengan properti `series`. Tiap `y axis` dapat direlasikan ke banyak series (_one to many_); default _null_
 - `min`: nilai minimal; default 0
 - `max`: nilai maksimal; default 0
 - `unit`: satuan; default _null_
@@ -81,7 +81,7 @@ Komponen **series** _mandatory_. Memiliki properti:
 - `name`: nama _series_; default `Series`
 - `type`: tipe grafik; default `spline`; [Referensi&rarr;](https://www.highcharts.com/docs/chart-and-series-types/chart-types)
 - `point_id`: id titik ukur/parameter; default 0
-- `y_axis_code`: kode `y_axis` yang akan direlasikan ke salah satu `y-axis`; default _null_
+- `y_axis_ref`: kode referensi `y_axis` yang akan direlasikan ke salah satu `y axis`; default _null_
 - `color`: warna garis grafik; default _null_
 - `data_label`: tampilkan label data?; default _false_
 - `formula`: formula; [Referensi&rarr;](ref_formula.md)
