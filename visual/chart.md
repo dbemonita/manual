@@ -121,10 +121,14 @@ Komponen **plot_option**. Memiliki properti:
 
 Windrose merupakan bentuk grafik yang digunakan untuk menampilkan data arah dan kecepatan angin dalam bentuk diagram polar. Untuk menampilkan grafik windrose, maka pada komponen `<series>` harus ditambahkan properti `windrose_component` dengan opsi data `speed` atau `direction`. Berikut contoh implementasinya:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
-...
+<?visualmonita 5.3?>
+<?title Contoh Grafik?>
+<?author Andi Prianto?>
+<?revised 2020-01-01 08:00?>
+<?locale id?>
 
 <monita type="chart" windrose="true">
   <y_axis>
