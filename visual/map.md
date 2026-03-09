@@ -8,7 +8,6 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **peta**:
 <?visualmonita 5.0?>
 <?title Contoh Peta?>
 <?author Monita?>
-<?revised 2020-01-01 08:00?>
 <?locale id?>
 
 <monita type="map">
@@ -24,7 +23,6 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **peta**:
 > `<?visualmonita 5.0?>`
 > `<?title Contoh Peta?>`
 > `<?author Monita?>`
-> `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)

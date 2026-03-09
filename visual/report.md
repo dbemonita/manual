@@ -8,7 +8,6 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **Laporan**:
 <?visualmonita 5.0?>
 <?title Contoh Laporan?>
 <?author Monita?>
-<?revised 2020-01-01 08:00?>
 <?locale id?>
 
 <monita type="report">

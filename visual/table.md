@@ -8,7 +8,6 @@ Berikut contoh _basic_ berkas konfigurasi untuk membuat halaman **table**:
 <?visualmonita 5.0?>
 <?title Contoh Tabel?>
 <?author Monita?>
-<?revised 2020-01-01 08:00?>
 <?locale id?>
 
 <monita type="table">
@@ -45,7 +44,6 @@ Output layout dari visual tersebut akan seperti ini:
 > `<?visualmonita 5.0?>`
 > `<?title Contoh Tabel?>`
 > `<?author Monita?>`
-> `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)

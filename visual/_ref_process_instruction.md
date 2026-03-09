@@ -6,7 +6,6 @@
 <?visualmonita 5.0?>
 <?title Lorem Ipsum Dolor sit Amet?>
 <?author Monita?>
-<?revised 2020-01-01 08:00?>
 <?locale id?>
 <?development false?>
 ```
@@ -28,10 +27,6 @@ Judul dokumen. Dibuat sesingkat dan sejelas mungkin.
 > `<?author Monita?>`
 
 Pembuat dokumen. Nama personal dan/atau divisi.
-
-> `<?revised 2020-01-01 08:00?>`
-
-Tanggal dokumen dibuat atau diperbarui.
 
 > `<?locale id?>`
 

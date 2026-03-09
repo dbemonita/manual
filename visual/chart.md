@@ -8,7 +8,6 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **chart**:
 <?visualmonita 5.0?>
 <?title Contoh Grafik?>
 <?author Monita?>
-<?revised 2020-01-01 08:00?>
 <?locale id?>
 
 <monita type="chart">
@@ -44,7 +43,6 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **chart**:
 > `<?visualmonita 5.0?>`
 > `<?title Contoh Grafik?>`
 > `<?author Monita?>`
-> `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)
@@ -124,7 +122,6 @@ Windrose merupakan bentuk grafik yang digunakan untuk menampilkan data arah dan 
 <?visualmonita 5.0?>
 <?title Contoh Grafik?>
 <?author Monita?>
-<?revised 2020-01-01 08:00?>
 <?locale id?>
 
 <monita type="chart" windrose="true">

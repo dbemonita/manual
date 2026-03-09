@@ -8,7 +8,6 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **HMI**:
 <?visualmonita 5.0?>
 <?title Contoh HMI?>
 <?author Monita?>
-<?revised 2020-01-01 08:00?>
 <?locale id?>
 
 <monita type="hmi" background_color="#0E76BD" grid="true" decimal_default="2">
@@ -24,7 +23,6 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **HMI**:
 > `<?visualmonita 5.0?>`
 > `<?title Contoh HMI?>`
 > `<?author Monita?>`
-> `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)

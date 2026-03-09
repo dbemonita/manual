@@ -8,7 +8,6 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **THMI**:
 <?visualmonita 5.0?>
 <?title Contoh THMI?>
 <?author Monita?>
-<?revised 2020-01-01 08:00?>
 <?locale id?>
 
 <monita type="thmi">
@@ -52,7 +51,6 @@ Output layout dari visual tersebut akan seperti ini:
 > `<?visualmonita 5.0?>`
 > `<?title Contoh THMI?>`
 > `<?author Monita?>`
-> `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)
