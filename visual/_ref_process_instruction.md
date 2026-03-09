@@ -5,7 +5,7 @@
 
 <?visualmonita 5.0?>
 <?title Lorem Ipsum Dolor sit Amet?>
-<?author Andi Prianto?>
+<?author Monita?>
 <?revised 2020-01-01 08:00?>
 <?locale id?>
 <?development false?>
@@ -25,7 +25,7 @@ Dokumen ini digunakan pada aplikasi Visual Monita >= 5.0
 
 Judul dokumen. Dibuat sesingkat dan sejelas mungkin.
 
-> `<?author Andi Prianto?>`
+> `<?author Monita?>`
 
 Pembuat dokumen. Nama personal dan/atau divisi.
 

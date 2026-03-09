@@ -5,9 +5,9 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **Laporan**:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?visualmonita 5.3?>
+<?visualmonita 5.0?>
 <?title Contoh Laporan?>
-<?author Andi Prianto?>
+<?author Monita?>
 <?revised 2020-01-01 08:00?>
 <?locale id?>
 

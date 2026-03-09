@@ -5,9 +5,9 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **peta**:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?visualmonita 5.3?>
+<?visualmonita 5.0?>
 <?title Contoh Peta?>
-<?author Andi Prianto?>
+<?author Monita?>
 <?revised 2020-01-01 08:00?>
 <?locale id?>
 
@@ -20,11 +20,11 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **peta**:
 
 ## Penjelasan
 
-> `<?xml version="1.0" encoding="UTF-8"?>`  
-> `<?visualmonita 5.3?>`  
-> `<?title Contoh Peta?>`  
-> `<?author Andi Prianto?>`  
-> `<?revised 2020-01-01 08:00?>`  
+> `<?xml version="1.0" encoding="UTF-8"?>`
+> `<?visualmonita 5.0?>`
+> `<?title Contoh Peta?>`
+> `<?author Monita?>`
+> `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)

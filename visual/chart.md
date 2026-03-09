@@ -5,9 +5,9 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **chart**:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?visualmonita 5.3?>
+<?visualmonita 5.0?>
 <?title Contoh Grafik?>
-<?author Andi Prianto?>
+<?author Monita?>
 <?revised 2020-01-01 08:00?>
 <?locale id?>
 
@@ -41,9 +41,9 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **chart**:
 ## Penjelasan
 
 > `<?xml version="1.0" encoding="UTF-8"?>`
-> `<?visualmonita 5.3?>`
+> `<?visualmonita 5.0?>`
 > `<?title Contoh Grafik?>`
-> `<?author Andi Prianto?>`
+> `<?author Monita?>`
 > `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
@@ -59,9 +59,6 @@ Pada _tag_ ini juga bisa berisi atribut:
 - `subtitle` untuk mendefiniskan subjudul
 - `data_trim` untuk mendefinisikan baris data yang dihilangkan, dimulai dari 1
 - `data_interval` untuk mendefinisikan jarak waktu antardata: `minute`, `hour`, `day`, `month`
-- `data_reprocess` (_boolean_) untuk mendefinisikan apakah data dihitung ulang oleh Visual Monita
-- `closing_process` (_boolean_) untuk mendefinisikan tutup buku, bila _false_ berarti data dimulai tanggal 1 pukul 00:00, bila _true_ maka data dimulai satu periode ke belakang
-- `closing_process_strict` (_boolean_) untuk mendefinisikan periode awal tutup buku, bila _false_ misal dari tanggal 15 sampai dengan tanggal 15, bila _true_ misal dari tanggal 16 sampai dengan tanggal 15; atribut ini digunakan bila parameter `closing_process` bernilai _true_
 - `decimal_default` untuk mendefinisikan nilai baku atribut `decimal`
 - `windrose` (_boolean_) untuk mendefinisikan grafik dalam bentuk _windrose_
 
@@ -124,9 +121,9 @@ Windrose merupakan bentuk grafik yang digunakan untuk menampilkan data arah dan 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?visualmonita 5.3?>
+<?visualmonita 5.0?>
 <?title Contoh Grafik?>
-<?author Andi Prianto?>
+<?author Monita?>
 <?revised 2020-01-01 08:00?>
 <?locale id?>
 

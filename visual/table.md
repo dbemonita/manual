@@ -5,9 +5,9 @@ Berikut contoh _basic_ berkas konfigurasi untuk membuat halaman **table**:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?visualmonita 5.3?>
+<?visualmonita 5.0?>
 <?title Contoh Tabel?>
-<?author Andi Prianto?>
+<?author Monita?>
 <?revised 2020-01-01 08:00?>
 <?locale id?>
 
@@ -41,11 +41,11 @@ Output layout dari visual tersebut akan seperti ini:
 
 ## Penjelasan
 
-> `<?xml version="1.0" encoding="UTF-8"?>`  
-> `<?visualmonita 5.3?>`  
-> `<?title Contoh Tabel?>`  
-> `<?author Andi Prianto?>`  
-> `<?revised 2020-01-01 08:00?>`  
+> `<?xml version="1.0" encoding="UTF-8"?>`
+> `<?visualmonita 5.0?>`
+> `<?title Contoh Tabel?>`
+> `<?author Monita?>`
+> `<?revised 2020-01-01 08:00?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)
@@ -60,9 +60,6 @@ Pada _tag_ ini juga berisi atribut:
 - `subtitle` untuk mendefiniskan subjudul
 - `data_trim` untuk mendefinisikan baris data yang dihilangkan, dimulai dari 1
 - `data_interval` untuk mendefinisikan jarak waktu antardata: `minute`, `hour`, `day`, `month`
-- `data_reprocess` (_boolean_) untuk mendefinisikan apakah data dihitung ulang oleh Visual Monita
-- `closing_process` (_boolean_) untuk mendefinisikan tutup buku, bila _false_ berarti data dimulai tanggal 1 pukul 00:00, bila _true_ maka data dimulai satu periode ke belakang
-- `closing_process_strict` (_boolean_) untuk mendefinisikan periode awal tutup buku, bila _false_ misal dari tanggal 15 sampai dengan tanggal 15, bila _true_ misal dari tanggal 16 sampai dengan tanggal 15; atribut ini digunakan bila parameter `closing_process` bernilai _true_
 - `decimal_default` untuk mendefinisikan nilai baku atribut `decimal` di tiap properti `cell`
 - `bb_left_title` untuk mendefinisikan isi HTML pada area kiri tabel, dengan menggunakan _bb code_
 - `bb_right_title` untuk mendefinisikan isi HTML pada area kanan tabel, dengan menggunakan _bb code_
