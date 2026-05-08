@@ -1,5 +1,4 @@
-- Fitur
-
+- [Pendahuluan](/)
   - Dashboard
     - [Apa itu Dashboard?](dash_introduction.md)
     - [Contoh Berkas](dash.md)

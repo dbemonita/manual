@@ -5,10 +5,9 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **THMI**:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?visualmonita 5.3?>
+<?visualmonita 5.0?>
 <?title Contoh THMI?>
-<?author Andi Prianto?>
-<?revised 2020-01-01 08:00?>
+<?author Monita?>
 <?locale id?>
 
 <monita type="thmi">
@@ -48,11 +47,10 @@ Output layout dari visual tersebut akan seperti ini:
 
 ## Penjelasan
 
-> `<?xml version="1.0" encoding="UTF-8"?>`  
-> `<?visualmonita 5.3?>`  
-> `<?title Contoh THMI?>`  
-> `<?author Andi Prianto?>`  
-> `<?revised 2020-01-01 08:00?>`  
+> `<?xml version="1.0" encoding="UTF-8"?>`
+> `<?visualmonita 5.0?>`
+> `<?title Contoh THMI?>`
+> `<?author Monita?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)

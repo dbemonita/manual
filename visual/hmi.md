@@ -5,10 +5,9 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **HMI**:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?visualmonita 5.3?>
+<?visualmonita 5.0?>
 <?title Contoh HMI?>
-<?author Andi Prianto?>
-<?revised 2020-01-01 08:00?>
+<?author Monita?>
 <?locale id?>
 
 <monita type="hmi" background_color="#0E76BD" grid="true" decimal_default="2">
@@ -20,11 +19,10 @@ Berikut contoh berkas konfigurasi untuk membuat halaman **HMI**:
 
 ## Penjelasan
 
-> `<?xml version="1.0" encoding="UTF-8"?>`  
-> `<?visualmonita 5.3?>`  
-> `<?title Contoh HMI?>`  
-> `<?author Andi Prianto?>`  
-> `<?revised 2020-01-01 08:00?>`  
+> `<?xml version="1.0" encoding="UTF-8"?>`
+> `<?visualmonita 5.0?>`
+> `<?title Contoh HMI?>`
+> `<?author Monita?>`
 > `<?locale id?>`
 
 Format dokumen dan _meta data_. [Referensi&rarr;](ref_process_instruction.md)
