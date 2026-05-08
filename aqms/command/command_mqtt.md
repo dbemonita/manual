@@ -4,7 +4,7 @@
 
     | Topic Publish | Payload |  Keterangan |Opsi |
     |:--------------|:--------|:----------|:------|
-    |aqms/cmd/[serial_number] | SO2;Z | Zeroing Sensor Udara SO2| Perintah untuk Zeroing Sensor Udara |
+    |aqms/command/[serial_number]|SO2;Z | Zeroing Sensor Udara SO2| Perintah untuk Zeroing Sensor Udara |
     ||NO2;Z| Zeroing Sensor Udara NO2||
     ||CO;Z| Zeroing Sensor Udara CO||
     ||O3;Z| Zeroing Sensor Udara O3||
