@@ -14,3 +14,5 @@
     ||restart|Restart Module ||
     |aqms/fota/[serial_number]|flash|Flashing OTA Normal ke Module |None / f / force|
     |aqms/fota/[serial_number]|flash;f|Flashing OTA secara force/paksa ke Module | atau flash;force |
+
+---
