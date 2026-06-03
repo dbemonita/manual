@@ -1,13 +1,60 @@
-# Admin Monita
+# Tentang Admin Monita
 
-Aplikasi ini merupakan sistem manajemen terpusat yang digunakan untuk mengelola perangkat (devices), aset, titik pengukuran (measure points), serta pengguna (users) beserta seluruh hubungan antar entitas tersebut. Melalui aplikasi ini, administrator dapat melakukan pengaturan, pemantauan, dan pengelolaan data secara terstruktur dan terintegrasi.
+Adalah aplikasi pengelolaan perangkat, aset, titik ukur, serta pengguna.
 
-Beberapa fungsi utama yang tersedia dalam aplikasi Admin antara lain:
+_Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti NGINX dan Apache.
 
-- Mengelola data perangkat yang terhubung ke sistem
-- Mengatur dan mendata aset beserta atributnya
-- Mengonfigurasi titik pengukuran sebagai sumber data monitoring
-- Mengelola akun pengguna dan hak akses
-- Mengatur relasi antar entitas seperti perangkat terhadap aset atau titik pengukuran
-- Melakukan pengaturan sistem untuk mendukung operasional platform secara keseluruhan
-- Memantau data yang dikirim oleh device secara real-time
+## Instalasi
+
+- Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1WEyAkPY5l4BIUKxb2PAplE1X19I4CmzH).
+- Dengan apliaksi `unzip`, _extract_ aplikasi di _server_ tujuan.
+- Jalankan aplikasi.
+  - Contoh dengan PHP: `php -S localhost:8000`
+  - Contoh dengan python: `python -m http.server 8000`
+  - Bisa juga _deploy_ ke:
+    - Netlify
+    - Cloudflare Pages
+    - Vercel
+    - GitHub Pages
+
+## Changelog
+
+### 1.6.0 (2026-05-29)
+
+- Memungkinkan berjalan di http dengan IP address.
+- Auto disable fungsi-fungsi yang memerlukan isSecureContext.
+
+### 1.5.0 (2026-05-26)
+
+- Tambah halaman detail alarm.
+
+### 1.4.1 (2026-05-20)
+
+- Perbaikan menu pada sidebar.
+- Tambah fitur alarm history refetcher tiap 60 detik.
+
+### 1.4.0 (2026-05-20)
+
+- Tambah halaman histori alarm dan ACK.
+- Configurable H5, Chatbox, FCM.
+- Perbaikan input number untuk data float.
+- Ubah theme menjadi Nora.
+
+### 1.3.1 (2026-04-27)
+
+- Ubah session user, dibuat tidak expired.
+- Tambah "stop push notif" saat user logout.
+- Tambah teks "Admin/<versi>" pada device name.
+
+### 1.3.0 (2026-04-21)
+
+- Tambah halaman list notifikasi (alarm).
+
+### 1.2.0 (2026-04-20)
+
+- Tambah fitur pengelolaan notifikasi.
+
+### 1.1.0 (2026-03-13)
+
+- Menggunakan mode CSR.
+- Tambah form API Base URL pada halaman login.
