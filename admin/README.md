@@ -4,7 +4,7 @@ Adalah aplikasi pengelolaan perangkat, aset, titik ukur, serta pengguna.
 
 _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti NGINX dan Apache.
 
-## Instalasi
+### Instalasi
 
 - Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1WEyAkPY5l4BIUKxb2PAplE1X19I4CmzH).
 - Dengan apliaksi `unzip`, _extract_ aplikasi di _server_ tujuan.
@@ -16,6 +16,8 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
     - Cloudflare Pages
     - Vercel
     - GitHub Pages
+
+---
 
 ## Changelog
 

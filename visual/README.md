@@ -19,6 +19,8 @@ Panduan instalasi berikut berlaku untuk versi `5.8.0` atau lebih tinggi.
     - Vercel
     - GitHub Pages
 
+---
+
 ## Changelog
 
 ### 5.13.0 (2026-05-29)
