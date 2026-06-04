@@ -21,6 +21,15 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 
 ## Changelog
 
+### 1.6.1 (2026-06-04)
+
+- Mengubah tampilan dashboard:
+  - Jumlah total device, device aktif, dan device tidak aktif.
+  - Memisahkan list device aktif dan tidak aktif.
+  - Efisiensi ruang (widget lebih tipis).
+  - Filter device berdasarkan teks.
+  - Tombol pause 60s-auto-refresh.
+
 ### 1.6.0 (2026-05-29)
 
 - Memungkinkan berjalan di http dengan IP address.
