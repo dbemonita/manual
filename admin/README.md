@@ -7,7 +7,7 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 ### Instalasi
 
 - Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1WEyAkPY5l4BIUKxb2PAplE1X19I4CmzH).
-- Dengan apliaksi `unzip`, _extract_ aplikasi di _server_ tujuan.
+- Dengan aplikasi `unzip`, _extract_ aplikasi di _server_ tujuan.
 - Jalankan aplikasi.
   - Contoh dengan PHP: `php -S localhost:8000`
   - Contoh dengan python: `python -m http.server 8000`
