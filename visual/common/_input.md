@@ -33,7 +33,7 @@
 | input_border_radius \*     | float      | 0                            | _null_                         | Radius garis tepi      |
 | input_method \*            | string     | emit                         | emit; get; post                | Metode kirim data      |
 | input_url \*               | string     | _null_                       | _null_                         | Target pengiriman data |
-| input_data \*\*\           | string     | _null_                       | _null_                         | Data yang dikirim      |
+| input_data \*\*            | string     | _null_                       | _null_                         | Data yang dikirim      |
 | button_width               | float      | 0                            | _null_                         | Lebar tombol           |
 | button_height              | float      | 0                            | _null_                         | Tinggi tombol          |
 | button_image_source \*\*\* | string     | _null_                       | _null_                         | URL gambar tombol\*    |
