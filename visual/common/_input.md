@@ -29,7 +29,7 @@
 | input_color \*             | string     | DarkSlateGray                | _null_                         | Warna teks normal      |
 | input_background_color \*  | string     | White                        | _null_                         | Warna latar normal     |
 | input_border_width \*      | float      | 2                            | _null_                         | Ketebalan garis tepi   |
-| input_border_color \*      | string     | SlateGray                    | _null_                         | Warna garis tepi       |
+| input_border_color \*      | string     | LightGray                    | _null_                         | Warna garis tepi       |
 | input_border_radius \*     | float      | 0                            | _null_                         | Radius garis tepi      |
 | input_method \*            | string     | emit                         | emit; get; post                | Metode kirim data      |
 | input_url \*               | string     | _null_                       | _null_                         | Target pengiriman data |
