@@ -49,4 +49,5 @@
   - `i:CY1-VIR; j:1; dl:{{input}}; f:0; ts:{{timestamp}}`, _atau_
   - `i:CY1-VIR; dl:{{input}}; ts:{{timestamp}}`, _atau_
   - `i:CY1-VIR`
+  - Sehingga, jika `j`, `dl`, `f`, dan `ts` tidak didefinisikan, maka akan otomatis terisi.
 - \*\*\*) URL pada properti `source` relatif ke server berkas statis yang didefinisikan pada berkas `.env`.
