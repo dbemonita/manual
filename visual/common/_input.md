@@ -42,11 +42,6 @@
 | y                          | float      | 0                            | _null_                         | Posisi: Koordinat y    |
 | z                          | enum       | 0                            | 0;1;2;3;4;5;6;7;8;9            | Posisi: z-index        |
 
-\*) Tersedia pada versi >= 5.14.0.
-
-\*\*) Contoh data:
-
-- `{"page":1,"limit":10,"search":"john"} // JSON`
-- `{page:1,limit:10,search:'john'} // JS-style`
-
-\*\*) URL pada properti `source` relatif ke server berkas statis yang didefinisikan pada berkas `.env`.
+- \*) Tersedia pada versi >= 5.14.0.
+- \*\*) Contoh data `i:CY1-VIR; j:1; dl:{{input}}; f:0; ts:{{timestamp}}`. Spasi di antara `:`, `;`, `{{`, dan `}}` diabaikan.
+- \*\*\*) URL pada properti `source` relatif ke server berkas statis yang didefinisikan pada berkas `.env`.
