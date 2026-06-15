@@ -15,18 +15,22 @@
 
 #### Properti selengkapnya:
 
-| Properti    | Tipe Nilai | Nilai Baku | Pilihan Nilai       | Keterangan          |
-| ----------- | ---------- | ---------- | ------------------- | ------------------- |
-| caption     | string     | ActiveText | _null_              | Keterangan komponen |
-| point_id    | int        | 0          | _null_              | Titik ukur          |
-| register_id | int        | 0          | _null_              | Register            |
-| width       | float      | 0          | _null_              | Lebar               |
-| height      | float      | 0          | _null_              | Tinggi              |
-| source      | string     | _null_     | _null_              | URL gambar idle\*   |
-| source_0    | string     | _null_     | _null_              | URL gambar off\*    |
-| source_1    | string     | _null_     | _null_              | URL gambar on\*     |
-| x           | float      | 0          | _null_              | Posisi: Koordinat x |
-| y           | float      | 0          | _null_              | Posisi: Koordinat y |
-| z           | enum       | 0          | 0;1;2;3;4;5;6;7;8;9 | Posisi: z-index     |
+| Properti      | Tipe Nilai | Nilai Baku | Pilihan Nilai       | Keterangan           |
+| ------------- | ---------- | ---------- | ------------------- | -------------------- |
+| caption       | string     | ActiveText | _null_              | Keterangan komponen  |
+| point_id      | int        | 0          | _null_              | Titik ukur           |
+| register_id   | int        | 0          | _null_              | Register             |
+| width         | float      | 0          | _null_              | Lebar                |
+| height        | float      | 0          | _null_              | Tinggi               |
+| source        | string     | _null_     | _null_              | URL gambar idle \*\* |
+| source_0      | string     | _null_     | _null_              | URL gambar off \*\*  |
+| source_1      | string     | _null_     | _null_              | URL gambar on \*\*   |
+| allowed_roles | string     | 1;2        | _null_              | Role user \*         |
+| x             | float      | 0          | _null_              | Posisi: Koordinat x  |
+| y             | float      | 0          | _null_              | Posisi: Koordinat y  |
+| z             | enum       | 0          | 0;1;2;3;4;5;6;7;8;9 | Posisi: z-index      |
 
-\*) URL pada properti `source` relatif ke server berkas statis yang didefinisikan pada berkas `.env`.
+#### Catatan
+
+- \*) Tersedia pada versi >= 5.14.0.
+- \*\*) URL pada properti `source` relatif ke server berkas statis yang didefinisikan pada berkas `.env`.
