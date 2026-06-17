@@ -19,6 +19,10 @@ Panduan instalasi berikut berlaku untuk versi `5.8.0` atau lebih tinggi.
     - Vercel
     - GitHub Pages
 
+## Android App
+
+Aplikasi versi Android dapat diunduh melalui [Playstore](https://play.google.com/store/apps/details?id=id.co.monita.visual).
+
 ---
 
 ## Changelog
