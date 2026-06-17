@@ -29,7 +29,7 @@ Panduan instalasi berikut berlaku untuk versi `5.8.0` atau lebih tinggi.
 - Tambah prop UI untuk komponent `input` dan `input_date`.
 - Tambah info `domain:port` pada deviceName.
 - Unreg service worker saat logout.
-- Update sumber data push notif dari `.motification` ke `.data`.
+- Update sumber data push notif dari `.notification` ke `.data`.
 - Tambah info `Ref. ID` pada halaman alarm.
 
 ### 5.13.0 (2026-05-29)
