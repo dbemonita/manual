@@ -21,7 +21,7 @@ Panduan instalasi berikut berlaku untuk versi `5.8.0` atau lebih tinggi.
 
 ## Android App
 
-Aplikasi versi Android dapat diunduh melalui [Playstore](https://play.google.com/store/apps/details?id=id.co.monita.visual).
+Aplikasi versi Android dapat diunduh melalui [Play Store](https://play.google.com/store/apps/details?id=id.co.monita.visual).
 
 ---
 
@@ -58,7 +58,7 @@ Aplikasi versi Android dapat diunduh melalui [Playstore](https://play.google.com
 
 ## 5.10.0 (2026-04-13)
 
-- Versi perdana untuk Android PlayStore.
+- Versi perdana untuk Android Play Store.
 - Hapus local/push notification.
 
 ## 5.9.3 (2026-03-30)
