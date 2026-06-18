@@ -34,6 +34,7 @@ Aplikasi versi Android dapat diunduh melalui [Play Store](https://play.google.co
 - Tambah info `domain:port` pada deviceName.
 - Unreg service worker saat logout.
 - Update sumber data push notif dari `.notification` ke `.data`.
+- Update route ke halaman detil alarm saat notif diklik/tap.
 - Tambah info `Ref. ID` pada halaman alarm.
 
 ### 5.13.0 (2026-05-29)

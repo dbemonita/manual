@@ -27,6 +27,7 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 - Tambah info `domain:port` pada deviceName.
 - Unreg service worker saat logout.
 - Update sumber data push notif dari `.notification` ke `.data`.
+- Update route ke halaman detil alarm saat notif diklik/tap.
 - Tambah info `ID` pada halaman detil alarm.
 - Seragamkan format datetime di semua halaman.
 
