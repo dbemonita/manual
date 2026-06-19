@@ -17,9 +17,68 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
     - Vercel
     - GitHub Pages
 
+### Konfigurasi
+
+Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
+
+```js
+window.__APP_CONFIG__ = {
+  apiBase: "https://sockelat.monita.co.id", // Alamat API backend.
+  h5Navigation: false, // Terkait data-frame BRIN. Nilai default false.
+  h5Base: "", // Terkait data-frame BRIN. nilai default kosong.
+  scHost: "sockelat.monita.co.id", // Server socket-cluster.
+  scPort: 443, // Port socket-cluster. Nilai default 443.
+  scSecure: true, // Is socket-cluster? Nilai default true.
+  scPath: "/socketcluster/", // Path socket-cluster. Nilai default '/socketcluster/'.
+  alarmNotification: false, // Enable fungsi alarm? Nilai default false.
+  chatWidget: false, // Enable fungsi chat AI? Nilai default false.
+};
+```
+
+### Deployment Subfolder-like (e.g. https://example.com/admin)
+
+Berikut contoh konfigurasi subfolder-like untuk Apache:
+
+```
+ProxyPass /admin http://172.16.50.14:1901
+ProxyPassReverse /admin http://172.16.50.14:1901
+
+ProxyPass /_admin http://172.16.50.14:1901/_admin
+ProxyPassReverse /admin http://172.16.50.14:1901/_admin
+```
+
+Berikut contoh konfigurasi _subfolder-like_ untuk NGINX:
+
+```
+location /admin/ {
+    proxy_pass http://172.16.50.14:1901/;
+
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+
+location /_admin/ {
+    proxy_pass http://172.16.50.14:1901/_admin/;
+
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+```
+
+Catatan: Fitur _subfolder-like_ hanya bisa diterapkan pada version >= 1.8.0.
+
 ---
 
 ## Changelog
+
+### 1.8.0 (2026-06-15)
+
+- Memungkinkan dijalankan dengan format URL `https://example.com/admin`.
+- Hapus auto-reload pada halaman `alarm`, digantikan trigger dari FCM.
 
 ### 1.7.0 (2026-06-15)
 
