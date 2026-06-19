@@ -37,7 +37,7 @@ window.__APP_CONFIG__ = {
 
 ### Deployment Subfolder-like
 
-Konfigurasi ini ditujukan agar dapat menjalankan aplikasi seperti *https://example.com/admin/*.
+Konfigurasi ini ditujukan untuk deployment tanpa sub-domain. Contoh: https://example.com/admin/.
 
 Berikut contoh konfigurasi untuk Apache:
 
