@@ -42,18 +42,18 @@ Konfigurasi ini ditujukan agar dapat menjalankan aplikasi seperti *https://examp
 Berikut contoh konfigurasi untuk Apache:
 
 ```
-ProxyPass /admin http://172.16.50.14:1901
-ProxyPassReverse /admin http://172.16.50.14:1901
+ProxyPass /admin http://172.16.50.14:3000
+ProxyPassReverse /admin http://172.16.50.14:3000
 
-ProxyPass /_admin http://172.16.50.14:1901/_admin
-ProxyPassReverse /admin http://172.16.50.14:1901/_admin
+ProxyPass /_admin http://172.16.50.14:3000/_admin
+ProxyPassReverse /admin http://172.16.50.14:3000/_admin
 ```
 
 Berikut contoh konfigurasi untuk NGINX:
 
 ```
 location /admin/ {
-    proxy_pass http://172.16.50.14:1901/;
+    proxy_pass http://172.16.50.14:3000/;
 
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
@@ -62,7 +62,7 @@ location /admin/ {
 }
 
 location /_admin/ {
-    proxy_pass http://172.16.50.14:1901/_admin/;
+    proxy_pass http://172.16.50.14:3000/_admin/;
 
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
