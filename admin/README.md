@@ -35,7 +35,7 @@ window.__APP_CONFIG__ = {
 };
 ```
 
-### Deployment Subfolder-like
+### Deployment Tanpa Sub-domain
 
 Konfigurasi ini ditujukan untuk deployment tanpa sub-domain. Contoh: https://example.com/admin/.
 
