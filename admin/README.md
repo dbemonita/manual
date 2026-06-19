@@ -35,9 +35,11 @@ window.__APP_CONFIG__ = {
 };
 ```
 
-### Deployment Subfolder-like (e.g. https://example.com/admin)
+### Deployment Subfolder-like
 
-Berikut contoh konfigurasi subfolder-like untuk Apache:
+Konfigurasi ini ditujukan agar dapat menjalankan aplikasi seperti *https://example.com/admin/*.
+
+Berikut contoh konfigurasi untuk Apache:
 
 ```
 ProxyPass /admin http://172.16.50.14:1901
@@ -47,7 +49,7 @@ ProxyPass /_admin http://172.16.50.14:1901/_admin
 ProxyPassReverse /admin http://172.16.50.14:1901/_admin
 ```
 
-Berikut contoh konfigurasi _subfolder-like_ untuk NGINX:
+Berikut contoh konfigurasi untuk NGINX:
 
 ```
 location /admin/ {
