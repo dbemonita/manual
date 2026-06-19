@@ -79,7 +79,7 @@ Catatan: Fitur _subfolder-like_ hanya bisa diterapkan pada versi >= 1.8.0.
 
 ### 1.8.0 (2026-06-15)
 
-- Memungkinkan dijalankan dengan format URL `https://example.com/admin`.
+- Memungkinkan dijalankan tanpa sub-domain. Contoh: `https://example.com/admin`.
 - Hapus auto-reload pada halaman `alarm`, digantikan trigger dari FCM.
 
 ### 1.7.0 (2026-06-15)
