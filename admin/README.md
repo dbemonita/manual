@@ -71,7 +71,7 @@ location /_admin/ {
 }
 ```
 
-Catatan: Fitur _subfolder-like_ hanya bisa diterapkan pada version >= 1.8.0.
+Catatan: Fitur _subfolder-like_ hanya bisa diterapkan pada versi >= 1.8.0.
 
 ---
 
