@@ -81,7 +81,7 @@ Catatan:
 
 ## Changelog
 
-### 1.8.0 (2026-06-15)
+### 1.8.0 (2026-06-19)
 
 - Memungkinkan dijalankan tanpa domain/sub-domain. Contoh: `https://example.com/admin` atau `https://example.com/manage/`.
 - Hapus auto-reload pada halaman `alarm`, digantikan trigger dari FCM.
