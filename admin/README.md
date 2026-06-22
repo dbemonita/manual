@@ -55,7 +55,7 @@ h5Base
 
 Konfigurasi ini ditujukan untuk deploy tanpa domain/sub-domain. Contoh: `https://example.com/admin/` atau `https://example.com/manage/`.
 
-##### Dengan Proxy
+##### DENGAN PROXY
 
 _Asumsi proxy ke IP lokal dengan port 3000._
 
@@ -91,7 +91,7 @@ location /_admin/ {
 }
 ```
 
-##### Tanpa Proxy
+##### TANPA PROXY
 
 _Asumsi aplikasi berada di /var/www/_
 
@@ -147,7 +147,7 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 - Pastikan folder `/home`, `/home/user/`, `/home/user/apps`, dan `/home/user/apps/admin`memiliki permission`755`.
 - Semua file di dalam folder `admin` memiliki permission `644` dengan cara `find /home/user/apps/admin -type f -exec chmod 644 {} \;`
 
-##### Catatan:
+##### CATATAN:
 
 - Fitur "deploy tanpa domain/sub-domain" hanya bisa diterapkan pada versi >= 1.8.0.
 - Alias `admin` dapat diganti/disesuaikan. Misal `manage`, `lobby`, dsb.
