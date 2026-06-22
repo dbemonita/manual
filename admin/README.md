@@ -21,7 +21,7 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 
 Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
 
-Versi >= 1.9.0 (Menggunakan _UPPER_CASE_).
+Versi >= 1.9.0 (Menggunakan _UPPERCASE_).
 
 ```js
 API_BASE: "https://sockelat.monita.co.id", // Alamat API backend.
