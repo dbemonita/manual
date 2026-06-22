@@ -2,7 +2,7 @@
 
 Adalah aplikasi pengelolaan perangkat, aset, titik ukur, serta pengguna.
 
-_Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti NGINX dan Apache.
+_Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
 
 ### Instalasi
 
@@ -21,24 +21,45 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 
 Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
 
-```js
-apiBase: "https://sockelat.monita.co.id", // Alamat API backend.
-scHost: "sockelat.monita.co.id", // Server socket-cluster.
-scPath: "/socketcluster/", // Path socket-cluster. Nilai default '/socketcluster/'.
-scPort: 443, // Port socket-cluster. Nilai default 443.
-scSecure: true, // Is socket-cluster secure? Nilai default true.
-alarmNotification: false, // Enable fungsi alarm? Nilai default false.
-chatWidget: false, // Enable fungsi chat AI? Nilai default false.
+Versi >= 1.9.0 (Menggunakan _UPPER_CASE_).
 
-h5Navigation: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai default false.
-h5Base: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
+```js
+API_BASE: "https://sockelat.monita.co.id", // Alamat API backend.
+SC_HOST: "sockelat.monita.co.id", // Server socket-cluster.
+SC_PATH: "/socketcluster/", // Path socket-cluster. Nilai default '/socketcluster/'.
+SC_PORT: 443, // Port socket-cluster. Nilai default 443.
+SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
+ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
+CHAT_WIDGET: false, // Enable fungsi chat AI? Nilai default false.
+
+H5_NAVIGATION: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai default false.
+H5_BASE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
+```
+
+Versi <= 1.8.0 (Menggunakan _camelCase_).
+
+```
+apiBase
+scHost
+scPath
+scPort
+scSecure
+alarmNotification
+chatWidget
+
+h5Navigation
+h5Base
 ```
 
 ### Deployment Tanpa Sub-domain
 
 Konfigurasi ini ditujukan untuk deploy tanpa domain/sub-domain. Contoh: `https://example.com/admin/` atau `https://example.com/manage/`.
 
-Berikut contoh konfigurasi untuk Apache:
+##### Dengan Proxy
+
+_Asumsi proxy ke IP lokal dengan port 3000._
+
+Berikut contoh konfigurasi untuk Apache 2:
 
 ```
 ProxyPass /admin http://172.16.50.14:3000
@@ -48,7 +69,7 @@ ProxyPass /_admin http://172.16.50.14:3000/_admin
 ProxyPassReverse /_admin http://172.16.50.14:3000/_admin
 ```
 
-Berikut contoh konfigurasi untuk NGINX:
+Berikut contoh konfigurasi untuk Nginx:
 
 ```
 location /admin/ {
@@ -70,7 +91,63 @@ location /_admin/ {
 }
 ```
 
-Catatan:
+##### Tanpa Proxy
+
+_Asumsi aplikasi berada di /var/www/_
+
+Berikut contoh konfigurasi untuk Apache 2:
+
+Terlebih dahulu pastikan modul `rewrite` aktif dengan cara `a2enmod rewrite`.
+
+```
+Alias /admin /var/www/admin
+Alias /_admin /var/www/admin/_admin
+
+<Directory /var/www/admin>
+    Options FollowSymLinks
+    AllowOverride None
+    Require all granted
+
+    RewriteEngine On
+    RewriteBase /admin/
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.html [L]
+</Directory>
+
+<Directory /var/www/admin/_admin>
+    Options FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+```
+
+Berikut contoh konfigurasi untuk Nginx:
+
+```
+location /admin/ {
+    alias /var/www/admin/;
+
+    try_files $uri $uri/ /admin/index.html;
+}
+
+location /_admin/ {
+    alias /var/www/admin/_admin/;
+
+    access_log off;
+    expires 1y;
+    add_header Cache-Control "public, immutable";
+}
+```
+
+Bila posisi aplikasi tidak ada di `/var/www`, maka:
+
+- Misal aplikasi berada di dalam folder `/home/user/apps`.
+- Pastikan folder `/home`, `/home/user/`, `/home/user/apps`, dan `/home/user/apps/admin`memiliki permission`755`.
+- Semua file di dalam folder `admin` memiliki permission `644` dengan cara `find /home/user/apps/admin -type f -exec chmod 644 {} \;`
+
+##### Catatan:
 
 - Fitur "deploy tanpa domain/sub-domain" hanya bisa diterapkan pada versi >= 1.8.0.
 - Alias `admin` dapat diganti/disesuaikan. Misal `manage`, `lobby`, dsb.

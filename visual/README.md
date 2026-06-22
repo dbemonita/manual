@@ -2,7 +2,7 @@
 
 Adalah aplikasi visualisasi data melalui web HMI, grafik, tabel, dan peta.
 
-Sejak versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti NGINX dan Apache.
+Sejak versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
 
 ## Instalasi
 
@@ -36,6 +36,22 @@ DEVELOPMENT_TEXT: false, // Tampilkan teks term of use? Terkait BRIN. nilai defa
 GOOGLE_RECAPTCHA: false, // Menggunakan re-capthca pada form login? Terkait BRIN. nilai default false.
 GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kosong.
 H5_SERVICE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
+```
+
+Pada versi >= 5.15.0 konfigurasi di-_wrap_ dengan:
+
+```js
+window.__APP_CONFIG__ = {
+  // Variabel konfigurasi di atas.
+};
+```
+
+Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
+
+```js
+window.APP_CONFIG = {
+  // Variabel konfigurasi di atas.
+};
 ```
 
 ## Android App
