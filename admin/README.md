@@ -75,7 +75,7 @@ Catatan:
 
 - Fitur "deploy tanpa domain/sub-domain" hanya bisa diterapkan pada versi >= 1.8.0.
 - Alias `admin` dapat diganti/disesuaikan. Misal `manage`, `lobby`, dsb.
-- Alias `_admin` tidak dapat diganti. Folder `_admin` adalah folder utama aplikasi.
+- Alias `_admin` tidak dapat diganti. Folder `_admin` berisi _script_ aplikasi.
 
 ---
 
