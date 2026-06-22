@@ -35,7 +35,7 @@ window.__APP_CONFIG__ = {
 };
 ```
 
-### Deployment Tanpa Domain/Sub-domain
+### Deployment Tanpa Sub-domain
 
 Konfigurasi ini ditujukan untuk deploy tanpa domain/sub-domain. Contoh: `https://example.com/admin/` atau `https://example.com/manage/`.
 
