@@ -35,9 +35,9 @@ window.__APP_CONFIG__ = {
 };
 ```
 
-### Deployment Tanpa Sub-domain
+### Deployment Tanpa Domain/Sub-domain
 
-Konfigurasi ini ditujukan untuk deployment tanpa sub-domain. Contoh: https://example.com/admin/.
+Konfigurasi ini ditujukan untuk deploy tanpa domain/sub-domain. Contoh: `https://example.com/admin/` atau `https://example.com/manage/`.
 
 Berikut contoh konfigurasi untuk Apache:
 
@@ -46,7 +46,7 @@ ProxyPass /admin http://172.16.50.14:3000
 ProxyPassReverse /admin http://172.16.50.14:3000
 
 ProxyPass /_admin http://172.16.50.14:3000/_admin
-ProxyPassReverse /admin http://172.16.50.14:3000/_admin
+ProxyPassReverse /_admin http://172.16.50.14:3000/_admin
 ```
 
 Berikut contoh konfigurasi untuk NGINX:
@@ -71,7 +71,11 @@ location /_admin/ {
 }
 ```
 
-Catatan: Fitur _subfolder-like_ hanya bisa diterapkan pada versi >= 1.8.0.
+Catatan:
+
+- Fitur "deploy tanpa domain/sub-domain" hanya bisa diterapkan pada versi >= 1.8.0.
+- Alias `admin` dapat diganti/disesuaikan. Misal `manage`, `lobby`, dsb.
+- Alias `_admin` tidak dapat diganti. Folder `_admin` adalah folder utama aplikasi.
 
 ---
 
@@ -79,7 +83,7 @@ Catatan: Fitur _subfolder-like_ hanya bisa diterapkan pada versi >= 1.8.0.
 
 ### 1.8.0 (2026-06-15)
 
-- Memungkinkan dijalankan tanpa sub-domain. Contoh: `https://example.com/admin`.
+- Memungkinkan dijalankan tanpa domain/sub-domain. Contoh: `https://example.com/admin` atau `https://example.com/manage/`.
 - Hapus auto-reload pada halaman `alarm`, digantikan trigger dari FCM.
 
 ### 1.7.0 (2026-06-15)
