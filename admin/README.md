@@ -22,18 +22,16 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
 
 ```js
-window.__APP_CONFIG__ = {
-  apiBase: "https://sockelat.monita.co.id", // Alamat API backend.
-  scHost: "sockelat.monita.co.id", // Server socket-cluster.
-  scPath: "/socketcluster/", // Path socket-cluster. Nilai default '/socketcluster/'.
-  scPort: 443, // Port socket-cluster. Nilai default 443.
-  scSecure: true, // Is socket-cluster secure? Nilai default true.
-  alarmNotification: false, // Enable fungsi alarm? Nilai default false.
-  chatWidget: false, // Enable fungsi chat AI? Nilai default false.
+apiBase: "https://sockelat.monita.co.id", // Alamat API backend.
+scHost: "sockelat.monita.co.id", // Server socket-cluster.
+scPath: "/socketcluster/", // Path socket-cluster. Nilai default '/socketcluster/'.
+scPort: 443, // Port socket-cluster. Nilai default 443.
+scSecure: true, // Is socket-cluster secure? Nilai default true.
+alarmNotification: false, // Enable fungsi alarm? Nilai default false.
+chatWidget: false, // Enable fungsi chat AI? Nilai default false.
 
-  h5Navigation: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai default false.
-  h5Base: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
-};
+h5Navigation: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai default false.
+h5Base: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
 ### Deployment Tanpa Sub-domain
