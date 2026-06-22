@@ -19,6 +19,27 @@ Panduan instalasi berikut berlaku untuk versi `5.8.0` atau lebih tinggi.
     - Vercel
     - GitHub Pages
 
+### Konfigurasi
+
+Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
+
+```js
+window.APP_CONFIG = {
+  API_BASE: "https://sockelat.monita.co.id", // Alamat API backend.
+  SC_HOST: "sockelat.monita.co.id", // Server socket-cluster.
+  SC_PATH: "/socketcluster/", // Path socket-cluster. Nilai default '/socketcluster/'.
+  SC_PORT: 443, // Port socket-cluster. Nilai default 443.
+  SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
+  ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
+  WIDGET_CHAT: false, // Enable fungsi chat AI? Nilai default false.
+
+  DEVELOPMENT_TEXT: false, // Tampilkan teks term of use? Terkait BRIN. nilai default false.
+  GOOGLE_RECAPTCHA: false, // Menggunakan re-capthca pada form login? Terkait BRIN. nilai default false.
+  GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kosong.
+  H5_SERVICE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
+};
+```
+
 ## Android App
 
 Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.com/store/apps/details?id=id.co.monita.visual).
