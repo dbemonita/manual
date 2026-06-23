@@ -49,7 +49,7 @@ Berikut adalah fitur dan/atau halaman yang ada pada aplikasi Admin Monita:
 - Ini adalah fitur/halaman untuk monitoring server yang digunakan untuk menjalankan aplikasi Monita.
 - Beberapa informasi yang ditampilkan terkait hardisk, ram, ethernet, operating system, database, proxy server, dsb.
 
-### <i class="fa fa-bell fa-fw"></i> Alarm History
+### <i class="fa fa-bell-o fa-fw"></i> Alarm History
 
 - Ini adalah fitur/halaman untuk melakukan pengelolaan log alarm.
 - Melalui halaman ini juga pengguna dapat melakukan "ACK" pada satu atau lebih log alarm.
