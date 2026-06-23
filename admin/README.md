@@ -157,6 +157,13 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 
 ## Changelog
 
+### 1.9.0 (2026-06-23)
+
+- Rename key localstorage, membedakan key visual monita saat deploy tanpa sub-domain.
+- Perbaikan layout halaman aset, terkait posisi scrollbar.
+- Ganti nama variabel konfigurasi menggunakan _UPPERCASE_ (backward compatible).
+- Perbaikan lokasi file worker untuk monaco editor (XML editor).
+
 ### 1.8.0 (2026-06-19)
 
 - Memungkinkan dijalankan tanpa domain/sub-domain. Contoh: `https://example.com/admin` atau `https://example.com/manage/`.
