@@ -33,7 +33,8 @@
   - [Debug](menu/debug.md)
   - [Bahasa](menu/language.md)
 
-- [Firmware Version](menu/fw.md)
+- Version
+  - [Firmware Version](menu/fw.md)
 
 - Contoh Kasus
   - [Kasus 1](usecase/index.md)
