@@ -1,92 +1,127 @@
-# Tentang Versi 5
+# Tentang Visual Monita 5
 
-Versi ini dibuat berdasarkan elemen visual pada aplikasi Monita 3 dengan pembaruan yang signifikan, baik secara sistem maupun konfigurasi. Dengan memisahkan elemen visual menjadi aplikasi terpisah.
+Adalah aplikasi visualisasi data melalui web HMI, grafik, tabel, dan peta.
 
-Berkas konfigurasi pada versi ini menggunakan format `.xml` versi 1.0.
+Sejak versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
 
 ## Instalasi
 
-### _Setup_
+Panduan instalasi berikut berlaku untuk versi `5.8.0` atau lebih tinggi.
 
-Silakan salin (`ctrl+c`) URL aplikasi _web_ Visual Monita 5.3.2 (Node 14) berikut:
+- Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1v4AWUM6w3Alechqg1R1mWl4xM0ARZLBx).
+- Dengan aplikasi `unzip`, _extract_ aplikasi di _server_ tujuan.
+- Jalankan aplikasi.
+  - Contoh dengan PHP: `php -S localhost:8000`
+  - Contoh dengan python: `python -m http.server 8000`
+  - Bisa juga _deploy_ ke:
+    - Netlify
+    - Cloudflare Pages
+    - Vercel
+    - GitHub Pages
 
-> http:/<span></span>/alpha.daunbiru.com:8084/dl/vismon-5.3.2-node-14.tar.gz
+### Konfigurasi
 
-Lalu _download_ dan _extract_ di server tujuan:
+Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
 
-```sh
-mkdir /apps/vismon && cd $_
-wget <download_link>
-tar -xf vismon*gz
-cp config.js.example config.js && nano $_
+```js
+API_BASE: "https://sockelat.monita.co.id", // Alamat API backend.
+SC_HOST: "sockelat.monita.co.id", // Server socket-cluster.
+SC_PATH: "/socketcluster/", // Path socket-cluster. Nilai default '/socketcluster/'.
+SC_PORT: 443, // Port socket-cluster. Nilai default 443.
+SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
+ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
+WIDGET_CHAT: false, // Enable fungsi chat AI? Nilai default false.
+
+DEVELOPMENT_TEXT: false, // Tampilkan teks term of use? Terkait BRIN. nilai default false.
+GOOGLE_RECAPTCHA: false, // Menggunakan re-capthca pada form login? Terkait BRIN. nilai default false.
+GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kosong.
+H5_SERVICE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-### _Process Manager_
+Pada versi >= 5.15.0 konfigurasi di-_wrap_ dengan:
 
-Bila menggunakan PM2, jalankan:
-
-```sh
-HOST=127.0.0.1 PORT=8080 pm2 start ./vismon-pm2.json
-pm2 save
+```js
+window.__APP_CONFIG__ = {
+  // Variabel konfigurasi di atas.
+};
 ```
 
-Catatan: Bila tidak menggunakan _proxy_, konfigurasikan `HOST=0.0.0.0`
+Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
 
-### _Proxy Server_
-
-Bila menggunakan port 80 (dan/atau 443) melalui Haproxy, pada berkas `haproxy.cfg`, tambahkan:
-
-```sh
-frontend vismon_front
-   bind *:80
-   # bind *:443 ssl crt /path/to/file.pem
-   default_backend vismon_back
-
-backend vismon_back
-   balance roundrobin
-   server vismon 127.0.0.1:8080 check
+```js
+window.APP_CONFIG = {
+  // Variabel konfigurasi di atas.
+};
 ```
 
-Catatan: Untuk membuat berkas **.pem**, gunakan perintah `cat /path/to/file.crt /path/to/file.key | tee /path/to/file.pem`
+## Android App
 
-### HTTP/2
+Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.com/store/apps/details?id=id.co.monita.visual).
 
-Untuk mengaktifkan protokol `http/2` melalui Haproxy, gunakan konfigurasi berikut:
+---
 
-```sh
-frontend vismon_front
-   bind *:80
-   bind *:443 ssl crt /path/to/file.pem alpn h2,http/1.1
-   mode http
-   default_backend vismon_back
+## Changelog
 
-backend vismon_back
-   balance roundrobin
-   mode http
-   server vismon 127.0.0.1:8080 check
-```
+### 5.14.0 (2026-06-17)
 
-## Kompatibilitas Browser
+- Tambah prop `allowed_roles` untuk komponen 2 arah.
+- Tambah prop UI untuk komponent `input` dan `input_date`.
+- Tambah info `domain:port` pada deviceName.
+- Unreg service worker saat logout.
+- Update sumber data push notif dari `.notification` ke `.data`.
+- Update route ke halaman detil alarm saat notif diklik/tap.
+- Tambah info `Ref. ID` pada halaman alarm.
 
-Visual Monita dapat berjalan baik pada browser-browser berikut:
+### 5.13.0 (2026-05-29)
 
-| Platform | Engine    | Browser               | Versi Minimum | Download                                                                         |
-| -------- | --------- | --------------------- | ------------- | -------------------------------------------------------------------------------- |
-| Desktop  | Gecko     | **Firefox**           |               | [Download](https://www.mozilla.org/en-US/firefox/new/)                           |
-| Desktop  | Gecko     | **Firefox Developer** |               | [Download](https://www.mozilla.org/en-US/firefox/developer/)                     |
-| Desktop  | Blink     | **Chrome**            |               | [Download](https://www.google.com/intl/en_us/chrome/)                            |
-| Desktop  | Blink     | **Brave**             |               | [Download](https://brave-browser.readthedocs.io/en/latest/installing-brave.html) |
-| Desktop  | Blink     | **Vivaldi**           |               | [Download](https://vivaldi.com/download/)                                        |
-| Desktop  | Blink     | **Opera**             |               | [Download](https://www.opera.com/)                                               |
-| Desktop  | Blink     | **Min**               |               | [Download](https://minbrowser.github.io/min/)                                    |
-| Desktop  | Blink     | **Edge**              | 79            | [Download](https://www.microsoft.com/en-us/edge/)                                |
-| Android  | GeckoView | **Firefox**           |               | [Download](https://play.google.com/store/apps/details?id=org.mozilla.firefox)    |
-| Android  | WebView   | **Chrome**            |               | [Download](https://play.google.com/store/apps/details?id=com.android.chrome)     |
-| Android  | WebView   | **Opera**             |               | [Download](https://play.google.com/store/apps/details?id=com.opera.browser)      |
+- Memungkinkan berjalan di http dengan IP address.
+- Auto disable fungsi-fungsi yang memerlukan isSecureContext.
 
-Catatan:
+## 5.12.0 (2026-05-26)
 
-- Microsoft Edge versi 79 merupakan versi pertama _Chromium-based_ pada browser tersebut.
-- Sejak Android 4.4 "KitKat", komponen WebView dibuat berdasarkan _engine_ Blink (tidak lagi WebKit).
-- Visual Monita tidak dapat berjalan optimal pada browser Safari dan browser lain yang menggunakan _engine_ WebKit.
-- Visual Monita tidak dapat berjalan optimal pada seluruh browser di perangkat iOS dan iPadOS dikarenakan batasan dari Apple yang mengharuskan semua browser yang terdaftar di App Store untuk menggunakan _engine_ WebKit (referensi: https://developer.apple.com/app-store/review/guidelines/#2.5.6).
+- Tambah widget alarm pada sidebar.
+- Tambah halaman detail alarm.
+- Perbaikan latest data (race condition).
+
+## 5.11.0 (2026-05-20)
+
+- Hapus tipe visual alarm-report.
+- Tambah FCM push notification for android.
+- Tambah FCM push notification for web.
+- Tambah halaman alarm history.
+- Perbaikan initial data untuk marker popup.
+- Kembalikan tipe visual `dash`.
+
+## 5.10.0 (2026-04-13)
+
+- Versi perdana untuk Google Play.
+- Hapus local/push notification.
+
+## 5.9.3 (2026-03-30)
+
+- Perbaikan UI untuk Android generasi menengah dengan top-notch.
+- Perbaikan UI untuk Android pada mode gelap (dark-mode).
+
+## 5.9.2 (2026-03-27)
+
+- PoC Push Notification (server: vmpush.monita.co.id).
+- Update UI untuk Android generasi baru (edge-to-edge).
+
+## 5.9.1 (2026-03-16)
+
+- Tambah privacy-policy untuk comply Google Play.
+
+## 5.9.0 (2026-03-12)
+
+- Tambah library @capacitor/\* untuk wrapper ke mobile/APK.
+- Hapus config `API_HOST`, `API_PATH`, `API_PORT`, digantikan dengan `API_BASE`.
+- Hapus parser untuk tipe visual `dash`.
+
+## 5.8.0 (2026-03-09)
+
+- Menggunakan mode CSR.
+- Hapus closingProcess.
+- Hapus closingProcessStrict.
+- Hapus dataReprocess.
+- Kembalikan maindataPrefixed.
+- Kembalikan maindataFixed.

@@ -21,7 +21,7 @@ Pada bagian sisi kiri (_sidebar_) terdapat pilihan menu sebagai berikut.
 
 Pada bagian tengah atau jendela utama, terdapat berbagai _section_ informasi sebagai berikut.
 
-##### Informasi Modul
+##### INFORMASI MODUL
 
 |       Nama        |                       Penjelasan                        |
 | :---------------: | :-----------------------------------------------------: |
@@ -33,7 +33,7 @@ Pada bagian tengah atau jendela utama, terdapat berbagai _section_ informasi seb
 | Penggunaan Memori | Informasi RAM yang tersedia dan digunakan oleh _device_ |
 |      SD Card      |  Informasi ketersediaan ruang penyimpanan pada SD Card  |
 
-##### Ethernet
+##### ETHERNET
 
 |    Nama     |          Penjelasan          |
 | :---------: | :--------------------------: |
@@ -42,7 +42,7 @@ Pada bagian tengah atau jendela utama, terdapat berbagai _section_ informasi seb
 |   Gateway   |   Informasi alamat Gateway   |
 | Alamat MAC  |     Informasi alamat MAC     |
 
-##### Cellular
+##### CELLULAR
 
 |       Nama        |                 Penjelasan                 |
 | :---------------: | :----------------------------------------: |
@@ -54,15 +54,15 @@ Pada bagian tengah atau jendela utama, terdapat berbagai _section_ informasi seb
 
 Untuk mengamankan akses ke _device_, dapat dilakukan pengubahan sandi maupun _logout_.
 
-##### Ubah Sandi
+##### UBAH SANDI
 
 Untuk mengubah sandi, dapat melalui:
 
 - Pilih menu `Ubah Sandi` atau `Change Password`.
 - Lalu masukkan sandi baru.
 
-##### Logout
+##### LOGOUT
 
 _Device_ akan otomatis _logout_ setelah 15 menit. Untuk menyegerakan _logout_, dapat melalui:
 
--  Klik menu `Keluar` atau `Logout`.
+- Klik menu `Keluar` atau `Logout`.
