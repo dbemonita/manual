@@ -65,7 +65,7 @@ h5Base
 
 ### Update Aplikasi Web
 
-Sejak versi > 5.15.0, untuk update aplikasi versi di atasnya, dapat dengan menjalankan:
+Sejak versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat dengan menjalankan:
 
 ```sh
 ./update
