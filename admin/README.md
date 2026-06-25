@@ -4,7 +4,7 @@ Adalah aplikasi pengelolaan perangkat, aset, titik ukur, serta pengguna.
 
 _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
 
-### Instalasi
+## Instalasi
 
 - Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1WEyAkPY5l4BIUKxb2PAplE1X19I4CmzH).
 - Dengan aplikasi `unzip`, _extract_ aplikasi di _server_ tujuan.
@@ -61,6 +61,20 @@ chatWidget
 
 h5Navigation
 h5Base
+```
+
+### Update Aplikasi Web
+
+Sejak versi > 5.15.0, untuk update aplikasi versi di atasnya, dapat dengan menjalankan:
+
+```sh
+./update
+```
+
+atau, `./update <versi>`, contoh:
+
+```sh
+./update 5.15.1
 ```
 
 ### Deployment Tanpa Sub-domain

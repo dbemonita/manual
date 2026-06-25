@@ -66,7 +66,21 @@ Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
 };
 ```
 
-## Android App
+### Update Aplikasi Web
+
+Sejak versi > 5.15.0, untuk update aplikasi versi di atasnya, dapat dengan menjalankan:
+
+```sh
+./update
+```
+
+atau, `./update <versi>`, contoh:
+
+```sh
+./update 5.15.1
+```
+
+### Android App
 
 Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.com/store/apps/details?id=id.co.monita.visual).
 
