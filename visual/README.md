@@ -80,6 +80,8 @@ atau, `./update <versi>`, contoh:
 ./update 5.15.1
 ```
 
+Pastikan sudah terpasang `unzip` pada server, dengan cara `sudo apt install unzip`.
+
 ### Android App
 
 Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.com/store/apps/details?id=id.co.monita.visual).

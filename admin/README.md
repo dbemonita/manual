@@ -77,6 +77,8 @@ atau, `./update <versi>`, contoh:
 ./update 5.15.1
 ```
 
+Pastikan sudah terpasang `unzip` pada server, dengan cara `sudo apt install unzip`.
+
 ### Deployment Tanpa Sub-domain
 
 Konfigurasi ini ditujukan untuk deploy tanpa domain/sub-domain. Contoh: `https://example.com/admin/` atau `https://example.com/manage/`.
