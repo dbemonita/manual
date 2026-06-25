@@ -21,7 +21,7 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 
 Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
 
-Versi >= 1.9.0 (Menggunakan _UPPERCASE_).
+Sejak versi >= 1.9.0, konfigurasi menggunakan _UPPERCASE_ seperti berikut:
 
 ```js
 API_BASE: "https://sockelat.monita.co.id", // Alamat API backend.
@@ -36,7 +36,19 @@ H5_NAVIGATION: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai 
 H5_BASE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-Versi <= 1.8.0 (Menggunakan _camelCase_).
+Sejak versi >= 1.10.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
+
+```js
+API_KEY: "*****",
+AUTH_DOMAIN: "*****.firebaseapp.com",
+PROJECT_ID: "*****",
+STORAGE_BUCKET: "*****.firebasestorage.app",
+MESSAGING_SENDER_ID: "*****",
+APP_ID: "*:*****:web:*****",
+MEASUREMENT_ID: "G-*****",
+```
+
+Pada versi <= 1.8.0, konfigurasi menggunakan _camelCase_ seperti berikut.
 
 ```
 apiBase

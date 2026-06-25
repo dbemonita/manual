@@ -38,10 +38,22 @@ GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kos
 H5_SERVICE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-Pada versi >= 5.15.0 konfigurasi di-_wrap_ dengan:
+Sejak versi >= 5.15.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
 
 ```js
-window.__APP_CONFIG__ = {
+API_KEY: "*****",
+AUTH_DOMAIN: "*****.firebaseapp.com",
+PROJECT_ID: "*****",
+STORAGE_BUCKET: "*****.firebasestorage.app",
+MESSAGING_SENDER_ID: "*****",
+APP_ID: "*:*****:web:*****",
+MEASUREMENT_ID: "G-*****",
+```
+
+Sejak versi >= 5.15.0, konfigurasi di-_wrap_ dengan:
+
+```js
+.__APP_CONFIG__ = {
   // Variabel konfigurasi di atas.
 };
 ```
@@ -49,7 +61,7 @@ window.__APP_CONFIG__ = {
 Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
 
 ```js
-window.APP_CONFIG = {
+.APP_CONFIG = {
   // Variabel konfigurasi di atas.
 };
 ```
