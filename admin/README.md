@@ -185,6 +185,12 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 
 ## Changelog
 
+### 1.10.0 (2026-06-26)
+
+- Menggunakan single file config: `config.js`.
+- Di halaman login, tambah info update aplikasi bila tersedia.
+- Tambah tools updater untuk update aplikasi: `./update`
+
 ### 1.9.0 (2026-06-23)
 
 - Rename key localstorage, membedakan key visual monita saat deploy tanpa sub-domain.

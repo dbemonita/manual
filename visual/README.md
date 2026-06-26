@@ -90,6 +90,12 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 
 ## Changelog
 
+### 5.15.0 (2026-06-26)
+
+- Menggunakan single file config: `config.js`.
+- Di halaman login, tambah info update aplikasi bila tersedia.
+- Tambah tools updater untuk update aplikasi: `./update`
+
 ### 5.14.0 (2026-06-17)
 
 - Tambah prop `allowed_roles` untuk komponen 2 arah.
