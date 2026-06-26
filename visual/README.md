@@ -8,7 +8,7 @@ Sejak versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _C
 
 Panduan instalasi berikut berlaku untuk versi `5.8.0` atau lebih tinggi.
 
-- Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1v4AWUM6w3Alechqg1R1mWl4xM0ARZLBx).
+- Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1v4AWUM6w3Alechqg1R1mWl4xM0ARZLBx) atau [Server Monita](https://download.monita.co.id/visual/).
 - Dengan aplikasi `unzip`, _extract_ aplikasi di _server_ tujuan.
 - Jalankan aplikasi.
   - Contoh dengan PHP: `php -S localhost:8000`
