@@ -111,13 +111,13 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 - Memungkinkan berjalan di http dengan IP address.
 - Auto disable fungsi-fungsi yang memerlukan isSecureContext.
 
-## 5.12.0 (2026-05-26)
+### 5.12.0 (2026-05-26)
 
 - Tambah widget alarm pada sidebar.
 - Tambah halaman detail alarm.
 - Perbaikan latest data (race condition).
 
-## 5.11.0 (2026-05-20)
+### 5.11.0 (2026-05-20)
 
 - Hapus tipe visual alarm-report.
 - Tambah FCM push notification for android.
@@ -126,32 +126,32 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 - Perbaikan initial data untuk marker popup.
 - Kembalikan tipe visual `dash`.
 
-## 5.10.0 (2026-04-13)
+### 5.10.0 (2026-04-13)
 
 - Versi perdana untuk Google Play.
 - Hapus local/push notification.
 
-## 5.9.3 (2026-03-30)
+### 5.9.3 (2026-03-30)
 
 - Perbaikan UI untuk Android generasi menengah dengan top-notch.
 - Perbaikan UI untuk Android pada mode gelap (dark-mode).
 
-## 5.9.2 (2026-03-27)
+### 5.9.2 (2026-03-27)
 
 - PoC Push Notification (server: vmpush.monita.co.id).
 - Update UI untuk Android generasi baru (edge-to-edge).
 
-## 5.9.1 (2026-03-16)
+### 5.9.1 (2026-03-16)
 
 - Tambah privacy-policy untuk comply Google Play.
 
-## 5.9.0 (2026-03-12)
+### 5.9.0 (2026-03-12)
 
 - Tambah library @capacitor/\* untuk wrapper ke mobile/APK.
 - Hapus config `API_HOST`, `API_PATH`, `API_PORT`, digantikan dengan `API_BASE`.
 - Hapus parser untuk tipe visual `dash`.
 
-## 5.8.0 (2026-03-09)
+### 5.8.0 (2026-03-09)
 
 - Menggunakan mode CSR.
 - Hapus closingProcess.
