@@ -181,6 +181,12 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 - Alias `admin` dapat diganti/disesuaikan. Misal `manage`, `lobby`, dsb.
 - Alias `_admin` tidak dapat diganti. Folder `_admin` berisi _script_ aplikasi.
 
+## Restart Server
+
+- Sejak versi >= 1.11.0 terdapat fitur/halaman untuk restart server. Fitur/halaman ini hanya tersedia untuk user dengan role root atau admin.
+- Bila proses restart server gagal, dan user memiliki akses ke server, maka user dapat restart melalui PM2.
+- Tampilan fitur/halaman seperti pada gambar berikit: https://manual.monita.co.id/admin/#/feat?id=-restart-server.
+
 ---
 
 ## Changelog
