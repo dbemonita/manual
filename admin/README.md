@@ -193,7 +193,7 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 
 ### 1.11.1 (2026-07-02)
 
-- Perbaikan scrollbar pada section parameters, form formula, page asset management.
+- Menampilkan scrollbar pada section parameters, form formula, page asset management.
 
 ### 1.11.0 (2026-07-02)
 
