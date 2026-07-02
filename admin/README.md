@@ -185,6 +185,13 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 
 ## Changelog
 
+### 1.11.0 (2026-07-02)
+
+- Tambah info API server pada halaman login (pojok kiri atas).
+- Perbaikan posisi toast (z-index) saat form pada sidebar kanan dibuka.
+- Tambah argumen "help" pada tool updater (`./update -h` atau `./update --help`).
+- Tambah halaman restart server beserta menunya, pada sidebar kiri, untuk role root dan admin.
+
 ### 1.10.0 (2026-06-26)
 
 - Menggunakan single file config: `config.js`.
