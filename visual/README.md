@@ -8,7 +8,7 @@ Sejak versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _C
 
 Panduan instalasi berikut berlaku untuk versi `5.8.0` atau lebih tinggi.
 
-- Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1v4AWUM6w3Alechqg1R1mWl4xM0ARZLBx).
+- Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1v4AWUM6w3Alechqg1R1mWl4xM0ARZLBx) atau [Server Monita](https://download.monita.co.id/visual/).
 - Dengan aplikasi `unzip`, _extract_ aplikasi di _server_ tujuan.
 - Jalankan aplikasi.
   - Contoh dengan PHP: `php -S localhost:8000`
@@ -38,10 +38,22 @@ GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kos
 H5_SERVICE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-Pada versi >= 5.15.0 konfigurasi di-_wrap_ dengan:
+Sejak versi >= 5.15.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
 
 ```js
-window.__APP_CONFIG__ = {
+API_KEY: "*****",
+AUTH_DOMAIN: "*****.firebaseapp.com",
+PROJECT_ID: "*****",
+STORAGE_BUCKET: "*****.firebasestorage.app",
+MESSAGING_SENDER_ID: "*****",
+APP_ID: "*:*****:web:*****",
+MEASUREMENT_ID: "G-*****",
+```
+
+Sejak versi >= 5.15.0, konfigurasi di-_wrap_ dengan:
+
+```js
+.__APP_CONFIG__ = {
   // Variabel konfigurasi di atas.
 };
 ```
@@ -49,18 +61,40 @@ window.__APP_CONFIG__ = {
 Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
 
 ```js
-window.APP_CONFIG = {
+.APP_CONFIG = {
   // Variabel konfigurasi di atas.
 };
 ```
 
-## Android App
+### Update Aplikasi Web
+
+Sejak versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
+
+```sh
+./update
+```
+
+atau, `./update <versi>`, contoh:
+
+```sh
+./update 5.15.1
+```
+
+Pastikan sudah terpasang `unzip` pada server, dengan cara `sudo apt install unzip`.
+
+### Android App
 
 Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.com/store/apps/details?id=id.co.monita.visual).
 
 ---
 
 ## Changelog
+
+### 5.15.0 (2026-06-26)
+
+- Menggunakan single file config: `config.js`.
+- Di halaman login, tambah info update aplikasi bila tersedia.
+- Tambah tools updater untuk update aplikasi: `./update`
 
 ### 5.14.0 (2026-06-17)
 
@@ -77,13 +111,13 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 - Memungkinkan berjalan di http dengan IP address.
 - Auto disable fungsi-fungsi yang memerlukan isSecureContext.
 
-## 5.12.0 (2026-05-26)
+### 5.12.0 (2026-05-26)
 
 - Tambah widget alarm pada sidebar.
 - Tambah halaman detail alarm.
 - Perbaikan latest data (race condition).
 
-## 5.11.0 (2026-05-20)
+### 5.11.0 (2026-05-20)
 
 - Hapus tipe visual alarm-report.
 - Tambah FCM push notification for android.
@@ -92,32 +126,32 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 - Perbaikan initial data untuk marker popup.
 - Kembalikan tipe visual `dash`.
 
-## 5.10.0 (2026-04-13)
+### 5.10.0 (2026-04-13)
 
 - Versi perdana untuk Google Play.
 - Hapus local/push notification.
 
-## 5.9.3 (2026-03-30)
+### 5.9.3 (2026-03-30)
 
 - Perbaikan UI untuk Android generasi menengah dengan top-notch.
 - Perbaikan UI untuk Android pada mode gelap (dark-mode).
 
-## 5.9.2 (2026-03-27)
+### 5.9.2 (2026-03-27)
 
 - PoC Push Notification (server: vmpush.monita.co.id).
 - Update UI untuk Android generasi baru (edge-to-edge).
 
-## 5.9.1 (2026-03-16)
+### 5.9.1 (2026-03-16)
 
 - Tambah privacy-policy untuk comply Google Play.
 
-## 5.9.0 (2026-03-12)
+### 5.9.0 (2026-03-12)
 
 - Tambah library @capacitor/\* untuk wrapper ke mobile/APK.
 - Hapus config `API_HOST`, `API_PATH`, `API_PORT`, digantikan dengan `API_BASE`.
 - Hapus parser untuk tipe visual `dash`.
 
-## 5.8.0 (2026-03-09)
+### 5.8.0 (2026-03-09)
 
 - Menggunakan mode CSR.
 - Hapus closingProcess.

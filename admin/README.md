@@ -4,9 +4,9 @@ Adalah aplikasi pengelolaan perangkat, aset, titik ukur, serta pengguna.
 
 _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
 
-### Instalasi
+## Instalasi
 
-- Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1WEyAkPY5l4BIUKxb2PAplE1X19I4CmzH).
+- Unduh aplikasi melalui [Google Drive](https://drive.google.com/drive/folders/1WEyAkPY5l4BIUKxb2PAplE1X19I4CmzH) atau [Server Monita](https://download.monita.co.id/admin/).
 - Dengan aplikasi `unzip`, _extract_ aplikasi di _server_ tujuan.
 - Jalankan aplikasi.
   - Contoh dengan PHP: `php -S localhost:8000`
@@ -21,7 +21,7 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 
 Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
 
-Versi >= 1.9.0 (Menggunakan _UPPERCASE_).
+Sejak versi >= 1.9.0, konfigurasi menggunakan _UPPERCASE_ seperti berikut:
 
 ```js
 API_BASE: "https://sockelat.monita.co.id", // Alamat API backend.
@@ -36,7 +36,19 @@ H5_NAVIGATION: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai 
 H5_BASE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-Versi <= 1.8.0 (Menggunakan _camelCase_).
+Sejak versi >= 1.10.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
+
+```js
+API_KEY: "*****",
+AUTH_DOMAIN: "*****.firebaseapp.com",
+PROJECT_ID: "*****",
+STORAGE_BUCKET: "*****.firebasestorage.app",
+MESSAGING_SENDER_ID: "*****",
+APP_ID: "*:*****:web:*****",
+MEASUREMENT_ID: "G-*****",
+```
+
+Pada versi <= 1.8.0, konfigurasi menggunakan _camelCase_ seperti berikut.
 
 ```
 apiBase
@@ -50,6 +62,22 @@ chatWidget
 h5Navigation
 h5Base
 ```
+
+### Update Aplikasi Web
+
+Sejak versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
+
+```sh
+./update
+```
+
+atau, `./update <versi>`, contoh:
+
+```sh
+./update 5.15.1
+```
+
+Pastikan sudah terpasang `unzip` pada server, dengan cara `sudo apt install unzip`.
 
 ### Deployment Tanpa Sub-domain
 
@@ -156,6 +184,12 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 ---
 
 ## Changelog
+
+### 1.10.0 (2026-06-26)
+
+- Menggunakan single file config: `config.js`.
+- Di halaman login, tambah info update aplikasi bila tersedia.
+- Tambah tools updater untuk update aplikasi: `./update`
 
 ### 1.9.0 (2026-06-23)
 
