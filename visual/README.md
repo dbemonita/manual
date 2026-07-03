@@ -98,8 +98,8 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 
 ### 5.14.0 (2026-06-17)
 
-- Tambah prop `allowed_roles` untuk komponen 2 arah.
-- Tambah prop UI untuk komponent `input` dan `input_date`.
+- Tambah prop `allowed_roles` untuk komponen 2 arah (input).
+- Tambah prop UI untuk komponen `input` dan `input_date`.
 - Tambah info `domain:port` pada deviceName.
 - Unreg service worker saat logout.
 - Update sumber data push notif dari `.notification` ke `.data`.
