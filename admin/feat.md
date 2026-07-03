@@ -74,9 +74,9 @@ Berikut adalah fitur dan/atau halaman yang ada pada aplikasi Admin Monita:
 - Ini adalah fitur/halaman untuk melakukan pengelolaan log alarm.
 - Melalui halaman ini juga pengguna dapat melakukan "ACK" pada satu atau lebih log alarm.
 
-### <i class="fa fa-refresh fa-fw"></i> Restart Server
+### <i class="fa fa-refresh fa-fw"></i> Restart Service
 
 ![restart](https://hackmd.io/_uploads/HkV4E5mQGx.jpg)
 
-- Ini adalah fitur/halaman untuk restart server alternatif via PM2.
+- Ini adalah fitur/halaman untuk restart service alternatif via PM2.
 - Tersedia untuk user dengan role root atau admin, pada versi 1.11.0 atau lebih tinggi.
