@@ -191,7 +191,7 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 
 ## Changelog
 
-### 1.11.1 (2026-07-02)
+### 1.11.1 (2026-07-03)
 
 - Menampilkan scrollbar pada section parameters, form formula, page asset management.
 
