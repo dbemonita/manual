@@ -32,6 +32,8 @@ SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
 ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
 WIDGET_CHAT: false, // Enable fungsi chat AI? Nilai default false.
 
+DOWNLOAD_SITE: 'https://download.monita.co.id', // Server build/zip Monita.
+
 DEVELOPMENT_TEXT: false, // Tampilkan teks term of use? Terkait BRIN. nilai default false.
 GOOGLE_RECAPTCHA: false, // Menggunakan re-capthca pada form login? Terkait BRIN. nilai default false.
 GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kosong.

@@ -25,14 +25,14 @@
 | source        | string     | _null_     | _null_              | URL gambar idle \*\* |
 | source_0      | string     | _null_     | _null_              | URL gambar off \*\*  |
 | source_1      | string     | _null_     | _null_              | URL gambar on \*\*   |
-| allowed_roles | string     | 1; 2       | _null_              | Role user \*         |
+| allowed_roles | string     | 1,2        | _null_              | Role user \*         |
 | x             | float      | 0          | _null_              | Posisi: Koordinat x  |
 | y             | float      | 0          | _null_              | Posisi: Koordinat y  |
 | z             | enum       | 0          | 0;1;2;3;4;5;6;7;8;9 | Posisi: z-index      |
 
 #### Catatan
 
-- \*) Tersedia pada versi >= 5.14.0. Roles:
+- \*) Tersedia pada versi >= 5.14.0. Separator koma. Roles:
   - 1 = Root
   - 2 = Admin
   - 3 = Operator

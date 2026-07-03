@@ -32,6 +32,8 @@ SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
 ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
 CHAT_WIDGET: false, // Enable fungsi chat AI? Nilai default false.
 
+DOWNLOAD_SITE: 'https://download.monita.co.id', // Server build/zip Monita.
+
 H5_NAVIGATION: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai default false.
 H5_BASE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
@@ -58,6 +60,8 @@ scPort
 scSecure
 alarmNotification
 chatWidget
+
+downloadSite
 
 h5Navigation
 h5Base
