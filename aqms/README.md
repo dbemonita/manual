@@ -12,4 +12,6 @@ Terdapat main procesor dan tampilan untuk menampilkan Nilai data
 
 ![Wiring AQMS](./assets/images/wireAqms.jpeg  "Monita AQMS")
 
+![Konektor AQMS](./assets/images/conn_boxAqms.jpeg  "Konektor AQMS")
+
 
