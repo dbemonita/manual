@@ -37,7 +37,7 @@
 | button_width           | float      | 0                            | _null_                         | Lebar tombol               |
 | button_height          | float      | 0                            | _null_                         | Tinggi tombol              |
 | button_image_source    | string     | _null_                       | _null_                         | URL gambar tombol \*\*\*\* |
-| allowed_roles          | string     | 1; 2                         | _null_                         | Role user \*\*\*           |
+| allowed_roles          | string     | 1,2                          | _null_                         | Role user \*\*\*           |
 | direction              | enum       | horizontal                   | horizontal;vertical            | Posisi gambar tombol       |
 | x                      | float      | 0                            | _null_                         | Posisi: Koordinat x        |
 | y                      | float      | 0                            | _null_                         | Posisi: Koordinat y        |
@@ -51,7 +51,7 @@
   - `i:CY1-VIR; dl:{{input}}; ts:{{timestamp}}`, _atau_
   - `i:CY1-VIR`
   - Sehingga, jika `j`, `dl`, `f`, dan `ts` tidak didefinisikan, maka akan otomatis terisi.
-- \*\*\*) Tersedia pada versi >= 5.14.0. Roles:
+- \*\*\*) Tersedia pada versi >= 5.14.0. Separator koma. Roles:
   - 1 = Root
   - 2 = Admin
   - 3 = Operator

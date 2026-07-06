@@ -32,6 +32,8 @@ SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
 ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
 CHAT_WIDGET: false, // Enable fungsi chat AI? Nilai default false.
 
+DOWNLOAD_SITE: 'https://download.monita.co.id', // Server build/zip Monita.
+
 H5_NAVIGATION: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai default false.
 H5_BASE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
@@ -58,6 +60,8 @@ scPort
 scSecure
 alarmNotification
 chatWidget
+
+downloadSite
 
 h5Navigation
 h5Base
@@ -181,9 +185,26 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 - Alias `admin` dapat diganti/disesuaikan. Misal `manage`, `lobby`, dsb.
 - Alias `_admin` tidak dapat diganti. Folder `_admin` berisi _script_ aplikasi.
 
+## Restart Service
+
+- Sejak versi >= 1.11.0 terdapat fitur/halaman untuk restart service. Fitur/halaman ini hanya tersedia untuk user dengan role root atau admin.
+- Bila proses restart service gagal, dan user memiliki akses ke service, maka user dapat restart melalui PM2.
+- Tampilan fitur/halaman seperti pada gambar berikit: https://manual.monita.co.id/admin/#/feat?id=-restart-service.
+
 ---
 
 ## Changelog
+
+### 1.11.1 (2026-07-03)
+
+- Menampilkan scrollbar pada section parameters, form formula, page asset management.
+
+### 1.11.0 (2026-07-02)
+
+- Tambah info API server pada halaman login (pojok kiri atas).
+- Perbaikan posisi toast (z-index) saat form pada sidebar kanan dibuka.
+- Tambah argumen "help" pada tool updater (`./update -h` atau `./update --help`).
+- Tambah halaman restart service beserta menunya, pada sidebar kiri, untuk role root dan admin.
 
 ### 1.10.0 (2026-06-26)
 
