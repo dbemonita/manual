@@ -31,12 +31,13 @@ SC_PORT: 443, // Port socket-cluster. Nilai default 443.
 SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
 ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
 CHAT_WIDGET: false, // Enable fungsi chat AI? Nilai default false.
-
 DOWNLOAD_SITE: 'https://download.monita.co.id', // Server build/zip Monita.
 
 H5_NAVIGATION: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai default false.
 H5_BASE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
+
+Sejak versi >= 1.12.0, konfigurasi `API_BASE` dapat diisikan dengan nilai `auto`. Sehingga aplikasi akan mengarah ke `<origin>/api`.
 
 Sejak versi >= 1.10.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
 
@@ -194,6 +195,14 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 ---
 
 ## Changelog
+
+### 1.12.0 (2026-07-07)
+
+- Logo dinamis mengikuti subdomain.
+- Server api memungkinkan dinamis `origin/api`. set `API_BASE: 'auto'`.
+- Force logout saat respon server 401 karena di-restart.
+- Tambah paginator pada list device di halaman dashboard.
+- Perbaikan tombol refresh untuk non-root/admin.
 
 ### 1.11.1 (2026-07-03)
 

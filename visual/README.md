@@ -31,7 +31,6 @@ SC_PORT: 443, // Port socket-cluster. Nilai default 443.
 SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
 ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
 WIDGET_CHAT: false, // Enable fungsi chat AI? Nilai default false.
-
 DOWNLOAD_SITE: 'https://download.monita.co.id', // Server build/zip Monita.
 
 DEVELOPMENT_TEXT: false, // Tampilkan teks term of use? Terkait BRIN. nilai default false.
@@ -39,6 +38,8 @@ GOOGLE_RECAPTCHA: false, // Menggunakan re-capthca pada form login? Terkait BRIN
 GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kosong.
 H5_SERVICE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
+
+Sejak versi >= 5.16.0, konfigurasi `API_BASE` dapat diisikan dengan nilai `auto`. Sehingga aplikasi akan mengarah ke `<origin>/api`.
 
 Sejak versi >= 5.15.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
 
@@ -91,6 +92,13 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 ---
 
 ## Changelog
+
+### 5.16.0 (2026-07-07)
+
+- Logo dinamis mengikuti subdomain.
+- Server api memungkinkan dinamis `origin/api`. set `API_BASE: 'auto'`.
+- Perbaikan sidebar pada saat tidak ada visual/menu.
+- Tambah tombol show/hide password pada form login.
 
 ### 5.15.0 (2026-06-26)
 
