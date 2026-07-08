@@ -2,7 +2,7 @@
 
 Adalah aplikasi visualisasi data melalui web HMI, grafik, tabel, dan peta.
 
-Sejak versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
+Pada versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
 
 ## Instalasi
 
@@ -39,9 +39,9 @@ GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kos
 H5_SERVICE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-Sejak versi >= 5.16.0, konfigurasi `API_BASE` dapat diisikan dengan nilai `auto`. Sehingga aplikasi akan mengarah ke `<origin>/api`.
+Pada versi >= 5.16.0, konfigurasi `API_BASE` dapat diisikan dengan nilai `auto`. Sehingga aplikasi akan mengarah ke `<origin>/api`.
 
-Sejak versi >= 5.15.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
+Pada versi >= 5.15.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
 
 ```js
 API_KEY: "*****",
@@ -53,7 +53,7 @@ APP_ID: "*:*****:web:*****",
 MEASUREMENT_ID: "G-*****",
 ```
 
-Sejak versi >= 5.15.0, konfigurasi di-_wrap_ dengan:
+Pada versi >= 5.15.0, konfigurasi di-_wrap_ dengan:
 
 ```js
 .__APP_CONFIG__ = {
@@ -71,7 +71,7 @@ Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
 
 ### Update Aplikasi Web
 
-Sejak versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
+Pada versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
 
 ```sh
 ./update

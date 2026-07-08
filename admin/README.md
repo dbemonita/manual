@@ -21,7 +21,7 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 
 Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
 
-Sejak versi >= 1.9.0, konfigurasi menggunakan _UPPERCASE_ seperti berikut:
+Pada versi >= 1.9.0, konfigurasi menggunakan _UPPERCASE_ seperti berikut:
 
 ```js
 API_BASE: "https://sockelat.monita.co.id", // Alamat API backend.
@@ -37,9 +37,9 @@ H5_NAVIGATION: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai 
 H5_BASE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-Sejak versi >= 1.12.0, konfigurasi `API_BASE` dapat diisikan dengan nilai `auto`. Sehingga aplikasi akan mengarah ke `<origin>/api`.
+Pada versi >= 1.12.0, konfigurasi `API_BASE` dapat diisikan dengan nilai `auto`. Sehingga aplikasi akan mengarah ke `<origin>/api`.
 
-Sejak versi >= 1.10.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
+Pada versi >= 1.10.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
 
 ```js
 API_KEY: "*****",
@@ -70,7 +70,7 @@ h5Base
 
 ### Update Aplikasi Web
 
-Sejak versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
+Pada versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
 
 ```sh
 ./update
@@ -188,7 +188,7 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 
 ## Restart Service
 
-- Sejak versi >= 1.11.0 terdapat fitur/halaman untuk restart service. Fitur/halaman ini hanya tersedia untuk user dengan role root atau admin.
+- Pada versi >= 1.11.0 terdapat fitur/halaman untuk restart service. Fitur/halaman ini hanya tersedia untuk user dengan role root atau admin.
 - Bila proses restart service gagal, dan user memiliki akses ke service, maka user dapat restart melalui PM2.
 - Tampilan fitur/halaman seperti pada gambar berikit: https://manual.monita.co.id/admin/#/feat?id=-restart-service.
 
