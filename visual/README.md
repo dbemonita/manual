@@ -93,6 +93,10 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 
 ## Changelog
 
+### 5.16.1 (2026-07-08)
+
+- Perbaikan tombol download PDF pada tipe visual epaper.
+
 ### 5.16.0 (2026-07-07)
 
 - Logo dinamis mengikuti subdomain.
