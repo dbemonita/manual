@@ -68,6 +68,15 @@ h5Navigation
 h5Base
 ```
 
+### Logo
+
+Pada versi >= 1.12.0, logo adaptif menyesuaikan subdomain dengan format PNG. Contoh:
+
+- Subdomain `pelindo.monita.co.id` file logo `pelindo.png`
+- Subdomain `selayar.monita.co.id` file logo `selayar.png`
+
+File logo disertakan di dalam folder aplikasi. Bila tidak tersedia, akan _fallback_ ke file `client.png` (logo Monita).
+
 ### Update Aplikasi Web
 
 Pada versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
