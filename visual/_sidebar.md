@@ -1,4 +1,6 @@
 - [Pendahuluan](/)
+- [Changelog](changelog.md)
+- Tipe Visual
   - Dashboard
     - [Apa itu Dashboard?](dash_introduction.md)
     - [Contoh Berkas](dash.md)
