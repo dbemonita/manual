@@ -96,7 +96,7 @@ Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.c
 ### 5.16.0 (2026-07-07)
 
 - Logo dinamis mengikuti subdomain.
-- Server api memungkinkan dinamis `origin/api`. set `API_BASE: 'auto'`.
+- Server api memungkinkan dinamis `<origin>/api`. set `API_BASE: 'auto'`.
 - Perbaikan sidebar pada saat tidak ada visual/menu.
 - Tambah tombol show/hide password pada form login.
 

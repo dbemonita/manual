@@ -199,7 +199,7 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 ### 1.12.0 (2026-07-07)
 
 - Logo dinamis mengikuti subdomain.
-- Server api memungkinkan dinamis `origin/api`. set `API_BASE: 'auto'`.
+- Server api memungkinkan dinamis `<origin>/api`. set `API_BASE: 'auto'`.
 - Force logout saat respon server 401 karena di-restart.
 - Tambah paginator pada list device di halaman dashboard.
 - Perbaikan tombol refresh untuk non-root/admin.
