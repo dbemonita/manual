@@ -2,6 +2,11 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.16.2 (2026-07-09)
+
+- Perbaikan halaman list alarm pada device android.
+- Perbaikan warna icon dengan class `.warning` pada device android.
+
 ### 5.16.1 (2026-07-08)
 
 - Perbaikan tombol download PDF pada tipe visual epaper.
