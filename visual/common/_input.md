@@ -19,7 +19,7 @@
 | ---------------------- | ---------- | ---------------------------- | ------------------------------ | -------------------------- |
 | caption                | string     | ActiveText                   | _null_                         | Keterangan komponen        |
 | point_id               | int        | 0                            | _null_                         | Titik ukur                 |
-| register_id            | int        | 0                            | _null_                         | Register                   |
+| register_id            | int        | 0                            | _null_                         | Register pada _hardware_   |
 | input_font             | string     | Arial, Helvetica, sans-serif | [Referensi&rarr;](ref_font.md) | Jenis huruf \*             |
 | input_size             | float      | 12                           | _null_                         | Ukuran huruf \*            |
 | input_style            | enum       | normal                       | normal; italic                 | Bentuk huruf \*            |
