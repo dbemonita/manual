@@ -49,6 +49,7 @@
         - [Termometer](hmi_thermo_meter.md)
         - [Toggle](hmi_toggle.md)
         - [Input](hmi_input.md)
+        - [Select](hmi_select.md)
 
     - THMI
       - [Apa itu THMI?](thmi_introduction.md)
