@@ -2,7 +2,7 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
-### 5.16.2 (2026-07-09)
+### 5.16.2 (2026-07-09) - _Android Release #4_
 
 - Perbaikan halaman list alarm pada device android.
 - Perbaikan warna icon dengan class `.warning` pada device android.
@@ -24,7 +24,7 @@ Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 - Di halaman login, tambah info update aplikasi bila tersedia.
 - Tambah tools updater untuk update aplikasi: `./update`
 
-### 5.14.0 (2026-06-17)
+### 5.14.0 (2026-06-17) - _Android Release #3_
 
 - Tambah prop `allowed_roles` untuk komponen 2 arah (input).
 - Tambah prop UI untuk komponen `input` dan `input_date`.
@@ -34,7 +34,7 @@ Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 - Update route ke halaman detil alarm saat notif diklik/tap.
 - Tambah info `Ref. ID` pada halaman alarm.
 
-### 5.13.0 (2026-05-29)
+### 5.13.0 (2026-05-29) - _Android Release #2_
 
 - Memungkinkan berjalan di http dengan IP address.
 - Auto disable fungsi-fungsi yang memerlukan isSecureContext.
@@ -54,7 +54,7 @@ Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 - Perbaikan initial data untuk marker popup.
 - Kembalikan tipe visual `dash`.
 
-### 5.10.0 (2026-04-13)
+### 5.10.0 (2026-04-13) - _Android Release #1_
 
 - Versi perdana untuk Google Play.
 - Hapus local/push notification.
