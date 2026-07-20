@@ -2,7 +2,7 @@
 
 Adalah aplikasi visualisasi data melalui web HMI, grafik, tabel, dan peta.
 
-Sejak versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
+Pada versi `5.8.0 (2026-03-09)`, _rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artinya, _build_ aplikasi berupa HTML, JS, dan CSS. Untuk _serving_ bisa menggunakan aplikasi pemrograman apapun, bahkan bisa langsung menggunakan _http server_ seperti Nginx dan Apache.
 
 ## Instalasi
 
@@ -31,7 +31,6 @@ SC_PORT: 443, // Port socket-cluster. Nilai default 443.
 SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
 ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
 WIDGET_CHAT: false, // Enable fungsi chat AI? Nilai default false.
-
 DOWNLOAD_SITE: 'https://download.monita.co.id', // Server build/zip Monita.
 
 DEVELOPMENT_TEXT: false, // Tampilkan teks term of use? Terkait BRIN. nilai default false.
@@ -40,7 +39,9 @@ GOOGLE_RECAPTCHA_SITEKEY: "", // Key re-capthca. Terkait BRIN. nilai default kos
 H5_SERVICE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-Sejak versi >= 5.15.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
+Pada versi >= 5.16.0, konfigurasi `API_BASE` dapat diisikan dengan nilai `auto`. Sehingga aplikasi akan mengarah ke `<origin>/api`.
+
+Pada versi >= 5.15.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
 
 ```js
 API_KEY: "*****",
@@ -52,7 +53,7 @@ APP_ID: "*:*****:web:*****",
 MEASUREMENT_ID: "G-*****",
 ```
 
-Sejak versi >= 5.15.0, konfigurasi di-_wrap_ dengan:
+Pada versi >= 5.15.0, konfigurasi di-_wrap_ dengan:
 
 ```js
 .__APP_CONFIG__ = {
@@ -68,9 +69,18 @@ Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
 };
 ```
 
+### Logo
+
+Pada versi >= 5.16.0, logo adaptif menyesuaikan subdomain dengan format PNG.
+
+- Subdomain `pelindo.monita.co.id` file logo `pelindo.png`
+- Subdomain `selayar.monita.co.id` file logo `selayar.png`
+
+File logo disertakan di dalam folder aplikasi. Bila tidak tersedia, akan _fallback_ ke file `client.png` (logo Monita).
+
 ### Update Aplikasi Web
 
-Sejak versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
+Pada versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
 
 ```sh
 ./update
@@ -87,77 +97,3 @@ Pastikan sudah terpasang `unzip` pada server, dengan cara `sudo apt install unzi
 ### Android App
 
 Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.com/store/apps/details?id=id.co.monita.visual).
-
----
-
-## Changelog
-
-### 5.15.0 (2026-06-26)
-
-- Menggunakan single file config: `config.js`.
-- Di halaman login, tambah info update aplikasi bila tersedia.
-- Tambah tools updater untuk update aplikasi: `./update`
-
-### 5.14.0 (2026-06-17)
-
-- Tambah prop `allowed_roles` untuk komponen 2 arah (input).
-- Tambah prop UI untuk komponen `input` dan `input_date`.
-- Tambah info `domain:port` pada deviceName.
-- Unreg service worker saat logout.
-- Update sumber data push notif dari `.notification` ke `.data`.
-- Update route ke halaman detil alarm saat notif diklik/tap.
-- Tambah info `Ref. ID` pada halaman alarm.
-
-### 5.13.0 (2026-05-29)
-
-- Memungkinkan berjalan di http dengan IP address.
-- Auto disable fungsi-fungsi yang memerlukan isSecureContext.
-
-### 5.12.0 (2026-05-26)
-
-- Tambah widget alarm pada sidebar.
-- Tambah halaman detail alarm.
-- Perbaikan latest data (race condition).
-
-### 5.11.0 (2026-05-20)
-
-- Hapus tipe visual alarm-report.
-- Tambah FCM push notification for android.
-- Tambah FCM push notification for web.
-- Tambah halaman alarm history.
-- Perbaikan initial data untuk marker popup.
-- Kembalikan tipe visual `dash`.
-
-### 5.10.0 (2026-04-13)
-
-- Versi perdana untuk Google Play.
-- Hapus local/push notification.
-
-### 5.9.3 (2026-03-30)
-
-- Perbaikan UI untuk Android generasi menengah dengan top-notch.
-- Perbaikan UI untuk Android pada mode gelap (dark-mode).
-
-### 5.9.2 (2026-03-27)
-
-- PoC Push Notification (server: vmpush.monita.co.id).
-- Update UI untuk Android generasi baru (edge-to-edge).
-
-### 5.9.1 (2026-03-16)
-
-- Tambah privacy-policy untuk comply Google Play.
-
-### 5.9.0 (2026-03-12)
-
-- Tambah library @capacitor/\* untuk wrapper ke mobile/APK.
-- Hapus config `API_HOST`, `API_PATH`, `API_PORT`, digantikan dengan `API_BASE`.
-- Hapus parser untuk tipe visual `dash`.
-
-### 5.8.0 (2026-03-09)
-
-- Menggunakan mode CSR.
-- Hapus closingProcess.
-- Hapus closingProcessStrict.
-- Hapus dataReprocess.
-- Kembalikan maindataPrefixed.
-- Kembalikan maindataFixed.

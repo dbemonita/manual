@@ -21,7 +21,7 @@ _Rendering_ aplikasi ini menggunakan metode _Client Side Rendering (CSR)_. Artin
 
 Konfigurasi ada pada file `config.js` (atau, bisa di-copy dari `config.js.example`). Isinya sebagai berikut:
 
-Sejak versi >= 1.9.0, konfigurasi menggunakan _UPPERCASE_ seperti berikut:
+Pada versi >= 1.9.0, konfigurasi menggunakan _UPPERCASE_ seperti berikut:
 
 ```js
 API_BASE: "https://sockelat.monita.co.id", // Alamat API backend.
@@ -31,14 +31,15 @@ SC_PORT: 443, // Port socket-cluster. Nilai default 443.
 SC_SECURE: true, // Is socket-cluster secure? Nilai default true.
 ALARM_NOTIFICATION: false, // Enable fungsi alarm? Nilai default false.
 CHAT_WIDGET: false, // Enable fungsi chat AI? Nilai default false.
-
 DOWNLOAD_SITE: 'https://download.monita.co.id', // Server build/zip Monita.
 
 H5_NAVIGATION: false, // Tampilkan link menu H5? Terkait data-frame BRIN. Nilai default false.
 H5_BASE: "", // Endpoint pengolahan data-frame. Terkait BRIN. nilai default kosong.
 ```
 
-Sejak versi >= 1.10.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
+Pada versi >= 1.12.0, konfigurasi `API_BASE` dapat diisikan dengan nilai `auto`. Sehingga aplikasi akan mengarah ke `<origin>/api`.
+
+Pada versi >= 1.10.0, terdapat tambahan konfigurasi FCM (disalin dari FCM Console).
 
 ```js
 API_KEY: "*****",
@@ -67,9 +68,18 @@ h5Navigation
 h5Base
 ```
 
+### Logo
+
+Pada versi >= 1.12.0, logo adaptif menyesuaikan subdomain dengan format PNG. Contoh:
+
+- Subdomain `pelindo.monita.co.id` file logo `pelindo.png`
+- Subdomain `selayar.monita.co.id` file logo `selayar.png`
+
+File logo disertakan di dalam folder aplikasi. Bila tidak tersedia, akan _fallback_ ke file `client.png` (logo Monita).
+
 ### Update Aplikasi Web
 
-Sejak versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
+Pada versi >= 5.15.0, untuk update aplikasi versi di atasnya, dapat menjalankan:
 
 ```sh
 ./update
@@ -187,98 +197,6 @@ Bila posisi aplikasi tidak ada di `/var/www`, maka:
 
 ## Restart Service
 
-- Sejak versi >= 1.11.0 terdapat fitur/halaman untuk restart service. Fitur/halaman ini hanya tersedia untuk user dengan role root atau admin.
+- Pada versi >= 1.11.0 terdapat fitur/halaman untuk restart service. Fitur/halaman ini hanya tersedia untuk user dengan role root atau admin.
 - Bila proses restart service gagal, dan user memiliki akses ke service, maka user dapat restart melalui PM2.
 - Tampilan fitur/halaman seperti pada gambar berikit: https://manual.monita.co.id/admin/#/feat?id=-restart-service.
-
----
-
-## Changelog
-
-### 1.11.1 (2026-07-03)
-
-- Menampilkan scrollbar pada section parameters, form formula, page asset management.
-
-### 1.11.0 (2026-07-02)
-
-- Tambah info API server pada halaman login (pojok kiri atas).
-- Perbaikan posisi toast (z-index) saat form pada sidebar kanan dibuka.
-- Tambah argumen "help" pada tool updater (`./update -h` atau `./update --help`).
-- Tambah halaman restart service beserta menunya, pada sidebar kiri, untuk role root dan admin.
-
-### 1.10.0 (2026-06-26)
-
-- Menggunakan single file config: `config.js`.
-- Di halaman login, tambah info update aplikasi bila tersedia.
-- Tambah tools updater untuk update aplikasi: `./update`
-
-### 1.9.0 (2026-06-23)
-
-- Rename key localstorage, membedakan key visual monita saat deploy tanpa sub-domain.
-- Perbaikan layout halaman aset, terkait posisi scrollbar.
-- Ganti nama variabel konfigurasi menggunakan _UPPERCASE_ (backward compatible).
-- Perbaikan lokasi file worker untuk monaco editor (XML editor).
-
-### 1.8.0 (2026-06-19)
-
-- Memungkinkan dijalankan tanpa domain/sub-domain. Contoh: `https://example.com/admin` atau `https://example.com/manage/`.
-- Hapus auto-reload pada halaman `alarm`, digantikan trigger dari FCM.
-
-### 1.7.0 (2026-06-15)
-
-- Tambah halaman user's gadget `/#/user/gadget`.
-- Tambah info `domain:port` pada deviceName.
-- Unreg service worker saat logout.
-- Update sumber data push notif dari `.notification` ke `.data`.
-- Update route ke halaman detil alarm saat notif diklik/tap.
-- Tambah info `ID` pada halaman detil alarm.
-- Seragamkan format datetime di semua halaman.
-
-### 1.6.1 (2026-06-04)
-
-- Mengubah tampilan dashboard:
-  - Jumlah total device, device aktif, dan device tidak aktif.
-  - Memisahkan list device aktif dan tidak aktif.
-  - Efisiensi ruang (widget lebih tipis).
-  - Filter device berdasarkan teks.
-  - Tombol pause 60s-auto-refresh.
-
-### 1.6.0 (2026-05-29)
-
-- Memungkinkan berjalan di http dengan IP address.
-- Auto disable fungsi-fungsi yang memerlukan isSecureContext.
-
-### 1.5.0 (2026-05-26)
-
-- Tambah halaman detail alarm.
-
-### 1.4.1 (2026-05-20)
-
-- Perbaikan menu pada sidebar.
-- Tambah fitur alarm history refetcher tiap 60 detik.
-
-### 1.4.0 (2026-05-20)
-
-- Tambah halaman histori alarm dan ACK.
-- Configurable H5, Chatbox, FCM.
-- Perbaikan input number untuk data float.
-- Ubah theme menjadi Nora.
-
-### 1.3.1 (2026-04-27)
-
-- Ubah session user, dibuat tidak expired.
-- Tambah "stop push notif" saat user logout.
-- Tambah teks "Admin/<versi>" pada device name.
-
-### 1.3.0 (2026-04-21)
-
-- Tambah halaman list notifikasi (alarm).
-
-### 1.2.0 (2026-04-20)
-
-- Tambah fitur pengelolaan notifikasi.
-
-### 1.1.0 (2026-03-13)
-
-- Menggunakan mode CSR.
-- Tambah form API Base URL pada halaman login.

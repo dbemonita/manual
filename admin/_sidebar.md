@@ -1,2 +1,3 @@
 - [Pendahuluan](/)
-- [Fitur/Halaman](feat.md)
+- [Changelog](changelog.md)
+- [Fitur/Halaman](feature.md)
