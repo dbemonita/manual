@@ -1,3 +1,9 @@
+# v6.2.3_xxx - 08 Juli 2026
+
+- [x] Race Condition pcb close di Lwip. penambahan timeout juka network tidak bisa di shutdown.
+- [x] perbiaiakn di app ethernet dan app mqtt.
+
+
 # v6.2.2.122_NO-MODEM - 24 Juni 2026
 
 - [x] Versi Modem - No Modem disetting firmware di Makefile, jadi harus buuil 2 jenis (MODEM dan NO_MODEM)
