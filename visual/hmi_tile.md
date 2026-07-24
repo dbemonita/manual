@@ -4,7 +4,7 @@ Berikut contoh komponen HMI `tile`:
 
 ```xml
 <tile>
-  <caption>Contoh Tile</caption>
+  <caption>Contoh Tile 1</caption>
   <width>200</width>
   <height>50</height>
   <image_source>/images/pipe_h.png</image_source>
