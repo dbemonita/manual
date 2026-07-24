@@ -13,6 +13,10 @@ Berikut contoh komponen HMI `tile`:
 </tile>
 ```
 
+#### Contoh
+
+![tile](https://hackmd.io/_uploads/Hy43r3lHfl.jpg)
+
 #### Properti selengkapnya:
 
 | Properti     | Tipe Nilai | Nilai Baku | Pilihan              | Keterangan          |

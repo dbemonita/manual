@@ -13,6 +13,10 @@ Berikut contoh komponen HMI `frame` (bingkai):
 </frame>
 ```
 
+#### Contoh
+
+![frame](https://hackmd.io/_uploads/rk3KNhlBzl.jpg)
+
 #### Properti selengkapnya:
 
 | Properti         | Tipe Nilai | Nilai Baku                   | Pilihan             | Keterangan            |
