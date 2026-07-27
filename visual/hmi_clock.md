@@ -11,6 +11,10 @@ Berikut contoh komponen HMI `clock` (jam analog):
 </clock>
 ```
 
+#### Contoh
+
+![clock](https://hackmd.io/_uploads/SJJ9_Y4BMl.jpg)
+
 #### Properti selengkapnya:
 
 | Properti          | Tipe Nilai | Nilai Baku     | Pilihan             | Keterangan          |
