@@ -9,6 +9,10 @@ Berikut contoh komponen HMI `raw_svg`:
 </raw_svg>
 ```
 
+#### Contoh
+
+![raw_svg](https://hackmd.io/_uploads/SJaPEvEHfx.jpg)
+
 #### Properti selengkapnya:
 
 | Properti        | Tipe Nilai | Nilai Baku | Pilihan             | Keterangan          |
