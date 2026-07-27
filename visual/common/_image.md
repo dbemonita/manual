@@ -9,6 +9,10 @@
 </image>
 ```
 
+#### Contoh
+
+![image](https://hackmd.io/_uploads/S1dApIVHfl.jpg)
+
 #### Properti selengkapnya:
 
 | Properti       | Tipe Nilai | Nilai Baku    | Pilihan             | Keterangan           |
