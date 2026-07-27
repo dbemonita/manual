@@ -8,6 +8,10 @@
 </rect>
 ```
 
+#### Contoh
+
+![rect](https://hackmd.io/_uploads/Hk5y9LEBfe.jpg)
+
 #### Properti selengkapnya:
 
 | Properti            | Tipe Nilai | Nilai Baku    | Pilihan               | Keterangan               |

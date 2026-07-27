@@ -11,6 +11,10 @@ Berikut contoh komponen HMI `circle` (lingkaran):
 </circle>
 ```
 
+#### Contoh
+
+![circle](https://hackmd.io/_uploads/rk_FwLVrGl.jpg)
+
 #### Properti selengkapnya:
 
 | Properti            | Tipe Nilai | Nilai Baku    | Pilihan             | Keterangan               |

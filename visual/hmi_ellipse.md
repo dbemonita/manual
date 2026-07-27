@@ -12,6 +12,10 @@ Berikut contoh komponen HMI `ellipse` (elips):
 </ellipse>
 ```
 
+#### Contoh
+
+![ellipse](https://hackmd.io/_uploads/ByrHuLNHfg.jpg)
+
 #### Properti selengkapnya:
 
 | Properti            | Tipe Nilai | Nilai Baku    | Pilihan             | Keterangan               |

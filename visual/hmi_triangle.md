@@ -11,6 +11,10 @@ Berikut contoh komponen HMI `triangle` (segitiga sama sisi):
 </triangle>
 ```
 
+#### Contoh
+
+![triangle](https://hackmd.io/_uploads/H1oMY8VBMx.jpg)
+
 #### Properti selengkapnya:
 
 | Properti            | Tipe Nilai | Nilai Baku    | Pilihan             | Keterangan               |

@@ -8,6 +8,10 @@
 </polyline>
 ```
 
+#### Contoh
+
+![polyline](https://hackmd.io/_uploads/ByYzVU4BGe.jpg)
+
 #### Properti selengkapnya:
 
 | Properti         | Tipe Nilai | Nilai Baku | Pilihan               | Keterangan                 |

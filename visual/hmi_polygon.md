@@ -14,6 +14,10 @@ Berikut contoh komponen HMI `polygon` (poligon):
 </polygon>
 ```
 
+#### Contoh
+
+![polygon](https://hackmd.io/_uploads/BkT3UI4Sfe.jpg)
+
 #### Properti selengkapnya:
 
 | Properti            | Tipe Nilai | Nilai Baku    | Pilihan               | Keterangan               |
