@@ -11,7 +11,7 @@ Berikut contoh komponen HMI `raw_svg`:
 
 #### Contoh
 
-![raw_svg](https://hackmd.io/_uploads/SJaPEvEHfx.jpg)
+![raw_svg](https://hackmd.io/_uploads/SJzl3YSHMx.jpg)
 
 #### Properti selengkapnya:
 

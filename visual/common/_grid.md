@@ -10,6 +10,10 @@
 </grid>
 ```
 
+#### Contoh
+
+![grid](https://hackmd.io/_uploads/SyQtqYSHMl.jpg)
+
 #### Properti selengkapnya:
 
 | Properti         | Tipe Nilai | Nilai Baku    | Pilihan             | Keterangan            |
