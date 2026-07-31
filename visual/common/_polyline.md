@@ -10,7 +10,7 @@
 
 #### Contoh
 
-![polyline](https://hackmd.io/_uploads/ByYzVU4BGe.jpg)
+![polyline](https://hackmd.io/_uploads/B1m4RX_Bfg.jpg)
 
 #### Properti selengkapnya:
 
