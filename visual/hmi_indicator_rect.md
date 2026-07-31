@@ -19,6 +19,10 @@ Tag pembuka `<indicator_rect>` tersebut memiliki atribut berikut:
 | ------------------------ | ---------- | ---------- | ---------------------------------- |
 | default_background_color | string     | _null_     | Nilai baku untuk semua warna latar |
 
+#### Contoh
+
+![indicator_rect](https://hackmd.io/_uploads/BknmXjYrzx.png)
+
 #### Properti selengkapnya:
 
 | Properti           | Tipe Nilai | Nilai Baku    | Pilihan               | Keterangan            |
