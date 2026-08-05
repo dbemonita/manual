@@ -17,6 +17,10 @@ Komponen ini berfungsi untuk menunjukkan data titik ukur dalam bentuk gambar den
 </indicator_image>
 ```
 
+#### Contoh
+
+![indicator_image](https://hackmd.io/_uploads/HkEr3mlUzg.png)
+
 #### Properti selengkapnya:
 
 | Properti           | Tipe Nilai | Nilai Baku     | Pilihan Nilai         | Keterangan              |
