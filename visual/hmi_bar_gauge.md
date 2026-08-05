@@ -13,6 +13,10 @@ Berikut contoh komponen HMI `bar_gauge`:
 </bar_gauge>
 ```
 
+#### Contoh
+
+![bar_gauge](https://hackmd.io/_uploads/ryfZ-VeLzg.png)
+
 #### Properti selengkapnya:
 
 | Properti           | Tipe Nilai | Nilai Baku | Keterangan                   |
