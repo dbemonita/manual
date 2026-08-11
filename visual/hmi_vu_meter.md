@@ -12,6 +12,10 @@ Berikut contoh komponen HMI `vu_meter`:
 </vu_meter>
 ```
 
+#### Contoh
+
+![vu_meter](https://hackmd.io/_uploads/ryrjjx_Uzg.png)
+
 #### Properti selengkapnya:
 
 > WIP

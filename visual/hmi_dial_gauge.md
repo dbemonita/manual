@@ -12,6 +12,10 @@ Berikut contoh komponen HMI `dial_gauge`:
 </dial_gauge>
 ```
 
+#### Contoh
+
+![dial_gauge](https://hackmd.io/_uploads/HJGDigOIze.png)
+
 #### Properti selengkapnya:
 
 | Properti           | Tipe Nilai | Nilai Baku | Keterangan               |

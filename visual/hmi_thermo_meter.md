@@ -10,6 +10,10 @@
 </thermometer>
 ```
 
+#### Contoh
+
+![thermometer](https://hackmd.io/_uploads/HJSpixuUGe.png)
+
 #### Properti selengkapnya:
 
 | Properti           | Tipe Nilai | Nilai Baku    | Keterangan                 |
