@@ -4,13 +4,15 @@
 <thermometer>
   <caption>Contoh Termometer 1</caption>
   <point_id>1001</point_id>
-  <height>150</height>
+  <height>200</height>
   <x>100</x>
   <y>100</y>
 </thermometer>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=thermometer
 
 ![thermometer](https://hackmd.io/_uploads/HJSpixuUGe.png)
 

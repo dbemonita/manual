@@ -13,6 +13,10 @@
 </toggle>
 ```
 
+#### Contoh:
+
+https://playground.monita.co.id/?component=toggle
+
 #### Properti selengkapnya:
 
 | Properti      | Tipe Nilai | Nilai Baku | Pilihan Nilai       | Keterangan               |

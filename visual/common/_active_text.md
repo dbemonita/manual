@@ -1,9 +1,11 @@
 ```xml
-<active_text>
+<active_text default_background_color="#68957c" default_color="white">
   <caption>Contoh Teks Aktif 1</caption>
   <point_id>1001</point_id>
-  <width>100</width>
-  <height>50</height>
+  <width>150</width>
+  <height>75</height>
+  <size>28</size>
+  <border_width>0</border_width>
   <x>100</x>
   <y>100</y>
 </active_text>
@@ -17,6 +19,8 @@ Tag pembuka `<active_text>` tersebut memiliki atribut-atribut sebagai berikut:
 | default_background_color | string     | _null_     | Nilai baku untuk semua warna latar |
 
 #### Contoh
+
+https://playground.monita.co.id/?component=active_text
 
 ![active_text](https://hackmd.io/_uploads/r1XRhcYHfg.png)
 

@@ -1,13 +1,35 @@
 ```xml
 <text>
   <caption>Contoh Teks 1</caption>
-  <content>Lorem Ipsum</content>
+  <content>The quick brown fox jumps over the lazy dog</content>
+  <size>32</size>
+  <font>Comic Sans MS</font>
   <x>100</x>
   <y>100</y>
 </text>
+
+<text>
+  <caption>Contoh Teks 2</caption>
+  <content>The quick brown fox jumps over the lazy dog</content>
+  <size>32</size>
+  <font>Consolas</font>
+  <x>100</x>
+  <y>200</y>
+</text>
+
+<text>
+  <caption>Contoh Teks 3</caption>
+  <content>The quick brown fox jumps over the lazy dog</content>
+  <size>32</size>
+  <font>Franklin Gothic Medium Cond</font>
+  <x>100</x>
+  <y>300</y>
+</text>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=text
 
 ![text](https://hackmd.io/_uploads/Hy3NJYEHzg.jpg)
 

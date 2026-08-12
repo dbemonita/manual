@@ -9,9 +9,20 @@ Berikut contoh komponen HMI `clock` (jam analog):
   <x>100</x>
   <y>100</y>
 </clock>
+
+<circle>
+  <caption>Contoh Lingkaran 1</caption>
+  <diameter>180</diameter>
+  <border_width>0</border_width>
+  <background_gradient>linear; 60; #fff; #8be9fd</background_gradient>
+  <x>110</x>
+  <y>110</y>
+</circle>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=clock
 
 ![clock](https://hackmd.io/_uploads/SJJ9_Y4BMl.jpg)
 

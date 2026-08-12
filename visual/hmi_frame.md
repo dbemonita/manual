@@ -5,15 +5,17 @@ Berikut contoh komponen HMI `frame` (bingkai):
 ```xml
 <frame>
   <caption>Contoh Frame 1</caption>
-  <title>Power Meter 1</title>
-  <width>300</width>
-  <height>200</height>
+  <title>Display 1</title>
+  <width>200</width>
+  <height>150</height>
   <x>100</x>
   <y>100</y>
 </frame>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=frame
 
 ![frame](https://hackmd.io/_uploads/rk3KNhlBzl.jpg)
 
@@ -31,7 +33,7 @@ Berikut contoh komponen HMI `frame` (bingkai):
 | height           | float      | 0                            | _null_              | Tinggi                |
 | background_color | string     | LightSlateGray               | _null_              | Warna latar           |
 | fill_color       | string     | White                        | _null_              | Warna isi bingkai     |
-| border_color     | string     | \_null\_\_                   | _null_              | Warna tepi bingkai    |
+| border_color     | string     | \_null\_                     | _null_              | Warna tepi bingkai    |
 | link             | string     | _null_                       | _null_              | Tautan                |
 | x                | float      | 0                            | _null_              | Posisi: Koordinat x   |
 | y                | float      | 0                            | _null_              | Posisi: Koordinat y   |

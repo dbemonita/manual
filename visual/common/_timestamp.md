@@ -1,14 +1,21 @@
 ```xml
 <timestamp>
   <caption>Contoh Timestamp 1</caption>
-  <width>100</width>
-  <height>50</height>
+  <width>320</width>
+  <height>60</height>
+  <size>32</size>
+  <font>Franklin Gothic Medium Cond</font>
+  <color>brown</color>
+  <border_radius>30</border_radius>
+  <background_gradient>linear; 60; #bd93f9; #8be9fd</background_gradient>
   <x>100</x>
   <y>100</y>
 </timestamp>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=timestamp
 
 ![timestamp](https://hackmd.io/_uploads/SJJLx5VrGx.jpg)
 

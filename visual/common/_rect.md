@@ -1,14 +1,18 @@
 ```xml
 <rect>
   <caption>Contoh Kotak 1</caption>
-  <width>300</width>
-  <height>150</height>
+  <width>200</width>
+  <height>100</height>
+  <border_width>0</border_width>
+  <background_gradient>linear; 60; #bd93f9; #8be9fd</background_gradient>
   <x>100</x>
   <y>100</y>
 </rect>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=rect
 
 ![rect](https://hackmd.io/_uploads/Hk5y9LEBfe.jpg)
 

@@ -5,16 +5,34 @@ Berikut contoh komponen HMI `polygon` (poligon):
 ```xml
 <polygon>
   <caption>Contoh Poligon 1</caption>
-  <x1>100</x1>
+  <x1>200</x1>
   <y1>100</y1>
-  <x2>100</x2>
-  <y2>200</y2>
-  <x3>200</x3>
-  <y3>200</y3>
+  <x2>223</x2>
+  <y2>168</y2>
+  <x3>295</x3>
+  <y3>168</y3>
+  <x4>237</x4>
+  <y4>210</y4>
+  <x5>260</x5>
+  <y5>280</y5>
+  <x6>200</x6>
+  <y6>238</y6>
+  <x7>140</x7>
+  <y7>280</y7>
+  <x8>163</x8>
+  <y8>210</y8>
+  <x9>105</x9>
+  <y9>168</y9>
+  <x10>177</x10>
+  <y10>168</y10>
+  <border_width>0</border_width>
+  <background_gradient>linear; 60; #bd93f9; #8be9fd</background_gradient>
 </polygon>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=polygon
 
 ![polygon](https://hackmd.io/_uploads/BkT3UI4Sfe.jpg)
 

@@ -13,7 +13,9 @@
 </liquid_level>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=liquid_level
 
 ![liquid_level](https://hackmd.io/_uploads/BkA13l_8Gl.png)
 

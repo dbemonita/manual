@@ -3,12 +3,21 @@
   <caption>Contoh Garis 1</caption>
   <x1>100</x1>
   <y1>100</y1>
-  <x2>300</x2>
+  <x2>200</x2>
   <y2>100</y2>
+  <x3>200</x3>
+  <y3>200</y3>
+  <x4>300</x4>
+  <y4>200</y4>
+  <width>2</width>
+  <end_arrow_type>arrow</end_arrow_type>
+  <end_arrow_size>20</end_arrow_size>
 </polyline>
 ```
 
-#### Contoh
+#### Contoh:
+
+https://playground.monita.co.id/?component=polyline
 
 ![polyline](https://hackmd.io/_uploads/B1m4RX_Bfg.jpg)
 

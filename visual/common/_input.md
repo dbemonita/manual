@@ -13,6 +13,10 @@
 </input>
 ```
 
+#### Contoh:
+
+https://playground.monita.co.id/?component=input
+
 #### Properti selengkapnya:
 
 | Properti               | Tipe Nilai | Nilai Baku                   | Pilihan Nilai                  | Keterangan                 |
