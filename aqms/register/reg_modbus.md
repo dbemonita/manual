@@ -13,7 +13,7 @@
     | 6   | rel. humid | uint16    | value / 10 | weather (%) |
     | 7   | wind speed | uint16    | value / 10 | weather (m/s) |
     | 8   | wind dir. | uint16    |            | weather (&deg) |
-    | 9   | rainfall | uint16    |             | weather (mm) |
+    | 9   | rainfall | uint16     | value / 100 | weather (mm/hour) (v2.2.10 later) |
     | 10  | air press. | uint16    | value / 10 | weather (hPa) |
     | 11  | pm1       | uint16    |             | PM (ug/m<sup>3</sup>) |
     | 12  | pm2.5     | uint16    |             | PM (ug/m<sup>3</sup>) |
