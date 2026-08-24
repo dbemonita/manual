@@ -2,10 +2,10 @@
 <image>
   <caption>Contoh Gambar 1</caption>
   <source>/images/wallpaper.jpg</source>
-  <width>800</width>
-  <height>500</height>
+  <width>900</width>
+  <height>475</height>
   <preserve_ratio>none</preserve_ratio>
-  <x>100</x>
+  <x>200</x>
   <y>100</y>
 </image>
 ```
