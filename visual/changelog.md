@@ -2,6 +2,12 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.17.0 (2026-08-24)
+
+- Tambah custom page untuk AQMS (`display/1.vue`).
+- Tambah configurasi untuk custom page `globalThis.__CUSTOM_PAGES__ = []` pada config.js
+- Pada `index.vue` update logic halaman pertama saat custom page didefinisikan.
+
 ### 5.16.2 (2026-07-09)
 
 - 📱 _Android Release #4_

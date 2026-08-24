@@ -69,6 +69,27 @@ Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
 };
 ```
 
+#### Halaman _Custom_
+
+Pada versi >= 5.17.0 terdapat konfigurasi opsional untuk halaman _custom_:
+
+```js
+__CUSTOM_PAGES__ = [
+  {
+    usernames: [], // List username yang dapat mengakses halaman custom ini
+    path: "", // Path file lokasi halaman custom
+    title: "", // Judul halaman custom
+    options: {
+      // Konfigurasi spesifik tiap-tiap halaman custom
+    },
+  },
+];
+```
+
+Contoh konfigurasi halaman custom:
+
+- [Dashboard AQMS &rarr;](custom_aqms.md)
+
 ### Logo
 
 Pada versi >= 5.16.0, logo adaptif menyesuaikan subdomain dengan format PNG.
