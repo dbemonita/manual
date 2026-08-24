@@ -81,7 +81,7 @@ globalThis.__CUSTOM_PAGES__ = [
           short: "Wind",
           unit: "m/s",
           min: 0,
-          max: 60,
+          max: 40,
         },
         {
           key: "windDirection",
@@ -144,7 +144,7 @@ globalThis.__CUSTOM_PAGES__ = [
           short: "Gust",
           unit: "m/s",
           min: 0,
-          max: 60,
+          max: 40,
         },
       ],
       ispuParamKeys: ["pm10", "pm25", "so2", "co", "o3", "no2", "hc"], // Parameter ISPU

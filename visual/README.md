@@ -74,7 +74,7 @@ Pada versi <= 5.14.0 konfigurasi di-_wrap_ dengan:
 Pada versi >= 5.17.0 terdapat konfigurasi opsional untuk halaman _custom_:
 
 ```js
-__CUSTOM_PAGES__ = [
+.__CUSTOM_PAGES__ = [
   {
     usernames: [], // List username yang dapat mengakses halaman custom ini
     path: "", // Path file lokasi halaman custom
