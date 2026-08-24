@@ -8,6 +8,10 @@
 </solid_gauge>
 ```
 
+#### Contoh:
+
+https://playground.monita.co.id/?component=solid_gauge
+
 #### Properti selengkapnya:
 
 | Properti         | Tipe Nilai | Nilai Baku  | Keterangan          |

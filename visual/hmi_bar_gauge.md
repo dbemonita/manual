@@ -6,12 +6,18 @@ Berikut contoh komponen HMI `bar_gauge`:
 <bar_gauge>
   <caption>Contoh Bar Gauge 1</caption>
   <point_id>1001</point_id>
-  <width>50</width>
-  <height>100</height>
-  <x>225</x>
-  <y>300</y>
+  <width>75</width>
+  <height>150</height>
+  <x>100</x>
+  <y>100</y>
 </bar_gauge>
 ```
+
+#### Contoh:
+
+https://playground.monita.co.id/?component=bar_gauge
+
+![bar_gauge](https://hackmd.io/_uploads/ryfZ-VeLzg.png)
 
 #### Properti selengkapnya:
 

@@ -1,13 +1,20 @@
 ```xml
 <image>
   <caption>Contoh Gambar 1</caption>
-  <source>/images/transformator.png</source>
-  <width>200</width>
-  <height>300</height>
+  <source>/images/wallpaper.jpg</source>
+  <width>800</width>
+  <height>500</height>
+  <preserve_ratio>none</preserve_ratio>
   <x>100</x>
   <y>100</y>
 </image>
 ```
+
+#### Contoh:
+
+https://playground.monita.co.id/?component=image
+
+![image](https://hackmd.io/_uploads/S1dApIVHfl.jpg)
 
 #### Properti selengkapnya:
 

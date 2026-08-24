@@ -5,11 +5,19 @@ Berikut contoh komponen HMI `triangle` (segitiga sama sisi):
 ```xml
 <triangle>
   <caption>Contoh Segitiga 1</caption>
-  <length>300</length>
+  <length>200</length>
+  <border_width>0</border_width>
+  <background_gradient>linear; 60; #bd93f9; #8be9fd</background_gradient>
   <x>100</x>
   <y>100</y>
 </triangle>
 ```
+
+#### Contoh:
+
+https://playground.monita.co.id/?component=triangle
+
+![triangle](https://hackmd.io/_uploads/H1oMY8VBMx.jpg)
 
 #### Properti selengkapnya:
 

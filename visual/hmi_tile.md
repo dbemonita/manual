@@ -4,14 +4,38 @@ Berikut contoh komponen HMI `tile`:
 
 ```xml
 <tile>
-  <caption>Contoh Tile</caption>
-  <width>200</width>
+  <caption>Contoh Tile 1</caption>
+  <width>300</width>
   <height>50</height>
-  <image_source>/images/pipe_h.png</image_source>
+  <image_source>/images/short-pipe-h.png</image_source>
   <x>100</x>
   <y>100</y>
 </tile>
+
+<tile>
+  <caption>Contoh Tile 1</caption>
+  <width>200</width>
+  <height>50</height>
+  <image_source>/images/short-pipe-h.png</image_source>
+  <x>100</x>
+  <y>200</y>
+</tile>
+
+<tile>
+  <caption>Contoh Tile 1</caption>
+  <width>100</width>
+  <height>50</height>
+  <image_source>/images/short-pipe-h.png</image_source>
+  <x>100</x>
+  <y>300</y>
+</tile>
 ```
+
+#### Contoh:
+
+https://playground.monita.co.id/?component=tile
+
+![tile](https://hackmd.io/_uploads/Hy43r3lHfl.jpg)
 
 #### Properti selengkapnya:
 

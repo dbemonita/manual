@@ -5,12 +5,20 @@ Berikut contoh komponen HMI `ellipse` (elips):
 ```xml
 <ellipse>
   <caption>Contoh Elips 1</caption>
-  <width>300</width>
-  <height>150</height>
+  <width>200</width>
+  <height>100</height>
+  <border_width>0</border_width>
+  <background_gradient>linear; 60; #bd93f9; #8be9fd</background_gradient>
   <x>100</x>
   <y>100</y>
 </ellipse>
 ```
+
+#### Contoh:
+
+https://playground.monita.co.id/?component=ellipse
+
+![ellipse](https://hackmd.io/_uploads/ByrHuLNHfg.jpg)
 
 #### Properti selengkapnya:
 

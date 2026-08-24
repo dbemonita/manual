@@ -4,11 +4,19 @@
   <width>200</width>
   <height>100</height>
   <num_rows>2</num_rows>
-  <num_cols>2</num_cols>
+  <num_cols>3</num_cols>
+  <border_color>white</border_color>
+  <border_width>2</border_width>
   <x>100</x>
   <y>100</y>
 </grid>
 ```
+
+#### Contoh:
+
+https://playground.monita.co.id/?component=grid
+
+![grid](https://hackmd.io/_uploads/SyQtqYSHMl.jpg)
 
 #### Properti selengkapnya:
 

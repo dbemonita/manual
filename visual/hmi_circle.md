@@ -5,11 +5,19 @@ Berikut contoh komponen HMI `circle` (lingkaran):
 ```xml
 <circle>
   <caption>Contoh Lingkaran 1</caption>
-  <diameter>300</diameter>
+  <diameter>200</diameter>
+  <border_width>0</border_width>
+  <background_gradient>linear; 60; #bd93f9; #8be9fd</background_gradient>
   <x>100</x>
   <y>100</y>
 </circle>
 ```
+
+#### Contoh:
+
+https://playground.monita.co.id/?component=circle
+
+![circle](https://hackmd.io/_uploads/rk_FwLVrGl.jpg)
 
 #### Properti selengkapnya:
 

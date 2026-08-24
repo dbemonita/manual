@@ -14,6 +14,10 @@
 </select>
 ```
 
+#### Contoh:
+
+https://playground.monita.co.id/?component=select
+
 #### Properti selengkapnya:
 
 | Properti                | Tipe Nilai | Nilai Baku                   | Pilihan Nilai                  | Keterangan                 |

@@ -12,6 +12,10 @@
 </active_chart>
 ```
 
+#### Contoh:
+
+https://playground.monita.co.id/?component=active_chart
+
 #### Properti selengkapnya:
 
 | Properti              | Tipe Nilai | Nilai Baku  | Pilihan Nilai                                                                            | Keterangan                   |

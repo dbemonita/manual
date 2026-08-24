@@ -3,11 +3,13 @@
 Berikut contoh komponen HMI `indicator_rect` (kotak indikator):
 
 ```xml
-<indicator_rect>
+<indicator_rect default_background_color="#68957c" default_color="white">
   <caption>Contoh Kotak Indikator 1</caption>
   <point_id>1001</point_id>
-  <width>300</width>
-  <height>150</height>
+  <width>150</width>
+  <height>75</height>
+  <size>28</size>
+  <border_width>0</border_width>
   <x>100</x>
   <y>100</y>
 </indicator_rect>
@@ -18,6 +20,12 @@ Tag pembuka `<indicator_rect>` tersebut memiliki atribut berikut:
 | Atribut                  | Tipe Nilai | Nilai Baku | Keterangan                         |
 | ------------------------ | ---------- | ---------- | ---------------------------------- |
 | default_background_color | string     | _null_     | Nilai baku untuk semua warna latar |
+
+#### Contoh:
+
+https://playground.monita.co.id/?component=indicator_rect
+
+![indicator_rect](https://hackmd.io/_uploads/BknmXjYrzx.png)
 
 #### Properti selengkapnya:
 
