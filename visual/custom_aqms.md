@@ -160,6 +160,7 @@ globalThis.__CUSTOM_PAGES__ = [
         "windDirection",
       ],
       weatherTrendKeys: ["temperature", "humidity", "windSpeed"], // List trend cuaca yang ditampilkan (maksimal 3)
+      dataSourceKey: "average", // "data" or "average"
       refetchEvery: 1, // Refetch/refresh tiap n menit
     },
   },

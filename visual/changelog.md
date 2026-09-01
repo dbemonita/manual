@@ -2,6 +2,15 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.17.1 (2026-09-01)
+
+- Dashboard AQMS:
+  - Update ukuran font.
+  - Pada widget tengah tampilkan hanya parameter kritis.
+  - Ubah warna untuk status "Tidak Sehat".
+  - Tambah konfig `dataSourceKey: 'average' // "data" or "average"`
+  - Perbaikan typo.
+
 ### 5.17.0 (2026-08-24)
 
 - Tambah custom page untuk AQMS (`display/1.vue`).
