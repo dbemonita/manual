@@ -88,7 +88,7 @@ Pada versi >= 5.17.0 terdapat konfigurasi opsional untuk halaman _custom_:
 
 Contoh konfigurasi halaman custom:
 
-- [Dashboard AQMS &rarr;](custom_aqms.md)
+- [Dashboard dan Laporan AQMS &rarr;](custom_aqms.md)
 
 ### Logo
 

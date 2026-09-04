@@ -1,4 +1,4 @@
-# Dashboard AQMS
+# Dashboard dan Laporan AQMS
 
 Contoh konfigurasi:
 
