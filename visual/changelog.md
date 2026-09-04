@@ -2,6 +2,11 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.17.2 (2026-09-04)
+
+- Update widget dan kontent dashboard AQMS.
+- Menambah halaman laporan AQMS.
+
 ### 5.17.1 (2026-09-01)
 
 - Dashboard AQMS:
