@@ -159,9 +159,53 @@ globalThis.__CUSTOM_PAGES__ = [
         "gustSpeed",
         "windDirection",
       ],
-      weatherTrendKeys: ["temperature", "humidity", "windSpeed"], // List trend cuaca yang ditampilkan (maksimal 3)
+      weatherTrendKeys: ["temperature", "humidity", "windSpeed"],
       dataSourceKey: "average", // "data" or "average"
-      refetchEvery: 1, // Refetch/refresh tiap n menit
+      refetchEvery: 1, // minutes
+    },
+  },
+  {
+    usernames: ["kecbogortengah.trial"], // List username yang dapat mengakses halaman custom ini
+    path: "display/2", // Path file lokasi halaman custom
+    title: "Laporan", // Judul halaman custom
+    options: {
+      logoUrl: "https://kemenlh.go.id/assets/images/logo/logo-klh-plain.png", // Logo pada A4
+      title: "LAPORAN", // Judul pada A4
+      subTitle: "INDEKS STANDAR PENCEMAR UDARA", // Sub-judul pada A4
+      stationName: "Stasiun Kecamatan Bogor Tengah",
+      region: "Kota Bogor, Provinsi Jawa Barat",
+      points: [
+        {
+          // 0-15.5 baik
+          // 15.6-55.4 sedang
+          // 55.5-150.4 tidak sehat
+          // 150.5-250.4 sangat tidak sehat
+          // >250.5 berbahaya
+          key: "pm25",
+          id: 310102,
+          name: "PM 2.5",
+          short: "PM2.5",
+          unit: "μg/m³",
+          min: 0,
+          max: 500,
+        },
+        {
+          // 0-15.5 baik
+          // 15.6-55.4 sedang
+          // 55.5-150.4 tidak sehat
+          // 150.5-250.4 sangat tidak sehat
+          // >250.5 berbahaya
+          key: "pm10",
+          id: 310103,
+          name: "PM 10",
+          short: "PM10",
+          unit: "μg/m³",
+          min: 0,
+          max: 500,
+        },
+      ],
+      ispuParamKeys: ["pm10", "pm25"],
+      dataSourceKey: "average", // "data" or "average"
     },
   },
 ];
