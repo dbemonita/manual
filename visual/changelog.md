@@ -2,6 +2,11 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.17.3 (2026-09-10)
+
+- Perbaikan bar kanan yang tidak bisa dibuka saat menggunakan halaman custom.
+- Menambah opsi fullscreen untuk halaman custom.
+
 ### 5.17.2 (2026-09-04)
 
 - Update widget dan kontent dashboard AQMS.
