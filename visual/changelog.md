@@ -2,6 +2,10 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.17.4 (2026-09-10)
+
+- Menambah datetime picker pada halaman custom.
+
 ### 5.17.3 (2026-09-10)
 
 - Perbaikan bar kanan yang tidak bisa dibuka saat menggunakan halaman custom.
