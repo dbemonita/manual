@@ -31,7 +31,7 @@
 
 https://playground.monita.co.id/?component=text
 
-![text](https://hackmd.io/_uploads/Hy3NJYEHzg.jpg)
+![text](https://hackmd.io/_uploads/HJ2hNcQqGe.png)
 
 #### Properti selengkapnya:
 

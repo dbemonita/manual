@@ -17,7 +17,7 @@ Berikut contoh komponen HMI `frame` (bingkai):
 
 https://playground.monita.co.id/?component=frame
 
-![frame](https://hackmd.io/_uploads/rk3KNhlBzl.jpg)
+![frame](https://hackmd.io/_uploads/S1h2Vc75Mg.png)
 
 #### Properti selengkapnya:
 

@@ -17,7 +17,7 @@ Berikut contoh komponen HMI `triangle` (segitiga sama sisi):
 
 https://playground.monita.co.id/?component=triangle
 
-![triangle](https://hackmd.io/_uploads/H1oMY8VBMx.jpg)
+![triangle](https://hackmd.io/_uploads/Bkn245X9Ml.png)
 
 #### Properti selengkapnya:
 
