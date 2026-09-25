@@ -16,7 +16,7 @@
 
 https://playground.monita.co.id/?component=grid
 
-![grid](https://hackmd.io/_uploads/SyQtqYSHMl.jpg)
+![grid](https://manual.monita.co.id/_assets/images/grid.png)
 
 #### Properti selengkapnya:
 

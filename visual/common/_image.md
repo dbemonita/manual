@@ -14,7 +14,7 @@
 
 https://playground.monita.co.id/?component=image
 
-![image](https://hackmd.io/_uploads/S1dApIVHfl.jpg)
+![image](https://manual.monita.co.id/_assets/images/image.png)
 
 #### Properti selengkapnya:
 

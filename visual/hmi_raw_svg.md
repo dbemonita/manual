@@ -54,7 +54,7 @@ Berikut contoh komponen HMI `raw_svg`:
 
 https://playground.monita.co.id/?component=raw_svg
 
-![raw_svg](https://hackmd.io/_uploads/SJzl3YSHMx.jpg)
+![raw_svg](https://manual.monita.co.id/_assets/images/raw_svg.png)
 
 #### Properti selengkapnya:
 

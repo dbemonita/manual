@@ -35,7 +35,7 @@ Berikut contoh komponen HMI `tile`:
 
 https://playground.monita.co.id/?component=tile
 
-![tile](https://hackmd.io/_uploads/Hy43r3lHfl.jpg)
+![tile](https://manual.monita.co.id/_assets/images/tile.png)
 
 #### Properti selengkapnya:
 
