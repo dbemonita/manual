@@ -1,3 +1,13 @@
+
+# [Download Firmware Daffodil](https://drive.google.com/drive/folders/1dz1C6Nq6wBmktp0kvZMXbmvK5L_d4aHb)
+
+# v6.3.2 (B) / v6.3.3 (F)  (25 September 2026)
+- [x] revisi perbaikan konfigurasi pengiriman domain untuk MQTT monitoring, menjadi broker_domain.
+- [x] perubahan metode cek server apakah ok atau tidak dengan cara cek server is Alive, menggantikan cara ping (ICMP) karena ternyata ada beberapa vps yang tetiba mematikan fungsi ICMP.
+
+# v6.3.0 (18 Agustus 2026)
+- [x] config non volatil system, dibuat bisa di update apabila ada perubahan atau penambahan. metode baca tulis flash jadi berubah.
+
 # v6.2.3_xxx - 08 Juli 2026
 
 - [x] Race Condition pcb close di Lwip. penambahan timeout juka network tidak bisa di shutdown.
