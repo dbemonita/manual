@@ -24,7 +24,7 @@ Berikut contoh komponen HMI `clock` (jam analog):
 
 https://playground.monita.co.id/?component=clock
 
-![clock](https://hackmd.io/_uploads/SJJ9_Y4BMl.jpg)
+![clock](https://manual.monita.co.id/_assets/images/clock.png)
 
 #### Properti selengkapnya:
 

@@ -30,7 +30,7 @@ https://playground.monita.co.id/?component=timestamp
 | locale              | string     | id                           | _null_                           | Bahasa                     |
 | offset              | string     | _Local offset_               | _null_                           | _UTC time offsets_         |
 | override            | boolean    | _false_                      | _null_                           | _Overridden?_              |
-| override_by         | enum       | timepicker                   | timepicker; lastdata             | _Overridden by?_\*         |
+| override_by         | enum       | timepicker                   | timepicker; lastdata             | _Overridden by?_ \*        |
 | font                | string     | Arial, Helvetica, sans-serif | [Referensi&rarr;](ref_font.md)   | Jenis huruf                |
 | size                | float      | 12                           | _null_                           | Ukuran huruf               |
 | style               | enum       | normal                       | normal; italic                   | Bentuk huruf               |
