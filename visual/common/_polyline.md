@@ -19,7 +19,7 @@
 
 https://playground.monita.co.id/?component=polyline
 
-![polyline](https://hackmd.io/_uploads/Hy3hEqmqGe.png)
+![polyline](/_assets/images/polyline.png)
 
 #### Properti selengkapnya:
 

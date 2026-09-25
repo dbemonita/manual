@@ -14,7 +14,7 @@
 
 https://playground.monita.co.id/?component=rect
 
-![rect](https://hackmd.io/_uploads/By2nV97qMl.png)
+![rect](/_assets/images/rect.png)
 
 #### Properti selengkapnya:
 

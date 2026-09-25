@@ -17,7 +17,7 @@ Berikut contoh komponen HMI `circle` (lingkaran):
 
 https://playground.monita.co.id/?component=circle
 
-![circle](https://hackmd.io/_uploads/Hk2n45mcfx.png)
+![circle](/_assets/images/circle.png)
 
 #### Properti selengkapnya:
 
