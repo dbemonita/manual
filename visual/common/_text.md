@@ -31,7 +31,7 @@
 
 https://playground.monita.co.id/?component=text
 
-![text](/_assets/images/text.png)
+![text](https://manual.monita.co.id/_assets/images/text.png)
 
 #### Properti selengkapnya:
 

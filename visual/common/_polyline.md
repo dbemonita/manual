@@ -19,7 +19,7 @@
 
 https://playground.monita.co.id/?component=polyline
 
-![polyline](/_assets/images/polyline.png)
+![polyline](https://manual.monita.co.id/_assets/images/polyline.png)
 
 #### Properti selengkapnya:
 

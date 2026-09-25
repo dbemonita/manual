@@ -14,7 +14,7 @@
 
 https://playground.monita.co.id/?component=rect
 
-![rect](/_assets/images/rect.png)
+![rect](https://manual.monita.co.id/_assets/images/rect.png)
 
 #### Properti selengkapnya:
 

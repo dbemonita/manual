@@ -18,7 +18,7 @@ Berikut contoh komponen HMI `ellipse` (elips):
 
 https://playground.monita.co.id/?component=ellipse
 
-![ellipse](/_assets/images/ellipse.png)
+![ellipse](https://manual.monita.co.id/_assets/images/ellipse.png)
 
 #### Properti selengkapnya:
 

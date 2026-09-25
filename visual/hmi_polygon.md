@@ -34,7 +34,7 @@ Berikut contoh komponen HMI `polygon` (poligon):
 
 https://playground.monita.co.id/?component=polygon
 
-![polygon](/_assets/images/polygon.png)
+![polygon](https://manual.monita.co.id/_assets/images/polygon.png)
 
 #### Properti selengkapnya:
 
