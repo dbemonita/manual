@@ -31,12 +31,12 @@ https://playground.monita.co.id/?component=indicator_image
 | point_id           | int        | 0              | _null_                | Titik ukur              |
 | width              | float      | 0              | _null_                | Lebar gambar            |
 | height             | float      | 0              | _null_                | Tinggi gambar           |
-| source             | string     | _null_         | _null_                | URL gambar _initial_\*  |
+| source             | string     | _null_         | _null_                | URL gambar _initial_ \* |
 | source_0           | string     | _null_         | _null_                | URL gambar nilai 0\*    |
 | source_1           | string     | _null_         | _null_                | URL gambar nilai 1\*    |
 | animation          | enum       | _null_         | rotate; move; reverse | Jenis animasi           |
 | animation_duration | string     | _null_         | _null_                | Durasi animasi (ms)     |
-| preserve_ratio     | enum       | xMidYMid meet  | xMidYMid meet; none   | _Preserve ratio_\*\*    |
+| preserve_ratio     | enum       | xMidYMid meet  | xMidYMid meet; none   | _Preserve ratio_ \*\*   |
 | link               | string     | _null_         | _null_                | Tautan                  |
 | x                  | float      | 0              | _null_                | Posisi: Koordinat x     |
 | y                  | float      | 0              | _null_                | Posisi: Koordinat y     |
