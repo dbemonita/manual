@@ -46,6 +46,7 @@
         - [_Liquid Level_](hmi_liquid_level.md)
         - [VU Meter](hmi_vu_meter.md)
         - [Grafik Aktif](hmi_active_chart.md)
+        - [Grafik Trend](hmi_trend_chart.md)
         - [Termometer](hmi_thermo_meter.md)
         - [Toggle](hmi_toggle.md)
         - [Input](hmi_input.md)
