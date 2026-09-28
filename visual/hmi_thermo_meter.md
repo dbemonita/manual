@@ -36,6 +36,6 @@ https://playground.monita.co.id/?component=thermometer
 | tick_visible       | boolean    | _true_        | Menampilkan _tick_?        |
 | fahrenheit_visible | boolean    | _true_        | Menampilkan fahrenheit?    |
 | interval           | float      | 15            | Interval _tick_            |
-| link               | string     | _null_        | Tautan                     |
+| link               | string     |               | Tautan                     |
 | x                  | float      | 0             | Posisi: Koordinat x        |
 | y                  | float      | 0             | Posisi: Koordinat y        |

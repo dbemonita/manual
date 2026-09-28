@@ -21,30 +21,30 @@ https://playground.monita.co.id/?component=input
 
 | Properti               | Tipe Nilai | Nilai Baku                   | Pilihan Nilai                  | Keterangan                 |
 | ---------------------- | ---------- | ---------------------------- | ------------------------------ | -------------------------- |
-| caption                | string     | ActiveText                   | _null_                         | Keterangan komponen        |
-| point_id               | int        | 0                            | _null_                         | Titik ukur                 |
-| register_id            | int        | 0                            | _null_                         | Register pada _hardware_   |
+| caption                | string     | ActiveText                   |                                | Keterangan komponen        |
+| point_id               | int        | 0                            |                                | Titik ukur                 |
+| register_id            | int        | 0                            |                                | Register pada _hardware_   |
 | input_font             | string     | Arial, Helvetica, sans-serif | [Referensi&rarr;](ref_font.md) | Jenis huruf \*             |
-| input_size             | float      | 12                           | _null_                         | Ukuran huruf \*            |
+| input_size             | float      | 12                           |                                | Ukuran huruf \*            |
 | input_style            | enum       | normal                       | normal; italic                 | Bentuk huruf \*            |
 | input_weight           | enum       | normal                       | normal; bold                   | Ketebalan huruf \*         |
-| input_width            | float      | 0                            | _null_                         | Lebar input                |
-| input_height           | float      | 0                            | _null_                         | Tinggi input               |
-| input_color            | string     | DarkSlateGray                | _null_                         | Warna teks normal \*       |
-| input_background_color | string     | White                        | _null_                         | Warna latar normal \*      |
-| input_border_width     | float      | 2                            | _null_                         | Ketebalan garis tepi \*    |
-| input_border_color     | string     | LightGray                    | _null_                         | Warna garis tepi \*        |
-| input_border_radius    | float      | 0                            | _null_                         | Radius garis tepi \*       |
+| input_width            | float      | 0                            |                                | Lebar input                |
+| input_height           | float      | 0                            |                                | Tinggi input               |
+| input_color            | string     | DarkSlateGray                |                                | Warna teks normal \*       |
+| input_background_color | string     | White                        |                                | Warna latar normal \*      |
+| input_border_width     | float      | 2                            |                                | Ketebalan garis tepi \*    |
+| input_border_color     | string     | LightGray                    |                                | Warna garis tepi \*        |
+| input_border_radius    | float      | 0                            |                                | Radius garis tepi \*       |
 | input_method           | string     | emit                         | emit; get; post                | Metode kirim data \*       |
-| input_url              | string     | _null_                       | _null_                         | Target pengiriman data \*  |
-| input_data             | string     | _null_                       | _null_                         | Data yang dikirim \*\*     |
-| button_width           | float      | 0                            | _null_                         | Lebar tombol               |
-| button_height          | float      | 0                            | _null_                         | Tinggi tombol              |
-| button_image_source    | string     | _null_                       | _null_                         | URL gambar tombol \*\*\*\* |
-| allowed_roles          | string     | 1,2                          | _null_                         | Role user \*\*\*           |
+| input_url              | string     |                              |                                | Target pengiriman data \*  |
+| input_data             | string     |                              |                                | Data yang dikirim \*\*     |
+| button_width           | float      | 0                            |                                | Lebar tombol               |
+| button_height          | float      | 0                            |                                | Tinggi tombol              |
+| button_image_source    | string     |                              |                                | URL gambar tombol \*\*\*\* |
+| allowed_roles          | string     | 1,2                          |                                | Role user \*\*\*           |
 | direction              | enum       | horizontal                   | horizontal;vertical            | Posisi gambar tombol       |
-| x                      | float      | 0                            | _null_                         | Posisi: Koordinat x        |
-| y                      | float      | 0                            | _null_                         | Posisi: Koordinat y        |
+| x                      | float      | 0                            |                                | Posisi: Koordinat x        |
+| y                      | float      | 0                            |                                | Posisi: Koordinat y        |
 | z                      | enum       | 0                            | 0;1;2;3;4;5;6;7;8;9            | Posisi: z-index            |
 
 #### Catatan

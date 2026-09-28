@@ -27,23 +27,23 @@ https://playground.monita.co.id/?component=indicator_image
 
 | Properti           | Tipe Nilai | Nilai Baku     | Pilihan Nilai         | Keterangan              |
 | ------------------ | ---------- | -------------- | --------------------- | ----------------------- |
-| caption            | string     | IndicatorImage | _null_                | Keterangan komponen     |
-| point_id           | int        | 0              | _null_                | Titik ukur              |
-| width              | float      | 0              | _null_                | Lebar gambar            |
-| height             | float      | 0              | _null_                | Tinggi gambar           |
-| source             | string     | _null_         | _null_                | URL gambar _initial_ \* |
-| source_0           | string     | _null_         | _null_                | URL gambar nilai 0\*    |
-| source_1           | string     | _null_         | _null_                | URL gambar nilai 1\*    |
-| animation          | enum       | _null_         | rotate; move; reverse | Jenis animasi           |
-| animation_duration | string     | _null_         | _null_                | Durasi animasi (ms)     |
+| caption            | string     | IndicatorImage |                       | Keterangan komponen     |
+| point_id           | int        | 0              |                       | Titik ukur              |
+| width              | float      | 0              |                       | Lebar gambar            |
+| height             | float      | 0              |                       | Tinggi gambar           |
+| source             | string     |                |                       | URL gambar _initial_ \* |
+| source_0           | string     |                |                       | URL gambar nilai 0\*    |
+| source_1           | string     |                |                       | URL gambar nilai 1\*    |
+| animation          | enum       |                | rotate; move; reverse | Jenis animasi           |
+| animation_duration | string     |                |                       | Durasi animasi (ms)     |
 | preserve_ratio     | enum       | xMidYMid meet  | xMidYMid meet; none   | _Preserve ratio_ \*\*   |
-| link               | string     | _null_         | _null_                | Tautan                  |
-| x                  | float      | 0              | _null_                | Posisi: Koordinat x     |
-| y                  | float      | 0              | _null_                | Posisi: Koordinat y     |
-| from_x             | float      | 0              | _null_                | Gerak dari: Koordinat x |
-| from_y             | float      | 0              | _null_                | Gerak dari: Koordinat y |
-| to_x               | float      | 0              | _null_                | Gerak ke: Koordinat x   |
-| to_y               | float      | 0              | _null_                | Gerak ke: Koordinat y   |
+| link               | string     |                |                       | Tautan                  |
+| x                  | float      | 0              |                       | Posisi: Koordinat x     |
+| y                  | float      | 0              |                       | Posisi: Koordinat y     |
+| from_x             | float      | 0              |                       | Gerak dari: Koordinat x |
+| from_y             | float      | 0              |                       | Gerak dari: Koordinat y |
+| to_x               | float      | 0              |                       | Gerak ke: Koordinat x   |
+| to_y               | float      | 0              |                       | Gerak ke: Koordinat y   |
 
 #### Catatan:
 

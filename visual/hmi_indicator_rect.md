@@ -19,7 +19,7 @@ Tag pembuka `<indicator_rect>` tersebut memiliki atribut berikut:
 
 | Atribut                  | Tipe Nilai | Nilai Baku | Keterangan                         |
 | ------------------------ | ---------- | ---------- | ---------------------------------- |
-| default_background_color | string     | _null_     | Nilai baku untuk semua warna latar |
+| default_background_color | string     |            | Nilai baku untuk semua warna latar |
 
 #### Contoh:
 

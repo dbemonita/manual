@@ -10,15 +10,15 @@ Komponen ini berfungsi untuk menunjukkan data titik ukur sesuai nilai yang dikir
 
 Tag pembuka `<single_text>` tersebut memiliki atribut-atribut sebagai berikut:
 
-| Atribut          | Tipe Nilai | Nilai Baku | Pilihan                            | Keterangan                                |
-| ---------------- | ---------- | ---------- | ---------------------------------- | ----------------------------------------- |
-| column_size      | enum       | 0          | 1;2;3;4;5;6;7;8;9;10;11;12         | Lebar komponen                            |
-| icon             | string     | _null_     | [Referensi&rarr;](ref_icon.md) | _Icon_ komponen                           |
-| data_this        | enum       | hour       | hour; day; month; year             | Rentang waktu data\*                      |
-| summary          | enum       | last       | min; max; sum; avg; first; last    | Jenis ringkasan data                      |
-| refresh_interval | int        | 0          | _null_                             | Interval pengambilan data terbaru (menit) |
-| flex             | boolean    | _false_    | _null_                             |                                           |
-| break            | boolean    | _false_    | _null_                             |                                           |
+| Atribut          | Tipe Nilai | Nilai Baku | Pilihan                         | Keterangan                                |
+| ---------------- | ---------- | ---------- | ------------------------------- | ----------------------------------------- |
+| column_size      | enum       | 0          | 1;2;3;4;5;6;7;8;9;10;11;12      | Lebar komponen                            |
+| icon             | string     |            | [Referensi&rarr;](ref_icon.md)  | _Icon_ komponen                           |
+| data_this        | enum       | hour       | hour; day; month; year          | Rentang waktu data\*                      |
+| summary          | enum       | last       | min; max; sum; avg; first; last | Jenis ringkasan data                      |
+| refresh_interval | int        | 0          |                                 | Interval pengambilan data terbaru (menit) |
+| flex             | boolean    | _false_    |                                 |                                           |
+| break            | boolean    | _false_    |                                 |                                           |
 
 %[{ _data_this.md }]%
 
@@ -26,7 +26,7 @@ Tag pembuka `<single_text>` tersebut memiliki atribut-atribut sebagai berikut:
 
 | Properti | Tipe Nilai | Nilai Baku | Keterangan      |
 | -------- | ---------- | ---------- | --------------- |
-| name     | string     | _null_     | Nama komponen\* |
+| name     | string     |            | Nama komponen\* |
 | point_id | int        | 0          | Titik ukur      |
 | decimal  | int        | 2          | Jumlah desimal  |
 

@@ -17,7 +17,7 @@ Berikut contoh komponen peta `overlay`:
 | Properti      | Tipe Nilai | Nilai Baku | Keterangan                          |
 | ------------- | ---------- | ---------- | ----------------------------------- |
 | caption       | string     | Overlay    | Keterangan komponen                 |
-| url           | string     | _null_     | URL _tile layer_                    |
+| url           | string     |            | URL _tile layer_                    |
 | subdomains    | string     | abc        | Keterangan komponen                 |
 | min_zoom      | int        | 0          | _Zoom_ minimum                      |
 | max_zoom      | int        | 18         | _Zoom_ maksimum                     |
@@ -31,16 +31,16 @@ Berikut contoh komponen peta `overlay`:
 
 | Properti    | Tipe Nilai | Nilai Baku | Keterangan                    |
 | ----------- | ---------- | ---------- | ----------------------------- |
-| api_key     | string     | _null_     | Nilai parameter _apiKey_      |
-| map_id      | string     | _null_     | Nilai parameter _mapID_       |
-| attribution | string     | _null_     | Nilai parameter _attribution_ |
-| bounds      | string     | _null_     | Nilai parameter _bounds_      |
-| base        | string     | _null_     | Nilai parameter _base_        |
-| variant     | string     | _null_     | Nilai parameter _variant_     |
-| opacity     | string     | _null_     | Nilai parameter _opacity_     |
-| style       | string     | _null_     | Nilai parameter _style_       |
-| type        | string     | _null_     | Nilai parameter _type_        |
-| size        | string     | _null_     | Nilai parameter _size_        |
-| format      | string     | _null_     | Nilai parameter _format_      |
-| ext         | string     | _null_     | Nilai parameter _ext_         |
-| language    | string     | _null_     | Nilai parameter _language_    |
+| api_key     | string     |            | Nilai parameter _apiKey_      |
+| map_id      | string     |            | Nilai parameter _mapID_       |
+| attribution | string     |            | Nilai parameter _attribution_ |
+| bounds      | string     |            | Nilai parameter _bounds_      |
+| base        | string     |            | Nilai parameter _base_        |
+| variant     | string     |            | Nilai parameter _variant_     |
+| opacity     | string     |            | Nilai parameter _opacity_     |
+| style       | string     |            | Nilai parameter _style_       |
+| type        | string     |            | Nilai parameter _type_        |
+| size        | string     |            | Nilai parameter _size_        |
+| format      | string     |            | Nilai parameter _format_      |
+| ext         | string     |            | Nilai parameter _ext_         |
+| language    | string     |            | Nilai parameter _language_    |

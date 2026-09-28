@@ -33,13 +33,13 @@ https://playground.monita.co.id/?component=dial_gauge
 | background_color   | string     | #F0F8FF    | Warna latar              |
 | hand_color         | string     | #FF4500    | Warna jarum              |
 | text_color         | string     | #2F4F4F    | Warna teks               |
-| fill_color_low2    | string     | _null_     | Warna batas bawah 2      |
-| fill_color_low1    | string     | _null_     | Warna batas bawah 1      |
-| fill_color         | string     | _null_     | Warna normal             |
-| fill_color_high1   | string     | _null_     | Warna batas atas 1       |
-| fill_color_high2   | string     | _null_     | Warna batas atas 2       |
+| fill_color_low2    | string     |            | Warna batas bawah 2      |
+| fill_color_low1    | string     |            | Warna batas bawah 1      |
+| fill_color         | string     |            | Warna normal             |
+| fill_color_high1   | string     |            | Warna batas atas 1       |
+| fill_color_high2   | string     |            | Warna batas atas 2       |
 | fill_gradient      | boolean    | _true_     | Gradasi warna batas?     |
 | interval           | float      | 20         | Interval _marker_        |
-| link               | string     | _null_     | Tautan                   |
+| link               | string     |            | Tautan                   |
 | x                  | float      | 0          | Posisi: Koordinat x      |
 | y                  | float      | 0          | Posisi: Koordinat y      |

@@ -60,6 +60,6 @@ https://playground.monita.co.id/?component=raw_svg
 
 | Properti        | Tipe Nilai | Nilai Baku | Pilihan             | Keterangan          |
 | --------------- | ---------- | ---------- | ------------------- | ------------------- |
-| caption         | string     | Text       | _null_              | Keterangan komponen |
-| encoded_content | string     | _null_     | _null_              | _Raw SVG_           |
+| caption         | string     | Text       |                     | Keterangan komponen |
+| encoded_content | string     |            |                     | _Raw SVG_           |
 | z               | enum       | 0          | 0;1;2;3;4;5;6;7;8;9 | Posisi: z-index     |

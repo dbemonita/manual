@@ -28,13 +28,13 @@ https://playground.monita.co.id/?component=bar_gauge
 | width              | float      | 0          | Lebar                        |
 | height             | float      | 0          | Tinggi                       |
 | marker_num         | int        | 10         | Jumlah _marker_              |
-| marker_color_off   | string     | _null_     | Warna _marker_ posisi off    |
+| marker_color_off   | string     |            | Warna _marker_ posisi off    |
 | marker_color_low2  | string     | #2F4F4F    | Warna _marker_ batas bawah 2 |
 | marker_color_low1  | string     | #2F4F4F    | Warna _marker_ batas bawah 1 |
 | marker_color       | string     | #2F4F4F    | Warna _marker_ batas tengah  |
 | marker_color_high1 | string     | #2F4F4F    | Warna _marker_ batas atas 1  |
 | marker_color_high2 | string     | #2F4F4F    | Warna _marker_ batas atas 2  |
-| link               | string     | _null_     | Tautan                       |
+| link               | string     |            | Tautan                       |
 | x                  | float      | 0          | Posisi: Koordinat x          |
 | y                  | float      | 0          | Posisi: Koordinat y          |
 | rotate             | float      | 0          | Derajat putaran              |

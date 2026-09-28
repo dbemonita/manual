@@ -12,6 +12,6 @@ Yang membedakan tag pembuka `<solid_gauge>` memiliki atribut-atribut sebagai ber
 | ---------------- | ---------- | ---------- | ------------------------------- | ----------------------------------------- |
 | data_this        | enum       | hour       | hour; day; month; year          | Rentang waktu data\*                      |
 | summary          | enum       | last       | min; max; sum; avg; first; last | Jenis ringkasan data                      |
-| refresh_interval | int        | 0          | _null_                          | Interval pengambilan data terbaru (menit) |
+| refresh_interval | int        | 0          |                                 | Interval pengambilan data terbaru (menit) |
 
 %[{ _data_this.md }]%

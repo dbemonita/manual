@@ -44,9 +44,9 @@ https://playground.monita.co.id/?component=tile
 | caption      | string     | Tile       | ---                  | Keterangan komponen |
 | width        | float      | 0          | ---                  | Lebar area          |
 | height       | float      | 0          | ---                  | Tinggi area         |
-| image_source | string     | _null_     | ---                  | URL gambar\*        |
+| image_source | string     |            | ---                  | URL gambar\*        |
 | direction    | enum       | horizontal | horizontal, vertical | Arah _loop_         |
-| link         | string     | _null_     | ---                  | Tautan              |
+| link         | string     |            | ---                  | Tautan              |
 | x            | float      | 0          | ---                  | Posisi: Koordinat x |
 | y            | float      | 0          | ---                  | Posisi: Koordinat y |
 | z            | enum       | 0          | 0;1;2;3;4;5;6;7;8;9  | Posisi: z-index     |

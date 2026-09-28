@@ -22,31 +22,31 @@ https://playground.monita.co.id/?component=select
 
 | Properti                | Tipe Nilai | Nilai Baku                   | Pilihan Nilai                  | Keterangan                 |
 | ----------------------- | ---------- | ---------------------------- | ------------------------------ | -------------------------- |
-| caption                 | string     | ActiveText                   | _null_                         | Keterangan komponen        |
-| point_id                | int        | 0                            | _null_                         | Titik ukur                 |
-| register_id             | int        | 0                            | _null_                         | Register pada _hardware_   |
+| caption                 | string     | ActiveText                   |                                | Keterangan komponen        |
+| point_id                | int        | 0                            |                                | Titik ukur                 |
+| register_id             | int        | 0                            |                                | Register pada _hardware_   |
 | select_font             | string     | Arial, Helvetica, sans-serif | [Referensi&rarr;](ref_font.md) | Jenis huruf                |
-| select_size             | float      | 12                           | _null_                         | Ukuran huruf               |
+| select_size             | float      | 12                           |                                | Ukuran huruf               |
 | select_style            | enum       | normal                       | normal; italic                 | Bentuk huruf               |
 | select_weight           | enum       | normal                       | normal; bold                   | Ketebalan huruf            |
-| select_width            | float      | 0                            | _null_                         | Lebar select               |
-| select_height           | float      | 0                            | _null_                         | Tinggi select              |
-| select_color            | string     | DarkSlateGray                | _null_                         | Warna teks normal          |
-| select_background_color | string     | White                        | _null_                         | Warna latar normal         |
-| select_border_width     | float      | 2                            | _null_                         | Ketebalan garis tepi       |
-| select_border_color     | string     | LightGray                    | _null_                         | Warna garis tepi           |
-| select_border_radius    | float      | 0                            | _null_                         | Radius garis tepi          |
-| select_options          | string     | _null_                       | _null_                         | Pilihan pada select \*     |
+| select_width            | float      | 0                            |                                | Lebar select               |
+| select_height           | float      | 0                            |                                | Tinggi select              |
+| select_color            | string     | DarkSlateGray                |                                | Warna teks normal          |
+| select_background_color | string     | White                        |                                | Warna latar normal         |
+| select_border_width     | float      | 2                            |                                | Ketebalan garis tepi       |
+| select_border_color     | string     | LightGray                    |                                | Warna garis tepi           |
+| select_border_radius    | float      | 0                            |                                | Radius garis tepi          |
+| select_options          | string     |                              |                                | Pilihan pada select \*     |
 | select_method           | string     | emit                         | emit; get; post                | Metode kirim data          |
-| select_url              | string     | _null_                       | _null_                         | Target pengiriman data     |
-| select_data             | string     | _null_                       | _null_                         | Data yang dikirim \*\*     |
-| button_width            | float      | 0                            | _null_                         | Lebar tombol               |
-| button_height           | float      | 0                            | _null_                         | Tinggi tombol              |
-| button_image_source     | string     | _null_                       | _null_                         | URL gambar tombol \*\*\*\* |
-| allowed_roles           | string     | 1,2                          | _null_                         | Role user \*\*\*           |
+| select_url              | string     |                              |                                | Target pengiriman data     |
+| select_data             | string     |                              |                                | Data yang dikirim \*\*     |
+| button_width            | float      | 0                            |                                | Lebar tombol               |
+| button_height           | float      | 0                            |                                | Tinggi tombol              |
+| button_image_source     | string     |                              |                                | URL gambar tombol \*\*\*\* |
+| allowed_roles           | string     | 1,2                          |                                | Role user \*\*\*           |
 | direction               | enum       | horizontal                   | horizontal;vertical            | Posisi gambar tombol       |
-| x                       | float      | 0                            | _null_                         | Posisi: Koordinat x        |
-| y                       | float      | 0                            | _null_                         | Posisi: Koordinat y        |
+| x                       | float      | 0                            |                                | Posisi: Koordinat x        |
+| y                       | float      | 0                            |                                | Posisi: Koordinat y        |
 | z                       | enum       | 0                            | 0;1;2;3;4;5;6;7;8;9            | Posisi: z-index            |
 
 #### Catatan

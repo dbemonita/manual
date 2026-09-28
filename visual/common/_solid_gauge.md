@@ -19,7 +19,7 @@ https://playground.monita.co.id/?component=solid_gauge
 | caption          | string     | SolidGauge  | Keterangan komponen |
 | point_id         | int        | 0           | ID titik ukur       |
 | decimal          | int        | 2           | Jumlah desimal      |
-| unit             | string     | _null_      | Satuan              |
+| unit             | string     |             | Satuan              |
 | width            | float      | 0           | Lebar area _gauge_  |
 | color            | string     | White       | Warna teks          |
 | background_color | string     | AliceBlue   | Warna latar         |
