@@ -7,8 +7,8 @@ Komponen ini berfungsi untuk menunjukkan data titik ukur dalam bentuk gambar den
   <caption>Contoh Gambar Indikator 1</caption>
   <point_id>1001</point_id>
   <source>/images/propeller.png</source>
-  <source_0>/images/propeller_off.png</source_0>
-  <source_1>/images/propeller_on.png</source_1>
+  <source_0>/images/propeller.png</source_0>
+  <source_1>/images/propeller.png</source_1>
   <animation>rotate</animation>
   <width>150</width>
   <height>150</height>
@@ -21,7 +21,7 @@ Komponen ini berfungsi untuk menunjukkan data titik ukur dalam bentuk gambar den
 
 https://playground.monita.co.id/?component=indicator_image
 
-![indicator_image](https://hackmd.io/_uploads/HkEr3mlUzg.png)
+![indicator_image](https://manual.monita.co.id/_assets/images/indicator_image.png)
 
 #### Properti selengkapnya:
 

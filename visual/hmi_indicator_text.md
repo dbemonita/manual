@@ -9,6 +9,8 @@ Komponen ini berfungsi untuk menunjukkan data titik ukur dalam bentuk teks _bool
   <content>IDLE</content>
   <content_0>STOP</content_0>
   <content_1>START</content_1>
+  <background_color_0>#f0b100</background_color_0>
+  <background_color_1>#00bc7d</background_color_1>
   <width>150</width>
   <height>75</height>
   <size>28</size>
@@ -29,7 +31,7 @@ Tag pembuka `<indicator_text>` tersebut memiliki atribut-atribut sebagai berikut
 
 https://playground.monita.co.id/?component=indicator_text
 
-![indicator_text](https://hackmd.io/_uploads/B1m0H7xIMe.png)
+![indicator_text](https://manual.monita.co.id/_assets/images/indicator_text.png)
 
 #### Properti selengkapnya:
 

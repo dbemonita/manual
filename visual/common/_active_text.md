@@ -6,6 +6,7 @@
   <height>75</height>
   <size>28</size>
   <border_width>0</border_width>
+  <unit>&#x2103;</unit> <!--°C-->
   <x>100</x>
   <y>100</y>
 </active_text>

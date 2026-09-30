@@ -3,12 +3,14 @@
 Berikut contoh komponen HMI `indicator_rect` (kotak indikator):
 
 ```xml
-<indicator_rect default_background_color="#68957c" default_color="white">
+<indicator_rect default_background_color="#62748e">
   <caption>Contoh Kotak Indikator 1</caption>
   <point_id>1001</point_id>
   <width>150</width>
   <height>75</height>
   <size>28</size>
+  <background_color_0>#f0b100</background_color_0>
+  <background_color_1>#00bc7d</background_color_1>
   <border_width>0</border_width>
   <x>100</x>
   <y>100</y>
