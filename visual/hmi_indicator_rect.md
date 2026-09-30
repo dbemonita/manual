@@ -25,7 +25,7 @@ Tag pembuka `<indicator_rect>` tersebut memiliki atribut berikut:
 
 https://playground.monita.co.id/?component=indicator_rect
 
-![indicator_rect](https://hackmd.io/_uploads/BknmXjYrzx.png)
+![indicator_rect](https://manual.monita.co.id/_assets/images/indicator_rect.png)
 
 #### Properti selengkapnya:
 
