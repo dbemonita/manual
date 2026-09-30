@@ -1,5 +1,5 @@
 ```xml
-<active_text default_background_color="#68957c" default_color="white">
+<active_text default_background_color="#00bc7d" default_color="white">
   <caption>Contoh Teks Aktif 1</caption>
   <point_id>1001</point_id>
   <width>150</width>
