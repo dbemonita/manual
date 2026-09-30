@@ -1,9 +1,9 @@
 ```xml
 <grid>
   <caption>Contoh Grid 1</caption>
-  <width>200</width>
-  <height>100</height>
-  <num_rows>2</num_rows>
+  <width>300</width>
+  <height>300</height>
+  <num_rows>3</num_rows>
   <num_cols>3</num_cols>
   <border_color>white</border_color>
   <border_width>2</border_width>
