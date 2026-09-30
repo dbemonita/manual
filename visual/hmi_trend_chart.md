@@ -19,6 +19,8 @@ Komponen ini tersedia pada versi `>=5.18.0`. Bertujuan untuk menampilkan data tr
 
 https://playground.monita.co.id/?component=trend_chart
 
+![trend_chart](https://manual.monita.co.id/_assets/images/trend_chart.png)
+
 #### Properti selengkapnya:
 
 | Properti            | Tipe Nilai | Nilai Baku                                           | Pilihan Nilai                  | Keterangan                      |
