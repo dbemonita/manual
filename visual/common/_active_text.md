@@ -22,7 +22,7 @@ Tag pembuka `<active_text>` tersebut memiliki atribut-atribut sebagai berikut:
 
 https://playground.monita.co.id/?component=active_text
 
-![active_text](https://hackmd.io/_uploads/r1XRhcYHfg.png)
+![active_text](https://manual.monita.co.id/_assets/images/active_text.png)
 
 #### Properti selengkapnya:
 

@@ -8,7 +8,7 @@ Komponen ini tersedia pada versi `>=5.18.0`. Bertujuan untuk menampilkan data tr
   <point_id>1001</point_id>
   <type>line-area</type>
   <title>Trend Chart 1</title>
-  <width>400</width>
+  <width>450</width>
   <height>200</height>
   <x>50</x>
   <y>50</y>
