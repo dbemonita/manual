@@ -45,6 +45,7 @@
         - [_Solid Gauge_](hmi_solid_gauge.md)
         - [_Liquid Level_](hmi_liquid_level.md)
         - [VU Meter](hmi_vu_meter.md)
+        - [Kompas](hmi_compass.md)
         - [Grafik Aktif](hmi_active_chart.md)
         - [Grafik Trend](hmi_trend_chart.md)
         - [Termometer](hmi_thermo_meter.md)
