@@ -16,7 +16,7 @@ Berikut contoh komponen HMI `vu_meter`:
 
 https://playground.monita.co.id/?component=vu_meter
 
-![vu_meter](https://hackmd.io/_uploads/ryrjjx_Uzg.png)
+![vu_meter](https://manual.monita.co.id/_assets/images/vu_meter.png)
 
 #### Properti selengkapnya:
 
