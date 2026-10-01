@@ -18,6 +18,10 @@ https://playground.monita.co.id/?component=vu_meter
 
 ![vu_meter](https://manual.monita.co.id/_assets/images/vu_meter.png)
 
-#### Properti selengkapnya:
-
-> WIP
+| Properti | Tipe Nilai | Nilai Baku | Pilihan Nilai | Keterangan          |
+| -------- | ---------- | ---------- | ------------- | ------------------- |
+| caption  | string     | ActiveText |               | Keterangan komponen |
+| point_id | int        | 0          |               | Titik ukur          |
+| decimal  | int        | 2          |               | Jumlah desimal      |
+| unit     | string     |            |               | Satuan              |
+| width    | float      | 0          |               | Lebar kotak teks    |
