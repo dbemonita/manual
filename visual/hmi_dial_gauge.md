@@ -4,13 +4,9 @@ Berikut contoh komponen HMI `dial_gauge`:
 
 ```xml
 <dial_gauge>
-  <caption>Gauge 1</caption>
+  <caption>Dial Gauge 1</caption>
   <point_id>1001</point_id>
   <diameter>150</diameter>
-  <fill_color_low2>#f73531</fill_color_low2>
-  <fill_color_low1>#f76800</fill_color_low1>
-  <fill_color_high1>#f6bb00</fill_color_high1>
-  <fill_color_high2>#67bf39</fill_color_high2>
   <x>100</x>
   <y>100</y>
 </dial_gauge>
