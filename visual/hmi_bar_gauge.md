@@ -17,7 +17,7 @@ Berikut contoh komponen HMI `bar_gauge`:
 
 https://playground.monita.co.id/?component=bar_gauge
 
-![bar_gauge](https://hackmd.io/_uploads/ryfZ-VeLzg.png)
+![bar_gauge](https://manual.monita.co.id/_assets/images/bar_gauge.png)
 
 #### Properti selengkapnya:
 
@@ -29,12 +29,11 @@ https://playground.monita.co.id/?component=bar_gauge
 | height             | float      | 0          | Tinggi                       |
 | marker_num         | int        | 10         | Jumlah _marker_              |
 | marker_color_off   | string     |            | Warna _marker_ posisi off    |
-| marker_color_low2  | string     | #2F4F4F    | Warna _marker_ batas bawah 2 |
-| marker_color_low1  | string     | #2F4F4F    | Warna _marker_ batas bawah 1 |
-| marker_color       | string     | #2F4F4F    | Warna _marker_ batas tengah  |
-| marker_color_high1 | string     | #2F4F4F    | Warna _marker_ batas atas 1  |
-| marker_color_high2 | string     | #2F4F4F    | Warna _marker_ batas atas 2  |
+| marker_color_low2  | string     | #ef4444    | Warna _marker_ batas bawah 2 |
+| marker_color_low1  | string     | #f97316    | Warna _marker_ batas bawah 1 |
+| marker_color       | string     | #eab308    | Warna _marker_ batas tengah  |
+| marker_color_high1 | string     | #84cc16    | Warna _marker_ batas atas 1  |
+| marker_color_high2 | string     | #22c55e    | Warna _marker_ batas atas 2  |
 | link               | string     |            | Tautan                       |
 | x                  | float      | 0          | Posisi: Koordinat x          |
 | y                  | float      | 0          | Posisi: Koordinat y          |
-| rotate             | float      | 0          | Derajat putaran              |
