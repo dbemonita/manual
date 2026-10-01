@@ -14,7 +14,7 @@
 
 https://playground.monita.co.id/?component=thermometer
 
-![thermometer](https://hackmd.io/_uploads/HJSpixuUGe.png)
+![thermometer](https://manual.monita.co.id/_assets/images/thermometer.png)
 
 #### Properti selengkapnya:
 
