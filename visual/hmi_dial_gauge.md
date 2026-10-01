@@ -20,7 +20,7 @@ Berikut contoh komponen HMI `dial_gauge`:
 
 https://playground.monita.co.id/?component=dial_gauge
 
-![dial_gauge](https://hackmd.io/_uploads/HJGDigOIze.png)
+![dial_gauge](https://manual.monita.co.id/_assets/images/dial_gauge.png)
 
 #### Properti selengkapnya:
 
