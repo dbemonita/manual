@@ -18,6 +18,8 @@
 
 https://playground.monita.co.id/?component=select
 
+![select](https://manual.monita.co.id/_assets/images/select.png)
+
 #### Properti selengkapnya:
 
 | Properti                | Tipe Nilai | Nilai Baku                   | Pilihan Nilai                  | Keterangan                 |
