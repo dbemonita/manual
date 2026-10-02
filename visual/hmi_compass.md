@@ -23,5 +23,4 @@ https://playground.monita.co.id/?component=vu_meter
 | caption  | string     | ActiveText |               | Keterangan komponen |
 | point_id | int        | 0          |               | Titik ukur          |
 | decimal  | int        | 2          |               | Jumlah desimal      |
-| unit     | string     |            |               | Satuan              |
 | diameter | float      | 0          |               | Diameter kompas     |
