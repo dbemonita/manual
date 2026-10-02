@@ -28,7 +28,7 @@ https://playground.monita.co.id/?component=trend_chart
 | caption             | string     | TrendChart                                           |                                | Keterangan komponen             |
 | point_id            | int        | 0                                                    |                                | ID titik ukur                   |
 | type                | string     | line-area                                            | line; line-area; bar; bar-line | Jenis grafik                    |
-| color               | string     | DodgerBlue                                           |                                | Warna line/bar grafik           |
+| color               | string     | RoyalBlue                                            |                                | Warna line/bar grafik           |
 | grid_color          | string     | LightSlateGray                                       |                                | Warna grid                      |
 | background_color    | string     | White                                                |                                | Warna latar area                |
 | background_gradient | string     |                                                      |                                | Warna latar _gradient_ \*       |
