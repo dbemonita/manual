@@ -13,6 +13,8 @@
 
 https://playground.monita.co.id/?component=solid_gauge
 
+![solid_gauge](https://manual.monita.co.id/_assets/images/solid_gauge.png)
+
 #### Properti selengkapnya:
 
 | Properti         | Tipe Nilai | Nilai Baku  | Keterangan          |
