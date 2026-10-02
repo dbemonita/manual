@@ -5,9 +5,9 @@
   <register_id>100</register_id>
   <width>100</width>
   <height>50</height>
-  <source>/images/button_iddle.png</source>
-  <source_0>/images/button_off.png</source_0>
-  <source_1>/images/button_on.png</source_1>
+  <image_source>/images/button_iddle.png</image_source>
+  <image_>/images/button_off.png</image_source_0>
+  <image_source_1>/images/button_on.png</image_source_1>
   <x>100</x>
   <y>100</y>
 </toggle>
@@ -19,20 +19,20 @@ https://playground.monita.co.id/?component=toggle
 
 #### Properti selengkapnya:
 
-| Properti      | Tipe Nilai | Nilai Baku | Pilihan Nilai       | Keterangan               |
-| ------------- | ---------- | ---------- | ------------------- | ------------------------ |
-| caption       | string     | ActiveText |                     | Keterangan komponen      |
-| point_id      | int        | 0          |                     | Titik ukur               |
-| register_id   | int        | 0          |                     | Register pada _hardware_ |
-| width         | float      | 0          |                     | Lebar                    |
-| height        | float      | 0          |                     | Tinggi                   |
-| source        | string     |            |                     | URL gambar idle \*\*     |
-| source_0      | string     |            |                     | URL gambar off \*\*      |
-| source_1      | string     |            |                     | URL gambar on \*\*       |
-| allowed_roles | string     | 1,2        |                     | Role user \*             |
-| x             | float      | 0          |                     | Posisi: Koordinat x      |
-| y             | float      | 0          |                     | Posisi: Koordinat y      |
-| z             | enum       | 0          | 0;1;2;3;4;5;6;7;8;9 | Posisi: z-index          |
+| Properti       | Tipe Nilai | Nilai Baku | Pilihan Nilai       | Keterangan               |
+| -------------- | ---------- | ---------- | ------------------- | ------------------------ |
+| caption        | string     | ActiveText |                     | Keterangan komponen      |
+| point_id       | int        | 0          |                     | Titik ukur               |
+| register_id    | int        | 0          |                     | Register pada _hardware_ |
+| width          | float      | 0          |                     | Lebar                    |
+| height         | float      | 0          |                     | Tinggi                   |
+| image_source   | string     |            |                     | URL gambar idle \*\*     |
+| image_source_0 | string     |            |                     | URL gambar off \*\*      |
+| image_source_1 | string     |            |                     | URL gambar on \*\*       |
+| allowed_roles  | string     | 1,2        |                     | Role user \*             |
+| x              | float      | 0          |                     | Posisi: Koordinat x      |
+| y              | float      | 0          |                     | Posisi: Koordinat y      |
+| z              | enum       | 0          | 0;1;2;3;4;5;6;7;8;9 | Posisi: z-index          |
 
 #### Catatan
 
