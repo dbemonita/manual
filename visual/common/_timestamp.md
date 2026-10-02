@@ -49,7 +49,6 @@ https://playground.monita.co.id/?component=timestamp
 | x                   | float      | 0                            |                                  | Posisi: Koordinat x         |
 | y                   | float      | 0                            |                                  | Posisi: Koordinat y         |
 | z                   | enum       | 0                            | 0;1;2;3;4;5;6;7;8;9              | Posisi: z-index             |
-| rotate              | float      | 0                            |                                  | Derajat putaran             |
 
 - \*) Tersedia pada versi >= 5.18.0. Gunakan opsi "lastdata" untuk menampilkan waktu pengiriman terbaru.
 - \*\*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
