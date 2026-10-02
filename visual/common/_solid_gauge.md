@@ -3,6 +3,7 @@
   <caption>Gauge 1</caption>
   <point_id>1001</point_id>
   <width>300</width>
+  <unit>&#x2103;</unit> <!--°C-->
   <x>100</x>
   <y>100</y>
 </solid_gauge>
@@ -30,6 +31,5 @@ https://playground.monita.co.id/?component=solid_gauge
 | fill_color_high1 | string     | DeepSkyBlue | Warna batas atas 1  |
 | fill_color_high2 | string     | DeepSkyBlue | Warna batas atas 2  |
 | value_visible    | boolean    | true        | Tampilkan nilai?    |
-| unit_visible     | boolean    | true        | Tampilkan satuan?   |
 | x                | float      | 0           | Posisi: Koordinat x |
 | y                | float      | 0           | Posisi: Koordinat y |

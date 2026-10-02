@@ -8,7 +8,7 @@
   <button_width>70</button_width>
   <button_height>35</button_height>
   <select_options>1,2,3</select_options>
-  <button_image_source>/images/submit_on.png</button_image_source>
+  <button_image_source>/images/button_ok.png</button_image_source>
   <x>100</x>
   <y>100</y>
 </select>
