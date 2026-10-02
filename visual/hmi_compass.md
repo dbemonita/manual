@@ -14,9 +14,9 @@ Berikut contoh komponen HMI `compass` (kompas):
 
 #### Contoh:
 
-https://playground.monita.co.id/?component=vu_meter
+https://playground.monita.co.id/?component=compass
 
-![vu_meter](https://manual.monita.co.id/_assets/images/vu_meter.png)
+![compass](https://manual.monita.co.id/_assets/images/compass.png)
 
 | Properti | Tipe Nilai | Nilai Baku | Pilihan Nilai | Keterangan          |
 | -------- | ---------- | ---------- | ------------- | ------------------- |
