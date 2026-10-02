@@ -5,10 +5,10 @@
   <caption>Grafik Aktif 1</caption>
   <point_id1>1001</point_id1>
   <line_color1>RoyalBlue</line_color1>
-  <width>1250</width>
-  <height>340</height>
-  <x>50</x>
-  <y>0</y>
+  <width>400</width>
+  <height>200</height>
+  <x>100</x>
+  <y>100</y>
 </active_chart>
 ```
 
