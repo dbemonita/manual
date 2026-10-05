@@ -17,6 +17,8 @@
 
 https://playground.monita.co.id/?component=toggle
 
+![toggle](https://manual.monita.co.id/_assets/images/toggle.png)
+
 #### Properti selengkapnya:
 
 | Properti       | Tipe Nilai | Nilai Baku | Pilihan Nilai       | Keterangan               |
