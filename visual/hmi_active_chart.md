@@ -5,7 +5,7 @@
   <caption>Grafik Aktif 1</caption>
   <point_id1>1001</point_id1>
   <line_color1>RoyalBlue</line_color1>
-  <width>400</width>
+  <width>500</width>
   <height>200</height>
   <x>100</x>
   <y>100</y>
