@@ -6,7 +6,7 @@ Berikut contoh komponen HMI `dial_gauge`:
 <dial_gauge>
   <caption>Dial Gauge 1</caption>
   <point_id>1001</point_id>
-  <diameter>150</diameter>
+  <diameter>200</diameter>
   <x>100</x>
   <y>100</y>
 </dial_gauge>

@@ -5,9 +5,9 @@
   <register_id>100</register_id>
   <width>100</width>
   <height>50</height>
-  <image_source>/images/button_iddle.png</image_source>
-  <image_>/images/button_off.png</image_source_0>
-  <image_source_1>/images/button_on.png</image_source_1>
+  <image_source>/images/toggle_idle.png</image_source>
+  <image_source_0>/images/toggle_off.png</image_source_0>
+  <image_source_1>/images/toggle_on.png</image_source_1>
   <x>100</x>
   <y>100</y>
 </toggle>

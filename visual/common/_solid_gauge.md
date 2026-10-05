@@ -1,6 +1,6 @@
 ```xml
 <solid_gauge>
-  <caption>Gauge 1</caption>
+  <caption>Solid Gauge 1</caption>
   <point_id>1001</point_id>
   <width>300</width>
   <unit>&#x2103;</unit> <!--°C-->

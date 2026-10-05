@@ -4,7 +4,7 @@ Berikut contoh komponen HMI `compass` (kompas):
 
 ```xml
 <compass>
-  <caption>Contoh Compass 1</caption>
+  <caption>Contoh Kompas 1</caption>
   <point_id>1001</point_id>
   <diameter>200</diameter>
   <x>100</x>

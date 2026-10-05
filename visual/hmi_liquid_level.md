@@ -4,8 +4,9 @@
 <liquid_level>
   <caption>Contoh Liquid Level 1</caption>
   <point_id>1001</point_id>
-  <width>300</width>
-  <height>300</height>
+  <width>150</width>
+  <height>200</height>
+  <interval>20</interval>
   <label_width>50</label_width>
   <label_height>25</label_height>
   <x>100</x>

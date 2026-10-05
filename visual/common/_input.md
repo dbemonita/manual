@@ -3,11 +3,11 @@
   <caption>Contoh Input 1</caption>
   <point_id>1001</point_id>
   <register_id>100</register_id>
-  <input_width>100</input_width>
-  <input_height>50</input_height>
+  <input_width>90</input_width>
+  <input_height>40</input_height>
   <button_width>100</button_width>
   <button_height>50</button_height>
-  <button_image_source>/images/button.png</button_image_source>
+  <button_image_source>/images/button_ok.png</button_image_source>
   <x>100</x>
   <y>100</y>
 </input>

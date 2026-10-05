@@ -3,10 +3,10 @@
   <caption>Contoh select 1</caption>
   <point_id>1001</point_id>
   <register_id>100</register_id>
-  <select_width>70</select_width>
-  <select_height>35</select_height>
-  <button_width>70</button_width>
-  <button_height>35</button_height>
+  <select_width>90</select_width>
+  <select_height>40</select_height>
+  <button_width>100</button_width>
+  <button_height>50</button_height>
   <select_options>1,2,3</select_options>
   <button_image_source>/images/button_ok.png</button_image_source>
   <x>100</x>
