@@ -2,6 +2,13 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.18.0 (2026-10-05)
+
+- Menambah komponen `trend_chart`.
+- Menambah properti `override_by` pada komponen `timestamp`.
+- Restore fitur `data_reprocess` dan `closing_process` (dihapus pada v5.8.0).
+- Tambah checkbox remember host pada form login.
+
 ### 5.17.4 (2026-09-10)
 
 - Menambah datetime picker pada halaman custom.

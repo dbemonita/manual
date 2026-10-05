@@ -2,6 +2,12 @@
 
 Informasi perubahan aplikasi [Admin Monita](https://beta.monita.co.id/admin/).
 
+### 1.13.0 (2026-10-05)
+
+- Update visualizer ke versi 1.0.0.
+- Tambah checkbox remember host pada form login.
+- Perbaikan tipe visual berdasarkan data sockelat.
+
 ### 1.12.0 (2026-07-07)
 
 - Logo dinamis mengikuti subdomain.
