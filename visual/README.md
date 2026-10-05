@@ -115,6 +115,110 @@ atau, `./update <versi>`, contoh:
 
 Pastikan sudah terpasang `unzip` pada server, dengan cara `sudo apt install unzip`.
 
+### Deployment
+
+##### DENGAN PROXY
+
+Pastikan untuk mengaktifkan modul `proxy` dan `proxy_http`:
+
+```bash
+a2enmod proxy
+a2enmod proxy_http
+```
+
+_Asumsi proxy ke IP lokal dengan port 8000._
+
+Berikut contoh konfigurasi untuk Apache:
+
+```
+<VirtualHost *:80>
+    ServerName demo.monita.co.id
+
+    ProxyPreserveHost On
+    ProxyPass        / http://192.168.1.100:8000/
+    ProxyPassReverse / http://192.168.1.100:8000/
+
+    ErrorLog ${APACHE_LOG_DIR}/proxy-error.log
+    CustomLog ${APACHE_LOG_DIR}/proxy-access.log combined
+</VirtualHost>
+```
+
+Berikut contoh konfigurasi untuk Nginx:
+
+```
+server {
+    listen 80;
+    server_name demo.monita.co.id;
+
+    location / {
+        proxy_pass http://172.16.50.14:8000/;
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+##### TANPA PROXY
+
+_Asumsi aplikasi berada di `/var/www/vismon`_.
+
+Berikut contoh konfigurasi untuk Apache:
+
+Terlebih dahulu pastikan modul `rewrite` aktif dengan cara `a2enmod rewrite`.
+
+```
+<VirtualHost *:80>
+    ServerName example.com
+    DocumentRoot /var/www/vismon
+
+    <Directory /var/www/vismon>
+        Options FollowSymLinks
+        AllowOverride None
+        Require all granted
+
+        RewriteEngine On
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^ /index.html [L]
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/vismon-error.log
+    CustomLog ${APACHE_LOG_DIR}/vismon-access.log combined
+</VirtualHost>
+```
+
+Berikut contoh konfigurasi untuk Nginx:
+
+```
+server {
+    listen 80;
+    server_name example.com;
+
+    root /var/www/vismon;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
+```
+
+Bila aplikasi tidak berada di dalam direktori `/var/www`, misalnya berada di `/home/user/apps/vismon`, pastikan permissions direktori dan file telah dikonfigurasi dengan benar.
+
+- Pastikan direktori induk (`/home`, `/home/user`, dan `/home/user/apps`) memiliki permission `755`.
+- Pastikan direktori aplikasi beserta seluruh subdirektorinya memiliki permission `755`.
+- Pastikan seluruh file aplikasi memiliki permission `644`.
+
+Gunakan perintah berikut untuk mengatur permission direktori dan file aplikasi:
+
+```bash
+find /home/user/apps/vismon -type d -exec chmod 755 {} \;
+find /home/user/apps/vismon -type f -exec chmod 644 {} \;
+```
+
 ### Android App
 
 Aplikasi versi Android dapat diunduh melalui [Google Play](https://play.google.com/store/apps/details?id=id.co.monita.visual).
