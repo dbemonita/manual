@@ -2,6 +2,10 @@
 
 Informasi perubahan aplikasi [Admin Monita](https://beta.monita.co.id/admin/).
 
+### 1.14.0 (2026-10-06)
+
+- Update visualizer ke versi 1.1.0.
+
 ### 1.13.0 (2026-10-05)
 
 - Update visualizer ke versi 1.0.0.
