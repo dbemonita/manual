@@ -2,6 +2,10 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.19.0 (2026-10-06)
+
+- Update visualizer ke versi 1.1.0.
+
 ### 5.18.0 (2026-10-05)
 
 - Menambah komponen `trend_chart`.
