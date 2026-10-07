@@ -95,91 +95,134 @@ Pastikan sudah terpasang `unzip` pada server, dengan cara `sudo apt install unzi
 
 ### Deployment Tanpa Sub-domain
 
-Konfigurasi ini ditujukan untuk deploy tanpa domain/sub-domain. Contoh: `https://example.com/admin/` atau `https://example.com/manage/`.
+Konfigurasi ini ditujukan untuk deploy tanpa domain/sub-domain. Contoh: `http://demo.monita.co.id/admin/` atau `http://demo.monita.co.id/manage/`.
 
 ##### DENGAN PROXY
 
-_Asumsi proxy ke IP lokal dengan port 3000._
+Pastikan untuk mengaktifkan modul `proxy` dan `proxy_http`:
 
-Berikut contoh konfigurasi untuk Apache 2:
+```bash
+a2enmod proxy
+a2enmod proxy_http
+systemctl restart apache2
+```
+
+_Asumsi proxy ke IP lokal dengan port 8000._
+
+Berikut contoh konfigurasi untuk Apache:
 
 ```
-ProxyPass /admin http://172.16.50.14:3000
-ProxyPassReverse /admin http://172.16.50.14:3000
+<VirtualHost *:80>
+    ServerName demo.monita.co.id
 
-ProxyPass /_admin http://172.16.50.14:3000/_admin
-ProxyPassReverse /_admin http://172.16.50.14:3000/_admin
+    ProxyPreserveHost On
+    ProxyPass        / http://192.168.1.100:8000/
+    ProxyPassReverse / http://192.168.1.100:8000/
+
+    ProxyPass /admin http://172.16.50.14:8000
+    ProxyPassReverse /admin http://172.16.50.14:8000
+
+    ProxyPass /_admin http://172.16.50.14:8000/_admin
+    ProxyPassReverse /_admin http://172.16.50.14:8000/_admin
+
+    ErrorLog ${APACHE_LOG_DIR}/proxy-error.log
+    CustomLog ${APACHE_LOG_DIR}/proxy-access.log combined
+</VirtualHost>
 ```
 
 Berikut contoh konfigurasi untuk Nginx:
 
 ```
-location /admin/ {
-    proxy_pass http://172.16.50.14:3000/;
+server {
+    listen 80;
+    server_name demo.monita.co.id;
 
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_set_header X-Forwarded-Proto $scheme;
-}
+    location / {
+        proxy_pass http://172.16.50.14:8000/;
 
-location /_admin/ {
-    proxy_pass http://172.16.50.14:3000/_admin/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
 
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_set_header X-Forwarded-Proto $scheme;
+    location /admin/ {
+        proxy_pass http://172.16.50.14:3000/;
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /_admin/ {
+        proxy_pass http://172.16.50.14:3000/_admin/;
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
 }
 ```
 
 ##### TANPA PROXY
 
-_Asumsi aplikasi berada di /var/www/_
+_Asumsi aplikasi berada di `/var/www/admin`._
 
 Berikut contoh konfigurasi untuk Apache 2:
 
 Terlebih dahulu pastikan modul `rewrite` aktif dengan cara `a2enmod rewrite`.
 
 ```
-Alias /admin /var/www/admin
-Alias /_admin /var/www/admin/_admin
+<VirtualHost *:80>
+    ServerName beta.monita.com
+    DocumentRoot /var/www/vismon
 
-<Directory /var/www/admin>
-    Options FollowSymLinks
-    AllowOverride None
-    Require all granted
+    Alias /admin /var/www/admin
+    Alias /_admin /var/www/admin/_admin
 
-    RewriteEngine On
-    RewriteBase /admin/
+    <Directory /var/www/admin>
+        Options FollowSymLinks
+        AllowOverride None
+        Require all granted
 
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^ index.html [L]
-</Directory>
+        RewriteEngine On
+        RewriteBase /admin/
 
-<Directory /var/www/admin/_admin>
-    Options FollowSymLinks
-    AllowOverride None
-    Require all granted
-</Directory>
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^ index.html [L]
+    </Directory>
+
+    <Directory /var/www/admin/_admin>
+        Options FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+</VirtualHost>
 ```
 
 Berikut contoh konfigurasi untuk Nginx:
 
 ```
-location /admin/ {
-    alias /var/www/admin/;
+server {
+    listen 80;
+    server_name demo.monita.co.id;
 
-    try_files $uri $uri/ /admin/index.html;
-}
+    location /admin/ {
+        alias /var/www/admin/;
 
-location /_admin/ {
-    alias /var/www/admin/_admin/;
+        try_files $uri $uri/ /admin/index.html;
+    }
 
-    access_log off;
-    expires 1y;
-    add_header Cache-Control "public, immutable";
+    location /_admin/ {
+        alias /var/www/admin/_admin/;
+
+        access_log off;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
 }
 ```
 

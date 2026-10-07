@@ -1,6 +1,6 @@
 # Grafik Trend
 
-Komponen ini tersedia pada versi `>=5.18.0`. Bertujuan untuk menampilkan data tren 24 jam terakhir. Misal saat ini pukul 11.15, maka tren akan menunjukkan pukul pukul 11 kemarin hingga pukul 10 hari ini yang berasal dari akuisisi data dari pukul 11.00.00 kemarin hingga pukul 10.59.59 hari ini. Berikut contoh penggunaan komponen HMI `trend_chart`:
+Komponen ini tersedia pada versi `>=5.18.0`. Bertujuan untuk menampilkan data rata-rata tiap jam, selama 24 jam terakhir. Misal saat ini pukul 11.15, maka tren akan menunjukkan data rata-rata tiap jam pukul 11 kemarin hingga pukul 10 hari ini yang berasal dari akuisisi data dari pukul 11.00.00 kemarin hingga pukul 10.59.59 hari ini. Berikut contoh penggunaan komponen HMI `trend_chart`:
 
 ```xml
 <trend_chart>

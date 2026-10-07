@@ -80,6 +80,7 @@ Komponen **series** _mandatory_. Memiliki properti:
 - `y_axis_ref`: kode referensi `y_axis` yang akan direlasikan ke salah satu `y axis`; default _null_
 - `color`: warna garis grafik; default _null_
 - `data_label`: tampilkan label data?; default _false_
+- `data_type`: `first` (default), `last`, `sum`, `min`, `max`, `avg`
 - `formula`: formula; [Referensi&rarr;](ref_formula.md)
 - `calc`: kalkulator; [Referensi&rarr;](ref_calc.md)
 - `decimal`: jumlah angka di belakang tanda koma ("."); default 2

@@ -124,6 +124,7 @@ Pastikan untuk mengaktifkan modul `proxy` dan `proxy_http`:
 ```bash
 a2enmod proxy
 a2enmod proxy_http
+systemctl restart apache2
 ```
 
 _Asumsi proxy ke IP lokal dengan port 8000._
@@ -163,15 +164,22 @@ server {
 
 ##### TANPA PROXY
 
-_Asumsi aplikasi berada di `/var/www/vismon`_.
+_Asumsi aplikasi berada di `/var/www/vismon`._
 
 Berikut contoh konfigurasi untuk Apache:
 
-Terlebih dahulu pastikan modul `rewrite` aktif dengan cara `a2enmod rewrite`.
+Terlebih dahulu pastikan modul `rewrite` aktif dengan cara:
+
+```bash
+a2enmod rewrite
+systemctl restart apache2
+```
+
+Lalu, buat konfigurasi:
 
 ```
 <VirtualHost *:80>
-    ServerName example.com
+    ServerName demo.monita.co.id
     DocumentRoot /var/www/vismon
 
     <Directory /var/www/vismon>
@@ -195,7 +203,7 @@ Berikut contoh konfigurasi untuk Nginx:
 ```
 server {
     listen 80;
-    server_name example.com;
+    server_name demo.monita.co.id;
 
     root /var/www/vismon;
     index index.html;
@@ -206,7 +214,7 @@ server {
 }
 ```
 
-Bila aplikasi tidak berada di dalam direktori `/var/www`, misalnya berada di `/home/user/apps/vismon`, pastikan permissions direktori dan file telah dikonfigurasi dengan benar.
+Bila aplikasi tidak berada di dalam direktori `/var/www/`, misalnya berada di `/home/user/apps/vismon`, pastikan permissions direktori dan file telah dikonfigurasi dengan benar.
 
 - Pastikan direktori induk (`/home`, `/home/user`, dan `/home/user/apps`) memiliki permission `755`.
 - Pastikan direktori aplikasi beserta seluruh subdirektorinya memiliki permission `755`.
