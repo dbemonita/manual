@@ -27,34 +27,39 @@ https://playground.monita.co.id/?component=active_text
 
 #### Properti selengkapnya:
 
-| Properti               | Tipe Nilai | Nilai Baku                   | Pilihan Nilai                  | Keterangan                |
-| ---------------------- | ---------- | ---------------------------- | ------------------------------ | ------------------------- |
-| caption                | string     | ActiveText                   |                                | Keterangan komponen       |
-| point_id               | int        | 0                            |                                | Titik ukur                |
-| calc                   | string     |                              |                                | Kode operasi/kalkulasi\*  |
-| decimal                | int        | 2                            |                                | Jumlah desimal            |
-| unit                   | string     |                              |                                | Satuan                    |
-| font                   | string     | Arial, Helvetica, sans-serif | [Referensi&rarr;](ref_font.md) | Jenis huruf               |
-| size                   | float      | 12                           |                                | Ukuran huruf              |
-| style                  | enum       | normal                       | normal; italic                 | Bentuk huruf              |
-| weight                 | enum       | normal                       | normal; bold                   | Ketebalan huruf           |
-| width                  | float      | 0                            |                                | Lebar kotak teks          |
-| height                 | float      | 0                            |                                | Tinggi kotak teks         |
-| color_low2             | string     | LightBlue                    |                                | Warna teks batas bawah 2  |
-| color_low1             | string     | LightBlue                    |                                | Warna teks batas bawah 1  |
-| color                  | string     | LightBlue                    |                                | Warna teks normal         |
-| color_high1            | string     | LightBlue                    |                                | Warna teks batas atas 1   |
-| color_high2            | string     | LightBlue                    |                                | Warna teks batas atas 2   |
-| background_color_low2  | string     | DarkSlateGray                |                                | Warna latar batas bawah 2 |
-| background_color_low1  | string     | DarkSlateGray                |                                | Warna latar batas bawah 1 |
-| background_color       | string     | DarkSlateGray                |                                | Warna latar normal        |
-| background_color_high1 | string     | DarkSlateGray                |                                | Warna latar batas atas 1  |
-| background_color_high2 | string     | DarkSlateGray                |                                | Warna latar batas atas 2  |
-| border_width           | float      | 2                            |                                | Ketebalan garis tepi      |
-| border_color           | string     |                              |                                | Warna garis tepi          |
-| border_radius          | float      | 0                            |                                | Radius garis tepi         |
-| anchor                 | enum       | middle                       | start; middle; end             | Rata kiri/tengah/kanan    |
-| link                   | string     |                              |                                | Tautan                    |
-| x                      | float      | 0                            |                                | Posisi: Koordinat x       |
-| y                      | float      | 0                            |                                | Posisi: Koordinat y       |
-| rotate                 | float      | 0                            |                                | Derajat putaran           |
+| Properti               | Tipe Nilai | Nilai Baku                   | Pilihan Nilai                  | Keterangan                 |
+| ---------------------- | ---------- | ---------------------------- | ------------------------------ | -------------------------- |
+| caption                | string     | ActiveText                   |                                | Keterangan komponen        |
+| point_id               | int        | 0                            |                                | Titik ukur                 |
+| calc                   | string     |                              |                                | Kode operasi/kalkulasi\*\* |
+| decimal                | int        | 2                            |                                | Jumlah desimal             |
+| unit                   | string     |                              |                                | Satuan                     |
+| font                   | string     | Arial, Helvetica, sans-serif | [Referensi&rarr;](ref_font.md) | Jenis huruf                |
+| size                   | float      | 12                           |                                | Ukuran huruf               |
+| style                  | enum       | normal                       | normal; italic                 | Bentuk huruf               |
+| weight                 | enum       | normal                       | normal; bold                   | Ketebalan huruf            |
+| width                  | float      | 0                            |                                | Lebar kotak teks           |
+| height                 | float      | 0                            |                                | Tinggi kotak teks          |
+| datetime_format        | string     |                              |                                | Tampilkan sebagai waktu\*  |
+| datetime_locale        | string     | id                           |                                | Format locale waktu\*      |
+| color_low2             | string     | LightBlue                    |                                | Warna teks batas bawah 2   |
+| color_low1             | string     | LightBlue                    |                                | Warna teks batas bawah 1   |
+| color                  | string     | LightBlue                    |                                | Warna teks normal          |
+| color_high1            | string     | LightBlue                    |                                | Warna teks batas atas 1    |
+| color_high2            | string     | LightBlue                    |                                | Warna teks batas atas 2    |
+| background_color_low2  | string     | DarkSlateGray                |                                | Warna latar batas bawah 2  |
+| background_color_low1  | string     | DarkSlateGray                |                                | Warna latar batas bawah 1  |
+| background_color       | string     | DarkSlateGray                |                                | Warna latar normal         |
+| background_color_high1 | string     | DarkSlateGray                |                                | Warna latar batas atas 1   |
+| background_color_high2 | string     | DarkSlateGray                |                                | Warna latar batas atas 2   |
+| border_width           | float      | 2                            |                                | Ketebalan garis tepi       |
+| border_color           | string     |                              |                                | Warna garis tepi           |
+| border_radius          | float      | 0                            |                                | Radius garis tepi          |
+| anchor                 | enum       | middle                       | start; middle; end             | Rata kiri/tengah/kanan     |
+| link                   | string     |                              |                                | Tautan                     |
+| x                      | float      | 0                            |                                | Posisi: Koordinat x        |
+| y                      | float      | 0                            |                                | Posisi: Koordinat y        |
+| rotate                 | float      | 0                            |                                | Derajat putaran            |
+
+- \*) Tersedia pada versi >= 5.19.0. Digunakan bila data adalah _epoch seconds_.
+- \*\*) Lihat [Referensi Calc](ref_calc.md)
