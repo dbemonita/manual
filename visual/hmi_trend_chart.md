@@ -1,6 +1,6 @@
 # Grafik Trend
 
-Komponen ini tersedia pada versi `>=5.18.0`. Bertujuan untuk menampilkan data rata-rata tiap jam, selama 24 jam terakhir. Misal saat ini pukul 11.15, maka tren akan menunjukkan data rata-rata tiap jam pukul 11 kemarin hingga pukul 10 hari ini yang berasal dari akuisisi data dari pukul 11.00.00 kemarin hingga pukul 10.59.59 hari ini. Berikut contoh penggunaan komponen HMI `trend_chart`:
+Komponen ini tersedia pada versi `>=5.18.0`. Bertujuan untuk menampilkan data rata-rata (`data_type = avg`) atau data awal waktu (`data_type = first`) tiap jam selama 24 jam terakhir. Misal saat ini pukul 11.15, maka tren akan menunjukkan data tiap jam pukul 11 kemarin hingga pukul 10 hari ini yang berasal dari pukul 11.00.00 kemarin hingga pukul 10.59.59 hari ini. Berikut contoh penggunaan komponen HMI `trend_chart`:
 
 ```xml
 <trend_chart>
@@ -27,6 +27,7 @@ https://playground.monita.co.id/?component=trend_chart
 | ------------------- | ---------- | ---------------------------------------------------- | ------------------------------ | ------------------------------- |
 | caption             | string     | TrendChart                                           |                                | Keterangan komponen             |
 | point_id            | int        | 0                                                    |                                | ID titik ukur                   |
+| data_type           | string     | avg                                                  | avg; first                     | Jenis data\*\*                  |
 | type                | string     | line-area                                            | line; line-area; bar; bar-line | Jenis grafik                    |
 | color               | string     | RoyalBlue                                            |                                | Warna line/bar grafik           |
 | grid_color          | string     | LightSlateGray                                       |                                | Warna grid                      |
@@ -55,3 +56,7 @@ https://playground.monita.co.id/?component=trend_chart
 | y                   | float      | 0                                                    |                                | Posisi: Koordinat y             |
 
 \*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
+\*\*) Penjelasan:
+
+- `avg` = Misal data jam 8, berasal dari rata-rata pukul 08:00:00 s/d 08.59:59.
+- `first` = Misal data jam 8, berasal dari data pertama yang masuk pada jam 8.
