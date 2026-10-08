@@ -58,6 +58,6 @@ https://playground.monita.co.id/?component=text
 | z                   | enum       | 0                            | 0;1;2;3;4;5;6;7;8;9            | Posisi: z-index           |
 | rotate              | float      | 0                            |                                | Derajat putaran           |
 
-\*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
+- \*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
 
 Catatan: Kode simbol/karakter khusus [lihat di sini](ref_unicode).

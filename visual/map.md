@@ -38,8 +38,7 @@ Pada _tag_ ini berisi atribut `type` dengan nilai `map`. Selain itu:
 - `expired_in` (dalam menit) berfungsi untuk menampilkan data minimum atau N/A bila usia data lebih dari waktu tersebut.
 - `layer_group_name` untuk mendefinisikan nama grup layer pada _widget_ _Layer_ di _sidebar_ kanan. Contoh: `layer_group_name="Nama Grup 1, Nama Grup 2, Nama Grup 3"`.\*
 
-\*) Ketarangan:
-
-- Grup 1 memuat marker aktif.
-- Grup 2 memuat marker statis.
-- Grup 3 memuat geojson dan geometri (garis, kotak, lingkaran, garis).
+- \*) Ketarangan:
+  - Grup 1 memuat marker aktif.
+  - Grup 2 memuat marker statis.
+  - Grup 3 memuat geojson dan geometri (garis, kotak, lingkaran, garis).

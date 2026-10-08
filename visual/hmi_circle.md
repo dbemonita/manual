@@ -35,6 +35,5 @@ https://playground.monita.co.id/?component=circle
 | y                   | float      | 0             |                     | Posisi: Koordinat y       |
 | z                   | enum       | 0             | 0;1;2;3;4;5;6;7;8;9 | Posisi: z-index           |
 
-\*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
-
-\*\*) Pilih salah satu. Bila didefinisikan keduanya maka yang digunakan adalah diameter.
+- \*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
+- \*\*) Pilih salah satu. Bila didefinisikan keduanya maka yang digunakan adalah diameter.

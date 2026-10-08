@@ -55,8 +55,7 @@ https://playground.monita.co.id/?component=trend_chart
 | x                   | float      | 0                                                    |                                | Posisi: Koordinat x             |
 | y                   | float      | 0                                                    |                                | Posisi: Koordinat y             |
 
-\*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
-\*\*) Penjelasan:
-
-- `avg` = Misal data jam 8, berasal dari rata-rata pukul 08:00:00 s/d 08.59:59.
-- `first` = Misal data jam 8, berasal dari data pertama yang masuk pada jam 8.
+- \*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
+- \*\*) Penjelasan:
+  - `avg` (Default) = Misal data jam 8, berasal dari rata-rata pukul 08:00:00 s/d 08.59:59.
+  - `first` (Tersedia >= 5.20.0) = Misal data jam 8, berasal dari data pertama yang masuk pada jam 8.

@@ -51,6 +51,5 @@ https://playground.monita.co.id/?component=indicator_image
 - Untuk animasi `rotate`, pastikan nilai `from_x` dan `to_x` sama dengan `x`. Lalu, `from_y` dan `to_y` sama dengan `y`.
 - Properti `from_x`, `from_y`, `to_x`, `to_y` hanya perlu didefinisikan bila properti `animation` juga didefinisikan `move` atau `reverse`. Pada kondisi ini, properti `x`, `y` dapat diabaikan.
 
-\*) URL pada properti `source` relatif ke server `sockelat`.
-
-\*\*) Bila properti `preserve_ratio` diset `none`, maka gambar akan _stretch_ mengikuti properti `width` dan `height`.
+- \*) URL pada properti `source` relatif ke server `sockelat`.
+- \*\*) Bila properti `preserve_ratio` diset `none`, maka gambar akan _stretch_ mengikuti properti `width` dan `height`.

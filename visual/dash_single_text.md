@@ -30,4 +30,4 @@ Tag pembuka `<single_text>` tersebut memiliki atribut-atribut sebagai berikut:
 | point_id | int        | 0          | Titik ukur      |
 | decimal  | int        | 2          | Jumlah desimal  |
 
-\*) Nama titik ukur secara baku menggunakan data dari database. Untuk _override_, definisikan properti `name`.
+- \*) Nama titik ukur secara baku menggunakan data dari database. Untuk _override_, definisikan properti `name`.

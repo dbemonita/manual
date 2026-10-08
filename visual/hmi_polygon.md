@@ -79,4 +79,4 @@ https://playground.monita.co.id/?component=polygon
 | y15                 | float      | 0             |                       | Titik 10: Koordinat y     |
 | z                   | enum       | 0             | 0;1;2;3;4;5;6;7;8;9   | Posisi: z-index           |
 
-\*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)
+- \*) Lihat [Referensi Warna _Gradient_](ref_gradient_color.md)

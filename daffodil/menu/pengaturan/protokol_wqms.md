@@ -19,7 +19,7 @@ SPARING merupakan singkatan dari Sistem Pemantauan Kualitas Air Limbah Secara Te
 
 ##### KETERANGAN:
 
-\*) Sesuai dokumen SPARING
+- \*) Sesuai dokumen SPARING
 
 ##### CATATAN:
 

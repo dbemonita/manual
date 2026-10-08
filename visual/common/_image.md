@@ -34,6 +34,5 @@ https://playground.monita.co.id/?component=image
 | z              | enum       | 0             | 0;1;2;3;4;5;6;7;8;9 | Posisi: z-index       |
 | rotate         | float      | 0             |                     | Derajat putaran       |
 
-\*) URL pada properti `source` relatif ke server `sockelat`.
-
-\*\*) Bila properti `preserve_ratio` diset `none`, maka gambar akan _stretch_ mengikuti properti `width` dan `height`.
+- \*) URL pada properti `source` relatif ke server `sockelat`.
+- \*\*) Bila properti `preserve_ratio` diset `none`, maka gambar akan _stretch_ mengikuti properti `width` dan `height`.

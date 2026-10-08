@@ -38,4 +38,4 @@ Berikut contoh komponen peta `marker` (marker statis/diam):
 | decimal          | int        | 2          |               | _Decimal places to round number to_ |
 | link             | string     |            |               | Tautan                              |
 
-\*) URL pada properti `source` relatif ke API server.
+- \*) URL pada properti `source` relatif ke API server.

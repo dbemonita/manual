@@ -59,4 +59,4 @@ Tag pembuka `<multi_text>` tersebut memiliki atribut-atribut sebagai berikut:
 | point_id10 | int        | 0          | Titik ukur #10      |
 | decimal10  | int        | 2          | Jumlah desimal #10  |
 
-\*) Nama titik ukur secara baku menggunakan data dari database. Untuk _override_, definisikan properti `name1` s/d `name10`.
+- \*) Nama titik ukur secara baku menggunakan data dari database. Untuk _override_, definisikan properti `name1` s/d `name10`.
