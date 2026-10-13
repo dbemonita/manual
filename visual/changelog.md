@@ -10,7 +10,7 @@ Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
 ### 5.19.0 (2026-10-06)
 
-- Update visualizer ke versi 1.1.0.
+- Menambah properti `datetime_format` and `datetime_locale` pada komponen `active_text`.
 
 ### 5.18.0 (2026-10-05)
 
