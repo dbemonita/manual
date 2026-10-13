@@ -2,6 +2,12 @@
 
 Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 
+### 5.20.0 (2026-10-13)
+
+- Menambah atribut `avg_fallback` untuk data `average` yang kosong ke data awal.
+- Menambah properti `data_type` untuk komponen `trend_chart`.
+- Perbaikan atribut `datepicker_exclude`.
+
 ### 5.19.0 (2026-10-06)
 
 - Update visualizer ke versi 1.1.0.
@@ -11,7 +17,7 @@ Informasi perubahan aplikasi [Visual Monita](https://beta.monita.co.id/).
 - Menambah komponen `trend_chart`.
 - Menambah properti `override_by` pada komponen `timestamp`.
 - Restore fitur `data_reprocess` dan `closing_process` (dihapus pada v5.8.0).
-- Tambah checkbox remember host pada form login.
+- Menambah checkbox remember host pada form login.
 
 ### 5.17.4 (2026-09-10)
 
