@@ -166,6 +166,51 @@ globalThis.__CUSTOM_PAGES__ = [
   },
   {
     usernames: ["kecbogortengah.trial"], // List username yang dapat mengakses halaman custom ini
+    path: "display/3", // Path file lokasi halaman custom
+    title: "Live Map", // Judul halaman custom
+    options: [
+      {
+        stationName: "Stasiun Kecamatan Bogor Tengah",
+        region: "Kota Bogor, Provinsi Jawa Barat",
+        posistion: [-6.6009135725212476, 106.7925855762779],
+        points: [
+          {
+            // 0-15.5 baik
+            // 15.6-55.4 sedang
+            // 55.5-150.4 tidak sehat
+            // 150.5-250.4 sangat tidak sehat
+            // >250.5 berbahaya
+            key: "pm25",
+            id: 310102,
+            name: "PM 2.5",
+            short: "PM2.5",
+            unit: "μg/m³",
+            min: 0,
+            max: 500,
+          },
+          {
+            // 0-15.5 baik
+            // 15.6-55.4 sedang
+            // 55.5-150.4 tidak sehat
+            // 150.5-250.4 sangat tidak sehat
+            // >250.5 berbahaya
+            key: "pm10",
+            id: 310103,
+            name: "PM 10",
+            short: "PM10",
+            unit: "μg/m³",
+            min: 0,
+            max: 500,
+          },
+        ],
+        ispuParamKeys: ["pm10", "pm25"],
+        dataSourceKey: "average", // "data" or "average"
+      },
+    ],
+    windyApiKey: "LZ7Puv9MoRt1DjYbJZ8EDs2j0k7KwrVY",
+  },
+  {
+    usernames: ["kecbogortengah.trial"], // List username yang dapat mengakses halaman custom ini
     path: "display/2", // Path file lokasi halaman custom
     title: "Laporan", // Judul halaman custom
     options: {
