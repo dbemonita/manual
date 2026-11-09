@@ -1,6 +1,24 @@
 
 # [Download Firmware Daffodil](https://drive.google.com/drive/folders/1dz1C6Nq6wBmktp0kvZMXbmvK5L_d4aHb)
 
+## V6.3.4 - V6.3.5 - 9 November 2026   
+
+- [X] Optimasi Config non volatil system, supaya ketika fw di flash tidak menghilangkan informasi config sebelumnya.
+- [x] Optimasi fitur MQTTS dengan port yang fleksibel.
+- [x] Penambahan informasi Device monitoring Info untuk monitoring dari Local Daun biru. 
+- [x] Penambahan VPN Wireguard untuk membantu proses tunnelling IP sehingga dapat diakses secara remote dari mana saja.
+- [x] Penambahan Informasi Active dan Non - Active pada section Ethernet dan Celullar.
+- [x] update Algorithm pada tab jaringan, jika versi terdeteksi NO-MODEM maka pilihan "Network Interface"  ditiadakan dan informasi section cellular di hilangkan. 
+- [X] Optimasi Algoritma "penggunaan memori", setiap kali persentase menunjukkan nilai penggunaan memori 95% maka sistem akan restart otomatis. 
+
+## V6.3.2 dan V6.3.3 - 8 Okterber 2026
+
+- [X] Optimasi persamaan y = mx + c dapat digunakan dan hasil operasi akan di tampilkan mulai alamat 101 dengan nama data_manipulasi. 
+- [X] Terjadi kesalahan setting pada broker_domain yang belum sesuai, sudah disesuaikan dan berjalan lancar. 
+- [x] Penambahan fitur MQTTS via Port 8883.
+- [X] Support multi connection ke MQTT broker, sudah bisa connect ke dua broker MQTT.
+- [X] Optimasi pada tab Data sehingga setiap kali reload atau pindah page tidak mudah hang. 
+
 # v6.3.2 (B) / v6.3.3 (F)  (25 September 2026)
 - [x] revisi perbaikan konfigurasi pengiriman domain untuk MQTT monitoring, menjadi broker_domain.
 - [x] perubahan metode cek server apakah ok atau tidak dengan cara cek server is Alive, menggantikan cara ping (ICMP) karena ternyata ada beberapa vps yang tetiba mematikan fungsi ICMP.
